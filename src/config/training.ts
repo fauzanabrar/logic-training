@@ -1,7 +1,7 @@
 import { appConfig } from "./app";
-import { mathTrainingProvider } from "@/features/training/providers/mathTrainingProvider";
+import { logicTrainingProvider } from "@/features/training/providers/logicTrainingProvider";
 
-type ProviderSkillKey = keyof typeof mathTrainingProvider.skills;
+type ProviderSkillKey = keyof typeof logicTrainingProvider.skills;
 type TrainingModeKey = ProviderSkillKey | "mix";
 
 const storagePrefix = appConfig.storagePrefix;
@@ -23,15 +23,15 @@ const skillModes: Array<{
   label: string;
   subtitle: string;
   icon: string;
-}> = mathTrainingProvider.skillOrder.map((skill) => ({
+}> = logicTrainingProvider.skillOrder.map((skill) => ({
   key: skill,
-  label: mathTrainingProvider.skills[skill].label,
-  subtitle: mathTrainingProvider.skills[skill].subtitle,
-  icon: mathTrainingProvider.skills[skill].symbol,
+  label: logicTrainingProvider.skills[skill].label,
+  subtitle: logicTrainingProvider.skills[skill].subtitle,
+  icon: logicTrainingProvider.skills[skill].symbol,
 }));
 
 export const trainingConfig = {
-  provider: mathTrainingProvider,
+  provider: logicTrainingProvider,
   storageKeys: {
     session: `${storagePrefix}:session`,
     settings: `${storagePrefix}:settings`,
