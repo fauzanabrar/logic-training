@@ -23,6 +23,7 @@ export type TrainingQuestion<SkillKey extends string> = {
 export type TrainingSettingsBase = {
   questionCount: number;
   timeLimitSeconds: number;
+  language: "en" | "id";
 };
 
 export type SettingControl<Settings> = {
@@ -49,7 +50,7 @@ export type KeypadConfig = {
 };
 
 export type AnswerConfig<Settings, Question, AnswerValue> = {
-  inputMode: "numeric" | "text";
+  inputMode: "numeric" | "text" | "multiple-choice";
   placeholder: string;
   keypad?: KeypadConfig;
   allowNegative?: (question: Question, settings: Settings) => boolean;
@@ -94,6 +95,7 @@ export type TrainingProvider<
     stats: Stats<SkillKey>;
   }) => Question;
   getQuestionText: (question: Question) => string;
+  getQuestionOptions?: (question: Question) => string[];
   updateStats: (stats: Stats<SkillKey>, args: {
     skill: SkillKey;
     correct: boolean;
