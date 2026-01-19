@@ -244,51 +244,55 @@ export const useTrainingSession = <
     [provider, question]
   );
 
-  const handleSubmit = useCallback((options?: { useKeypad?: boolean }) => {
-    if (!question || answered) {
-      return;
-    }
-    const prefersKeypadErrors = Boolean(options?.useKeypad);
-    const allowNegative = allowNegativeAnswer;
-    const cleaned = provider.answer.sanitizeInput(answer.trim(), {
-      allowNegative,
-    });
-    const parsed = provider.answer.parseInput(cleaned, { allowNegative });
-    if (parsed.error) {
-      if (parsed.error === "empty") {
-        setError(
-          prefersKeypadErrors
-            ? provider.answer.errors.emptyKeypad ??
-                provider.answer.errors.empty
-            : provider.answer.errors.empty
-        );
+  const handleSubmit = useCallback(
+    (options?: { useKeypad?: boolean; answer?: string }) => {
+      if (!question || answered) {
         return;
       }
-      if (parsed.error === "incomplete") {
-        setError(provider.answer.errors.incomplete);
+      const finalAnswer = options?.answer ?? answer;
+      const prefersKeypadErrors = Boolean(options?.useKeypad);
+      const allowNegative = allowNegativeAnswer;
+      const cleaned = provider.answer.sanitizeInput(finalAnswer.trim(), {
+        allowNegative,
+      });
+      const parsed = provider.answer.parseInput(cleaned, { allowNegative });
+      if (parsed.error) {
+        if (parsed.error === "empty") {
+          setError(
+            prefersKeypadErrors
+              ? provider.answer.errors.emptyKeypad ??
+                  provider.answer.errors.empty
+              : provider.answer.errors.empty
+          );
+          return;
+        }
+        if (parsed.error === "incomplete") {
+          setError(provider.answer.errors.incomplete);
+          return;
+        }
+        setError(provider.answer.errors.invalid);
         return;
       }
-      setError(provider.answer.errors.invalid);
-      return;
-    }
 
-    const elapsed = Date.now() - startTimeRef.current;
-    const correct = provider.answer.isCorrect(
-      parsed.value as AnswerValue,
-      question
-    );
+      const elapsed = Date.now() - startTimeRef.current;
+      const correct = provider.answer.isCorrect(
+        parsed.value as AnswerValue,
+        question
+      );
 
-    clearAdvanceTimer();
-    applyResult(correct, elapsed);
-  }, [
-    allowNegativeAnswer,
-    answer,
-    answered,
-    applyResult,
-    clearAdvanceTimer,
-    provider.answer,
-    question,
-  ]);
+      clearAdvanceTimer();
+      applyResult(correct, elapsed);
+    },
+    [
+      allowNegativeAnswer,
+      answer,
+      answered,
+      applyResult,
+      clearAdvanceTimer,
+      provider.answer,
+      question,
+    ]
+  );
 
   const handleAnswerChange = useCallback(
     (rawValue: string) => {

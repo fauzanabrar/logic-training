@@ -342,31 +342,58 @@ export default function Home() {
                   </>
                 ) : (
                   <div className={styles.answerRow}>
-                    <input
-                      ref={inputRef}
-                      className={styles.answerInput}
-                      type="text"
-                      inputMode={provider.answer.inputMode}
-                      pattern={
-                        provider.answer.inputMode === "numeric"
-                          ? "[-0-9]*"
-                          : undefined
-                      }
-                      value={answer}
-                      onChange={(event) => {
-                        handleAnswerChange(event.target.value);
-                      }}
-                      onKeyDown={(event) => {
-                        if (event.key === "Enter") {
-                          event.preventDefault();
-                          handleSubmit();
+                    {provider.answer.inputMode === "multiple-choice" &&
+                    question &&
+                    provider.getQuestionOptions ? (
+                      <div className={styles.answerButtons}>
+                        {provider.getQuestionOptions(question).map((option) => (
+                          <button
+                            key={option}
+                            type="button"
+                            onClick={() => {
+                              handleAnswerChange(option);
+                              handleSubmit({ answer: option });
+                            }}
+                            disabled={answered}
+                            className={`${styles.primaryButton} ${
+                              answered ? styles.buttonDisabled : ""
+                            }`}
+                          >
+                            {option}
+                          </button>
+                        ))}
+                      </div>
+                    ) : (
+                      <input
+                        ref={inputRef}
+                        className={styles.answerInput}
+                        type="text"
+                        inputMode={
+                          provider.answer.inputMode === "numeric"
+                            ? "numeric"
+                            : "text"
                         }
-                      }}
-                      placeholder={provider.answer.placeholder}
-                      autoComplete="off"
-                      disabled={answered}
-                      aria-label="Answer input"
-                    />
+                        pattern={
+                          provider.answer.inputMode === "numeric"
+                            ? "[-0-g]*"
+                            : undefined
+                        }
+                        value={answer}
+                        onChange={(event) => {
+                          handleAnswerChange(event.target.value);
+                        }}
+                        onKeyDown={(event) => {
+                          if (event.key === "Enter") {
+                            event.preventDefault();
+                            handleSubmit();
+                          }
+                        }}
+                        placeholder={provider.answer.placeholder}
+                        autoComplete="off"
+                        disabled={answered}
+                        aria-label="Answer input"
+                      />
+                    )}
                   </div>
                 )}
                 <div className={styles.actionRow}>

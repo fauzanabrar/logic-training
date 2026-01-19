@@ -31,6 +31,7 @@ const DEFAULT_SETTINGS: MathSettings = {
   questionCount: 10,
   timeLimitSeconds: 10,
   negativeLevel: 0,
+  language: "en",
 };
 
 const SKILL_ORDER: SkillKey[] = ["add", "sub", "mul", "div"];
