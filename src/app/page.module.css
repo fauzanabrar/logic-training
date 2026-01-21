@@ -92,6 +92,12 @@ button:focus-visible {
   place-items: center;
 }
 
+.brandIcon {
+  width: 28px;
+  height: 28px;
+  color: #fff;
+}
+
 .brandMarkText {
   color: #fff;
   font-weight: 700;

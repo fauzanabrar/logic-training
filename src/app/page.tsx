@@ -1044,9 +1044,42 @@ export default function Home() {
           <div className={styles.appBarLeft}>
             {screen === "menu" ? (
               <div className={styles.brandMark}>
-                <span className={styles.brandMarkText}>
-                  {currentCopy.brand.shortName}
-                </span>
+                <svg className={styles.brandIcon} viewBox="0 0 200 200" aria-hidden="true">
+                  {/* Brain icon with logic theme */}
+                  <circle cx="100" cy="100" r="95" stroke="currentColor" strokeWidth="3" fill="none"/>
+                  
+                  {/* Left brain hemisphere */}
+                  <path d="M 100 30 Q 70 50, 65 85 Q 60 110, 75 130 L 100 130 Z" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.3"/>
+                  
+                  {/* Right brain hemisphere */}
+                  <path d="M 100 30 Q 130 50, 135 85 Q 140 110, 125 130 L 100 130 Z" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.2"/>
+                  
+                  {/* Brain ridges */}
+                  <path d="M 85 60 Q 90 65, 85 70" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+                  <path d="M 115 60 Q 110 65, 115 70" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+                  <path d="M 80 80 Q 85 85, 80 90" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+                  <path d="M 120 80 Q 115 85, 120 90" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+                  
+                  {/* Logic circuits/connections */}
+                  <g stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none">
+                    {/* Center connection */}
+                    <line x1="100" y1="50" x2="100" y2="150"/>
+                    
+                    {/* Left logic nodes */}
+                    <circle cx="60" cy="100" r="3" fill="currentColor"/>
+                    <line x1="70" y1="100" x2="90" y2="100"/>
+                    
+                    {/* Right logic nodes */}
+                    <circle cx="140" cy="100" r="3" fill="currentColor"/>
+                    <line x1="110" y1="100" x2="130" y2="100"/>
+                    
+                    {/* Top logic node */}
+                    <circle cx="100" cy="40" r="3" fill="currentColor"/>
+                    
+                    {/* Bottom logic node */}
+                    <circle cx="100" cy="160" r="3" fill="currentColor"/>
+                  </g>
+                </svg>
               </div>
             ) : (
               <button

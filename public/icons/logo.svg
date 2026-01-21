@@ -1,0 +1,36 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Brain icon with logic theme -->
+  <circle cx="100" cy="100" r="95" stroke="currentColor" stroke-width="3"/>
+  
+  <!-- Left brain hemisphere -->
+  <path d="M 100 30 Q 70 50, 65 85 Q 60 110, 75 130 L 100 130 Z" stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.3"/>
+  
+  <!-- Right brain hemisphere -->
+  <path d="M 100 30 Q 130 50, 135 85 Q 140 110, 125 130 L 100 130 Z" stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.2"/>
+  
+  <!-- Brain ridges -->
+  <path d="M 85 60 Q 90 65, 85 70" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 115 60 Q 110 65, 115 70" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 80 80 Q 85 85, 80 90" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 120 80 Q 115 85, 120 90" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Logic circuits/connections -->
+  <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Center connection -->
+    <line x1="100" y1="50" x2="100" y2="150"/>
+    
+    <!-- Left logic nodes -->
+    <circle cx="60" cy="100" r="3" fill="currentColor"/>
+    <line x1="70" y1="100" x2="90" y2="100"/>
+    
+    <!-- Right logic nodes -->
+    <circle cx="140" cy="100" r="3" fill="currentColor"/>
+    <line x1="110" y1="100" x2="130" y2="100"/>
+    
+    <!-- Top logic node -->
+    <circle cx="100" cy="40" r="3" fill="currentColor"/>
+    
+    <!-- Bottom logic node -->
+    <circle cx="100" cy="160" r="3" fill="currentColor"/>
+  </g>
+</svg>
