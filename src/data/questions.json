@@ -5,19 +5,46 @@
         {
           "id": "syl_1_1",
           "text": "All men are mortal. Socrates is a man. Therefore, Socrates is mortal.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_1_2",
           "text": "All dogs are animals. Max is a dog. Therefore, Max is an animal.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_1_3",
           "text": "All birds can fly. Penguins are birds. Therefore, penguins can fly.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_1_4",
+          "text": "All flowers are plants. Roses are flowers. Therefore, roses are plants.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_1_5",
+          "text": "All metals are conductors. Copper is a conductor. Therefore, copper is a metal.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         }
       ],
@@ -25,19 +52,46 @@
         {
           "id": "syl_1_1",
           "text": "Semua manusia adalah makhluk hidup. Sokrates adalah manusia. Oleh karena itu, Sokrates adalah makhluk hidup.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_1_2",
           "text": "Semua anjing adalah hewan. Max adalah anjing. Oleh karena itu, Max adalah hewan.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_1_3",
           "text": "Semua burung dapat terbang. Penguin adalah burung. Oleh karena itu, penguin dapat terbang.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_1_4",
+          "text": "Semua bunga adalah tanaman. Mawar adalah bunga. Oleh karena itu, mawar adalah tanaman.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_1_5",
+          "text": "Semua logam adalah konduktor. Tembaga adalah konduktor. Oleh karena itu, tembaga adalah logam.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         }
       ]
@@ -47,19 +101,46 @@
         {
           "id": "syl_2_1",
           "text": "All students study hard. John is a student. Therefore, John studies hard.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_2_2",
           "text": "All cats are mammals. Fluffy is a mammal. Therefore, Fluffy is a cat.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_2_3",
           "text": "All roses are flowers. This plant is a rose. Therefore, this plant is a flower.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_2_4",
+          "text": "All students study. Some teachers are students. Therefore, some teachers study.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_2_5",
+          "text": "All swimmers are athletes. John is a swimmer. Therefore, John is an athlete.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         }
       ],
@@ -67,19 +148,46 @@
         {
           "id": "syl_2_1",
           "text": "Semua siswa belajar keras. John adalah siswa. Oleh karena itu, John belajar keras.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_2_2",
           "text": "Semua kucing adalah mamalia. Fluffy adalah mamalia. Oleh karena itu, Fluffy adalah kucing.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_2_3",
           "text": "Semua mawar adalah bunga. Tanaman ini adalah mawar. Oleh karena itu, tanaman ini adalah bunga.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_2_4",
+          "text": "Semua siswa belajar. Beberapa guru adalah siswa. Oleh karena itu, beberapa guru belajar.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_2_5",
+          "text": "Semua perenang adalah atlet. John adalah perenang. Oleh karena itu, John adalah atlet.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         }
       ]
@@ -89,19 +197,46 @@
         {
           "id": "syl_3_1",
           "text": "Some birds are colorful. All parrots are birds. Therefore, all parrots are colorful.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_3_2",
           "text": "All athletes are strong. Some dancers are strong. Therefore, some dancers are athletes.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_3_3",
           "text": "All musicians play instruments. Sarah is a musician. Therefore, Sarah plays instruments.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_3_4",
+          "text": "No students are lazy. All hardworking people are not lazy. Therefore, all students are hardworking.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_3_5",
+          "text": "Some birds are blue. All blue things are visible. Therefore, some birds are visible.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         }
       ],
@@ -109,19 +244,46 @@
         {
           "id": "syl_3_1",
           "text": "Beberapa burung berwarna-warni. Semua burung beo adalah burung. Oleh karena itu, semua burung beo berwarna-warni.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_3_2",
           "text": "Semua atlet kuat. Beberapa penari kuat. Oleh karena itu, beberapa penari adalah atlet.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_3_3",
           "text": "Semua musisi memainkan alat musik. Sarah adalah musisi. Oleh karena itu, Sarah memainkan alat musik.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_3_4",
+          "text": "Tidak ada siswa yang malas. Semua orang yang rajin bukan malas. Oleh karena itu, semua siswa rajin.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_3_5",
+          "text": "Beberapa burung berwarna biru. Semua hal berwarna biru terlihat. Oleh karena itu, beberapa burung terlihat.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         }
       ]
@@ -131,19 +293,46 @@
         {
           "id": "syl_4_1",
           "text": "All metals conduct electricity. Copper is a metal. Therefore, copper conducts electricity.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_4_2",
           "text": "Some reptiles are venomous. All snakes are reptiles. Therefore, some snakes are venomous.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_4_3",
           "text": "All doctors are educated. No educated people are lazy. Therefore, no doctors are lazy.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_4_6",
+          "text": "All M are P. Some S are M. Therefore, all S are P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_4_7",
+          "text": "No M are P. All S are M. Therefore, no S are P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         }
       ],
@@ -151,19 +340,46 @@
         {
           "id": "syl_4_1",
           "text": "Semua logam menghantarkan listrik. Tembaga adalah logam. Oleh karena itu, tembaga menghantarkan listrik.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_4_2",
           "text": "Beberapa reptil berbisa. Semua ular adalah reptil. Oleh karena itu, beberapa ular berbisa.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_4_3",
           "text": "Semua dokter berpendidikan. Tidak ada orang berpendidikan yang malas. Oleh karena itu, tidak ada dokter yang malas.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_4_6",
+          "text": "Semua M adalah P. Beberapa S adalah M. Oleh karena itu, semua S adalah P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_4_7",
+          "text": "Tidak ada M yang adalah P. Semua S adalah M. Oleh karena itu, tidak ada S yang adalah P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         }
       ]
@@ -173,40 +389,94 @@
         {
           "id": "syl_5_1",
           "text": "All A are B. All B are C. Therefore, all A are C.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_5_2",
           "text": "No A are B. All C are B. Therefore, no C are A.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_5_3",
           "text": "Some A are B. Some B are C. Therefore, some A are C.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
+        },
+        {
+          "id": "syl_5_6",
+          "text": "All M are P. No M are S. Therefore, no S are P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_5_7",
+          "text": "Some M are P. All M are S. Therefore, some S are P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
         }
       ],
       "id": [
         {
           "id": "syl_5_1",
           "text": "Semua A adalah B. Semua B adalah C. Oleh karena itu, semua A adalah C.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_5_2",
           "text": "Tidak ada A yang merupakan B. Semua C adalah B. Oleh karena itu, tidak ada C yang merupakan A.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_5_3",
           "text": "Beberapa A adalah B. Beberapa B adalah C. Oleh karena itu, beberapa A adalah C.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
+        },
+        {
+          "id": "syl_5_6",
+          "text": "Semua M adalah P. Tidak ada M yang adalah S. Oleh karena itu, tidak ada S yang adalah P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_5_7",
+          "text": "Beberapa M adalah P. Semua M adalah S. Oleh karena itu, beberapa S adalah P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
         }
       ]
     },
@@ -215,40 +485,94 @@
         {
           "id": "syl_6_1",
           "text": "All P are Q. All Q are R. All R are S. Therefore, all P are S.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_6_2",
           "text": "Some X are Y. No Y are Z. Therefore, some X are not Z.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_6_3",
           "text": "All M are N. No N are O. Some O are P. Therefore, some P are not M.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
+        },
+        {
+          "id": "syl_6_6",
+          "text": "All M are P. All M are S. Therefore, all S are P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_6_7",
+          "text": "Some M are P. No S are M. Therefore, some S are not P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ],
       "id": [
         {
           "id": "syl_6_1",
           "text": "Semua P adalah Q. Semua Q adalah R. Semua R adalah S. Oleh karena itu, semua P adalah S.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_6_2",
           "text": "Beberapa X adalah Y. Tidak ada Y yang merupakan Z. Oleh karena itu, beberapa X bukan Z.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_6_3",
           "text": "Semua M adalah N. Tidak ada N yang merupakan O. Beberapa O adalah P. Oleh karena itu, beberapa P bukan M.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
+        },
+        {
+          "id": "syl_6_6",
+          "text": "Semua M adalah P. Semua M adalah S. Oleh karena itu, semua S adalah P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_6_7",
+          "text": "Beberapa M adalah P. Tidak ada S yang adalah M. Oleh karena itu, beberapa S bukan P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ]
     },
@@ -257,19 +581,46 @@
         {
           "id": "syl_7_1",
           "text": "All A are B. All C are B. Therefore, all A are C.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_7_2",
           "text": "Some A are B. Some B are not C. Therefore, some A are not C.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_7_3",
           "text": "No A are B. No B are C. Therefore, no A are C.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_7_6",
+          "text": "Some M are P. All S are M. No P are X. Therefore, no S are X.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_7_7",
+          "text": "All M are P. Some S are not M. Therefore, all S are not P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         }
       ],
@@ -277,19 +628,46 @@
         {
           "id": "syl_7_1",
           "text": "Semua A adalah B. Semua C adalah B. Oleh karena itu, semua A adalah C.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_7_2",
           "text": "Beberapa A adalah B. Beberapa B bukan C. Oleh karena itu, beberapa A bukan C.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_7_3",
           "text": "Tidak ada A yang merupakan B. Tidak ada B yang merupakan C. Oleh karena itu, tidak ada A yang merupakan C.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_7_6",
+          "text": "Beberapa M adalah P. Semua S adalah M. Tidak ada P yang adalah X. Oleh karena itu, tidak ada S yang adalah X.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_7_7",
+          "text": "Semua M adalah P. Beberapa S bukan M. Oleh karena itu, semua S bukan P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         }
       ]
@@ -299,40 +677,130 @@
         {
           "id": "syl_8_1",
           "text": "All A are B. No B are C. All D are C. Therefore, no A are D.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_8_2",
           "text": "Some A are B. All B are C. Some C are not D. Therefore, some A are not D.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_8_3",
           "text": "No P are Q. All Q are R. Some R are S. Therefore, some S are not P.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
+        },
+        {
+          "id": "syl_8_6",
+          "text": "No M are P. All M are S. Some S are X. Therefore, some X are not P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_8_7",
+          "text": "Some M are P. No M are S. All P are X. Therefore, some X are not S.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_8_8",
+          "text": "All M are P. Some M are S. Some S are not X. Therefore, some P are not X.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_8_9",
+          "text": "No M are P. All M are S. All P are X. Therefore, no S are X.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ],
       "id": [
         {
           "id": "syl_8_1",
           "text": "Semua A adalah B. Tidak ada B yang merupakan C. Semua D adalah C. Oleh karena itu, tidak ada A yang merupakan D.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_8_2",
           "text": "Beberapa A adalah B. Semua B adalah C. Beberapa C bukan D. Oleh karena itu, beberapa A bukan D.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_8_3",
           "text": "Tidak ada P yang merupakan Q. Semua Q adalah R. Beberapa R adalah S. Oleh karena itu, beberapa S bukan P.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
+        },
+        {
+          "id": "syl_8_6",
+          "text": "Tidak ada M yang adalah P. Semua M adalah S. Beberapa S adalah X. Oleh karena itu, beberapa X bukan P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_8_7",
+          "text": "Beberapa M adalah P. Tidak ada M yang adalah S. Semua P adalah X. Oleh karena itu, beberapa X bukan S.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_8_8",
+          "text": "Semua M adalah P. Beberapa M adalah S. Beberapa S bukan X. Oleh karena itu, beberapa P bukan X.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_8_9",
+          "text": "Tidak ada M yang adalah P. Semua M adalah S. Semua P adalah X. Oleh karena itu, tidak ada S yang adalah X.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ]
     },
@@ -341,19 +809,64 @@
         {
           "id": "syl_9_1",
           "text": "All A are B. All B are C. Some C are not D. All E are D. Therefore, some A are not E.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_9_2",
           "text": "No X are Y. Some Y are Z. Some Z are W. Therefore, some W are not X.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_9_3",
           "text": "All M are N. Some N are O. No O are P. Therefore, some M are not P.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_9_6",
+          "text": "All M are P. Some M are S. All P are X. Therefore, all S are X.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_9_7",
+          "text": "No M are P. Some M are S. Therefore, some S are not P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_9_8",
+          "text": "Some M are P. All M are S. No P are X. Therefore, some S are not X.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_9_9",
+          "text": "All M are P. No M are S. Some X are M. Therefore, some X are P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         }
       ],
@@ -361,19 +874,64 @@
         {
           "id": "syl_9_1",
           "text": "Semua A adalah B. Semua B adalah C. Beberapa C bukan D. Semua E adalah D. Oleh karena itu, beberapa A bukan E.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_9_2",
           "text": "Tidak ada X yang merupakan Y. Beberapa Y adalah Z. Beberapa Z adalah W. Oleh karena itu, beberapa W bukan X.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_9_3",
           "text": "Semua M adalah N. Beberapa N adalah O. Tidak ada O yang merupakan P. Oleh karena itu, beberapa M bukan P.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_9_6",
+          "text": "Semua M adalah P. Beberapa M adalah S. Semua P adalah X. Oleh karena itu, semua S adalah X.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_9_7",
+          "text": "Tidak ada M yang adalah P. Beberapa M adalah S. Oleh karena itu, beberapa S bukan P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_9_8",
+          "text": "Beberapa M adalah P. Semua M adalah S. Tidak ada P yang adalah X. Oleh karena itu, beberapa S bukan X.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_9_9",
+          "text": "Semua M adalah P. Tidak ada M yang adalah S. Beberapa X adalah M. Oleh karena itu, beberapa X adalah P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         }
       ]
@@ -383,19 +941,64 @@
         {
           "id": "syl_10_1",
           "text": "Some A are B. All B are C. Some C are D. No D are E. Therefore, all A are E.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_10_2",
           "text": "All P are Q. No Q are R. Some R are S. All S are T. Therefore, no P are T.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_10_3",
           "text": "No X are Y. All Y are Z. Some Z are not W. Some W are V. Therefore, some V are X.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_10_6",
+          "text": "((M → P) ∧ (M → S)) ∧ ¬(P ∧ S). Therefore, a contradiction if M is true.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_10_7",
+          "text": "All M are P. No S are M. Some X are S. Therefore, no X are P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_10_8",
+          "text": "All M are P or Q. All P are X. All Q are Y. Therefore, all M are X or Y.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_10_9",
+          "text": "No M are P. Some M are S. All S are X. Therefore, no X are P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         }
       ],
@@ -403,19 +1006,64 @@
         {
           "id": "syl_10_1",
           "text": "Beberapa A adalah B. Semua B adalah C. Beberapa C adalah D. Tidak ada D yang merupakan E. Oleh karena itu, semua A adalah E.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         },
         {
           "id": "syl_10_2",
           "text": "Semua P adalah Q. Tidak ada Q yang merupakan R. Beberapa R adalah S. Semua S adalah T. Oleh karena itu, tidak ada P yang merupakan T.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Valid"
         },
         {
           "id": "syl_10_3",
           "text": "Tidak ada X yang merupakan Y. Semua Y adalah Z. Beberapa Z bukan W. Beberapa W adalah V. Oleh karena itu, beberapa V adalah X.",
-          "options": ["Valid", "Invalid"],
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_10_6",
+          "text": "((M → P) ∧ (M → S)) ∧ ¬(P ∧ S). Oleh karena itu, kontradiksi jika M benar.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_10_7",
+          "text": "Semua M adalah P. Tidak ada S yang adalah M. Beberapa X adalah S. Oleh karena itu, tidak ada X yang adalah P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "syl_10_8",
+          "text": "Semua M adalah P atau Q. Semua P adalah X. Semua Q adalah Y. Oleh karena itu, semua M adalah X atau Y.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "syl_10_9",
+          "text": "Tidak ada M yang adalah P. Beberapa M adalah S. Semua S adalah X. Oleh karena itu, tidak ada X yang adalah P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
           "answer": "Invalid"
         }
       ]
@@ -427,19 +1075,31 @@
         {
           "id": "fal_1_1",
           "text": "You're either with us or against us.",
-          "options": ["False Dilemma", "Ad Hominem", "Strawman"],
+          "options": [
+            "False Dilemma",
+            "Ad Hominem",
+            "Strawman"
+          ],
           "answer": "False Dilemma"
         },
         {
           "id": "fal_1_2",
           "text": "Everyone believes in climate change, so it must be true.",
-          "options": ["Appeal to Majority", "False Cause", "Ad Hominem"],
+          "options": [
+            "Appeal to Majority",
+            "False Cause",
+            "Ad Hominem"
+          ],
           "answer": "Appeal to Majority"
         },
         {
           "id": "fal_1_3",
           "text": "You're stupid, so your argument is wrong.",
-          "options": ["Ad Hominem", "Strawman", "False Cause"],
+          "options": [
+            "Ad Hominem",
+            "Strawman",
+            "False Cause"
+          ],
           "answer": "Ad Hominem"
         }
       ],
@@ -447,19 +1107,31 @@
         {
           "id": "fal_1_1",
           "text": "Anda harus setuju dengan saya atau tidak peduli dengan negara ini.",
-          "options": ["Dilema Palsu", "Ad Hominem", "Strawman"],
+          "options": [
+            "Dilema Palsu",
+            "Ad Hominem",
+            "Strawman"
+          ],
           "answer": "Dilema Palsu"
         },
         {
           "id": "fal_1_2",
           "text": "Semua orang percaya pada perubahan iklim, jadi itu pasti benar.",
-          "options": ["Banding kepada Mayoritas", "Sebab Palsu", "Ad Hominem"],
+          "options": [
+            "Banding kepada Mayoritas",
+            "Sebab Palsu",
+            "Ad Hominem"
+          ],
           "answer": "Banding kepada Mayoritas"
         },
         {
           "id": "fal_1_3",
           "text": "Anda bodoh, jadi argumen Anda salah.",
-          "options": ["Ad Hominem", "Strawman", "Sebab Palsu"],
+          "options": [
+            "Ad Hominem",
+            "Strawman",
+            "Sebab Palsu"
+          ],
           "answer": "Ad Hominem"
         }
       ]
@@ -469,19 +1141,31 @@
         {
           "id": "fal_2_1",
           "text": "If you don't vote for this candidate, you hate your country.",
-          "options": ["False Dilemma", "Appeal to Fear", "Straw Man"],
+          "options": [
+            "False Dilemma",
+            "Appeal to Fear",
+            "Straw Man"
+          ],
           "answer": "False Dilemma"
         },
         {
           "id": "fal_2_2",
           "text": "This medicine worked for my friend, so it will work for you.",
-          "options": ["False Cause", "Hasty Generalization", "Anecdotal Evidence"],
+          "options": [
+            "False Cause",
+            "Hasty Generalization",
+            "Anecdotal Evidence"
+          ],
           "answer": "Anecdotal Evidence"
         },
         {
           "id": "fal_2_3",
           "text": "My opponent says we should protect the environment, but they drive a car. Therefore, their argument is invalid.",
-          "options": ["Ad Hominem", "Strawman", "Begging the Question"],
+          "options": [
+            "Ad Hominem",
+            "Strawman",
+            "Begging the Question"
+          ],
           "answer": "Ad Hominem"
         }
       ],
@@ -489,19 +1173,31 @@
         {
           "id": "fal_2_1",
           "text": "Jika Anda tidak memilih kandidat ini, Anda membenci negara Anda.",
-          "options": ["Dilema Palsu", "Banding kepada Ketakutan", "Strawman"],
+          "options": [
+            "Dilema Palsu",
+            "Banding kepada Ketakutan",
+            "Strawman"
+          ],
           "answer": "Dilema Palsu"
         },
         {
           "id": "fal_2_2",
           "text": "Obat ini berhasil untuk teman saya, jadi akan berhasil untuk Anda.",
-          "options": ["Sebab Palsu", "Generalisasi Terburu-buru", "Bukti Anekdot"],
+          "options": [
+            "Sebab Palsu",
+            "Generalisasi Terburu-buru",
+            "Bukti Anekdot"
+          ],
           "answer": "Bukti Anekdot"
         },
         {
           "id": "fal_2_3",
           "text": "Lawan saya mengatakan kita harus melindungi lingkungan, tetapi mereka mengendarai mobil. Oleh karena itu, argumen mereka tidak valid.",
-          "options": ["Ad Hominem", "Strawman", "Mempertanyakan Dasar"],
+          "options": [
+            "Ad Hominem",
+            "Strawman",
+            "Mempertanyakan Dasar"
+          ],
           "answer": "Ad Hominem"
         }
       ]
@@ -511,19 +1207,31 @@
         {
           "id": "fal_3_1",
           "text": "If we allow same-sex marriage, next we'll allow marriage to animals.",
-          "options": ["Slippery Slope", "False Cause", "Straw Man"],
+          "options": [
+            "Slippery Slope",
+            "False Cause",
+            "Straw Man"
+          ],
           "answer": "Slippery Slope"
         },
         {
           "id": "fal_3_2",
           "text": "Since the sun rose today, it will rise tomorrow.",
-          "options": ["False Cause", "Hasty Generalization", "Begging the Question"],
+          "options": [
+            "False Cause",
+            "Hasty Generalization",
+            "Begging the Question"
+          ],
           "answer": "Hasty Generalization"
         },
         {
           "id": "fal_3_3",
           "text": "We must accept this proposal because the alternative is chaos.",
-          "options": ["False Dilemma", "Appeal to Fear", "Slippery Slope"],
+          "options": [
+            "False Dilemma",
+            "Appeal to Fear",
+            "Slippery Slope"
+          ],
           "answer": "False Dilemma"
         }
       ],
@@ -531,19 +1239,31 @@
         {
           "id": "fal_3_1",
           "text": "Jika kita memungkinkan pernikahan sejenis, selanjutnya kita akan memungkinkan pernikahan dengan hewan.",
-          "options": ["Lereng Licin", "Sebab Palsu", "Strawman"],
+          "options": [
+            "Lereng Licin",
+            "Sebab Palsu",
+            "Strawman"
+          ],
           "answer": "Lereng Licin"
         },
         {
           "id": "fal_3_2",
           "text": "Karena matahari terbit hari ini, matahari akan terbit besok.",
-          "options": ["Sebab Palsu", "Generalisasi Terburu-buru", "Mempertanyakan Dasar"],
+          "options": [
+            "Sebab Palsu",
+            "Generalisasi Terburu-buru",
+            "Mempertanyakan Dasar"
+          ],
           "answer": "Generalisasi Terburu-buru"
         },
         {
           "id": "fal_3_3",
           "text": "Kita harus menerima proposal ini karena alternatifnya adalah kekacauan.",
-          "options": ["Dilema Palsu", "Banding kepada Ketakutan", "Lereng Licin"],
+          "options": [
+            "Dilema Palsu",
+            "Banding kepada Ketakutan",
+            "Lereng Licin"
+          ],
           "answer": "Dilema Palsu"
         }
       ]
@@ -553,19 +1273,31 @@
         {
           "id": "fal_4_1",
           "text": "My grandmother smoked her whole life and lived to 95, therefore smoking is not harmful.",
-          "options": ["Hasty Generalization", "Anecdotal Evidence", "False Cause"],
+          "options": [
+            "Hasty Generalization",
+            "Anecdotal Evidence",
+            "False Cause"
+          ],
           "answer": "Anecdotal Evidence"
         },
         {
           "id": "fal_4_2",
           "text": "Crime increased after the new law was passed, therefore the law caused the crime increase.",
-          "options": ["False Cause", "Correlation vs Causation", "Post Hoc Ergo Propter Hoc"],
+          "options": [
+            "False Cause",
+            "Correlation vs Causation",
+            "Post Hoc Ergo Propter Hoc"
+          ],
           "answer": "Post Hoc Ergo Propter Hoc"
         },
         {
           "id": "fal_4_3",
           "text": "Environmentalists want to shut down all factories, which would destroy the economy.",
-          "options": ["Straw Man", "Hasty Generalization", "Appeal to Fear"],
+          "options": [
+            "Straw Man",
+            "Hasty Generalization",
+            "Appeal to Fear"
+          ],
           "answer": "Straw Man"
         }
       ],
@@ -573,19 +1305,31 @@
         {
           "id": "fal_4_1",
           "text": "Nenek saya merokok seumur hidupnya dan hidup sampai 95 tahun, oleh karena itu merokok tidak berbahaya.",
-          "options": ["Generalisasi Terburu-buru", "Bukti Anekdot", "Sebab Palsu"],
+          "options": [
+            "Generalisasi Terburu-buru",
+            "Bukti Anekdot",
+            "Sebab Palsu"
+          ],
           "answer": "Bukti Anekdot"
         },
         {
           "id": "fal_4_2",
           "text": "Kejahatan meningkat setelah undang-undang baru disahkan, oleh karena itu undang-undang menyebabkan peningkatan kejahatan.",
-          "options": ["Sebab Palsu", "Korelasi vs Kausalitas", "Post Hoc Ergo Propter Hoc"],
+          "options": [
+            "Sebab Palsu",
+            "Korelasi vs Kausalitas",
+            "Post Hoc Ergo Propter Hoc"
+          ],
           "answer": "Post Hoc Ergo Propter Hoc"
         },
         {
           "id": "fal_4_3",
           "text": "Lingkungan ingin menutup semua pabrik, yang akan menghancurkan ekonomi.",
-          "options": ["Strawman", "Generalisasi Terburu-buru", "Banding kepada Ketakutan"],
+          "options": [
+            "Strawman",
+            "Generalisasi Terburu-buru",
+            "Banding kepada Ketakutan"
+          ],
           "answer": "Strawman"
         }
       ]
@@ -595,19 +1339,31 @@
         {
           "id": "fal_5_1",
           "text": "This is the way we've always done it, so it must be the right way.",
-          "options": ["Appeal to Tradition", "Authority", "Common Practice"],
+          "options": [
+            "Appeal to Tradition",
+            "Authority",
+            "Common Practice"
+          ],
           "answer": "Appeal to Tradition"
         },
         {
           "id": "fal_5_2",
           "text": "Either you support our plan completely, or you don't care about solving the problem.",
-          "options": ["False Dilemma", "Loaded Question", "Begging the Question"],
+          "options": [
+            "False Dilemma",
+            "Loaded Question",
+            "Begging the Question"
+          ],
           "answer": "False Dilemma"
         },
         {
           "id": "fal_5_3",
           "text": "Have you stopped cheating on your exams?",
-          "options": ["Loaded Question", "Begging the Question", "Complex Question"],
+          "options": [
+            "Loaded Question",
+            "Begging the Question",
+            "Complex Question"
+          ],
           "answer": "Loaded Question"
         }
       ],
@@ -615,19 +1371,31 @@
         {
           "id": "fal_5_1",
           "text": "Ini adalah cara kami selalu melakukannya, jadi harus cara yang tepat.",
-          "options": ["Banding kepada Tradisi", "Otoritas", "Praktik Umum"],
+          "options": [
+            "Banding kepada Tradisi",
+            "Otoritas",
+            "Praktik Umum"
+          ],
           "answer": "Banding kepada Tradisi"
         },
         {
           "id": "fal_5_2",
           "text": "Baik Anda mendukung rencana kami sepenuhnya, atau Anda tidak peduli menyelesaikan masalah.",
-          "options": ["Dilema Palsu", "Pertanyaan Bermuatan", "Mempertanyakan Dasar"],
+          "options": [
+            "Dilema Palsu",
+            "Pertanyaan Bermuatan",
+            "Mempertanyakan Dasar"
+          ],
           "answer": "Dilema Palsu"
         },
         {
           "id": "fal_5_3",
           "text": "Apakah Anda sudah berhenti menipu dalam ujian Anda?",
-          "options": ["Pertanyaan Bermuatan", "Mempertanyakan Dasar", "Pertanyaan Kompleks"],
+          "options": [
+            "Pertanyaan Bermuatan",
+            "Mempertanyakan Dasar",
+            "Pertanyaan Kompleks"
+          ],
           "answer": "Pertanyaan Bermuatan"
         }
       ]
@@ -637,19 +1405,31 @@
         {
           "id": "fal_6_1",
           "text": "The CEO made a bad decision, so all corporate leaders are incompetent.",
-          "options": ["Hasty Generalization", "Appeal to Majority", "False Cause"],
+          "options": [
+            "Hasty Generalization",
+            "Appeal to Majority",
+            "False Cause"
+          ],
           "answer": "Hasty Generalization"
         },
         {
           "id": "fal_6_2",
           "text": "We should believe in God because the Bible says so, and the Bible is God's word.",
-          "options": ["Begging the Question", "Circular Reasoning", "Appeal to Authority"],
+          "options": [
+            "Begging the Question",
+            "Circular Reasoning",
+            "Appeal to Authority"
+          ],
           "answer": "Begging the Question"
         },
         {
           "id": "fal_6_3",
           "text": "If we allow people to work from home, productivity will drop, and then companies will fail, and then the economy will collapse.",
-          "options": ["Slippery Slope", "Causal Chain", "Domino Effect"],
+          "options": [
+            "Slippery Slope",
+            "Causal Chain",
+            "Domino Effect"
+          ],
           "answer": "Slippery Slope"
         }
       ],
@@ -657,19 +1437,31 @@
         {
           "id": "fal_6_1",
           "text": "CEO membuat keputusan yang buruk, jadi semua pemimpin korporat tidak kompeten.",
-          "options": ["Generalisasi Terburu-buru", "Banding kepada Mayoritas", "Sebab Palsu"],
+          "options": [
+            "Generalisasi Terburu-buru",
+            "Banding kepada Mayoritas",
+            "Sebab Palsu"
+          ],
           "answer": "Generalisasi Terburu-buru"
         },
         {
           "id": "fal_6_2",
           "text": "Kita harus percaya kepada Tuhan karena Alkitab mengatakan begitu, dan Alkitab adalah firman Tuhan.",
-          "options": ["Mempertanyakan Dasar", "Penalaran Sirkular", "Banding kepada Otoritas"],
+          "options": [
+            "Mempertanyakan Dasar",
+            "Penalaran Sirkular",
+            "Banding kepada Otoritas"
+          ],
           "answer": "Mempertanyakan Dasar"
         },
         {
           "id": "fal_6_3",
           "text": "Jika kita memungkinkan orang bekerja dari rumah, produktivitas akan turun, dan kemudian perusahaan akan gagal, dan kemudian ekonomi akan runtuh.",
-          "options": ["Lereng Licin", "Rantai Kausal", "Efek Domino"],
+          "options": [
+            "Lereng Licin",
+            "Rantai Kausal",
+            "Efek Domino"
+          ],
           "answer": "Lereng Licin"
         }
       ]
@@ -679,19 +1471,31 @@
         {
           "id": "fal_7_1",
           "text": "All my friends agree that this movie is great, so you're wrong if you think otherwise.",
-          "options": ["Appeal to Majority", "Peer Pressure", "Ad Populum"],
+          "options": [
+            "Appeal to Majority",
+            "Peer Pressure",
+            "Ad Populum"
+          ],
           "answer": "Ad Populum"
         },
         {
           "id": "fal_7_2",
           "text": "The fact that nobody has proven this theory wrong means it must be true.",
-          "options": ["Argument from Ignorance", "False Dilemma", "Appeal to Authority"],
+          "options": [
+            "Argument from Ignorance",
+            "False Dilemma",
+            "Appeal to Authority"
+          ],
           "answer": "Argument from Ignorance"
         },
         {
           "id": "fal_7_3",
           "text": "If you don't eat healthy, you'll get sick. You got sick. Therefore, you didn't eat healthy.",
-          "options": ["Affirming the Consequent", "False Cause", "Hasty Generalization"],
+          "options": [
+            "Affirming the Consequent",
+            "False Cause",
+            "Hasty Generalization"
+          ],
           "answer": "Affirming the Consequent"
         }
       ],
@@ -699,19 +1503,31 @@
         {
           "id": "fal_7_1",
           "text": "Semua teman saya setuju bahwa film ini bagus, jadi Anda salah jika berpikir sebaliknya.",
-          "options": ["Banding kepada Mayoritas", "Tekanan Rekan", "Ad Populum"],
+          "options": [
+            "Banding kepada Mayoritas",
+            "Tekanan Rekan",
+            "Ad Populum"
+          ],
           "answer": "Ad Populum"
         },
         {
           "id": "fal_7_2",
           "text": "Fakta bahwa tidak ada yang membuktikan teori ini salah berarti itu harus benar.",
-          "options": ["Argumen dari Ketidaktahuan", "Dilema Palsu", "Banding kepada Otoritas"],
+          "options": [
+            "Argumen dari Ketidaktahuan",
+            "Dilema Palsu",
+            "Banding kepada Otoritas"
+          ],
           "answer": "Argumen dari Ketidaktahuan"
         },
         {
           "id": "fal_7_3",
           "text": "Jika Anda tidak makan sehat, Anda akan sakit. Anda sakit. Oleh karena itu, Anda tidak makan sehat.",
-          "options": ["Menegaskan Konsekuensi", "Sebab Palsu", "Generalisasi Terburu-buru"],
+          "options": [
+            "Menegaskan Konsekuensi",
+            "Sebab Palsu",
+            "Generalisasi Terburu-buru"
+          ],
           "answer": "Menegaskan Konsekuensi"
         }
       ]
@@ -721,40 +1537,100 @@
         {
           "id": "fal_8_1",
           "text": "My uncle worked hard his whole life and lived a happy life. Therefore, hard work guarantees happiness.",
-          "options": ["Hasty Generalization", "Anecdotal Evidence", "False Cause"],
+          "options": [
+            "Hasty Generalization",
+            "Anecdotal Evidence",
+            "False Cause"
+          ],
           "answer": "Anecdotal Evidence"
         },
         {
           "id": "fal_8_2",
           "text": "Since nobody can prove that ghosts don't exist, we should believe in them.",
-          "options": ["Argument from Ignorance", "Appeal to Mystery", "False Dilemma"],
+          "options": [
+            "Argument from Ignorance",
+            "Appeal to Mystery",
+            "False Dilemma"
+          ],
           "answer": "Argument from Ignorance"
         },
         {
           "id": "fal_8_3",
           "text": "Your opponent supports environmental protection, and they're known to be dishonest, therefore environmental protection is not important.",
-          "options": ["Ad Hominem", "Tu Quoque", "Straw Man"],
+          "options": [
+            "Ad Hominem",
+            "Tu Quoque",
+            "Straw Man"
+          ],
           "answer": "Ad Hominem"
+        },
+        {
+          "id": "fal_8_6",
+          "text": "The argument uses complex language, therefore it must be sophisticated and true.",
+          "options": [
+            "Appeal to Complexity",
+            "Ad Populum"
+          ],
+          "answer": "Appeal to Complexity"
+        },
+        {
+          "id": "fal_8_7",
+          "text": "My theory is unfalsifiable, so any evidence supports it.",
+          "options": [
+            "Begging the Question",
+            "Heads I win Tails You lose"
+          ],
+          "answer": "Heads I win Tails You lose"
         }
       ],
       "id": [
         {
           "id": "fal_8_1",
           "text": "Paman saya bekerja keras seumur hidupnya dan menjalani kehidupan yang bahagia. Oleh karena itu, kerja keras menjamin kebahagiaan.",
-          "options": ["Generalisasi Terburu-buru", "Bukti Anekdot", "Sebab Palsu"],
+          "options": [
+            "Generalisasi Terburu-buru",
+            "Bukti Anekdot",
+            "Sebab Palsu"
+          ],
           "answer": "Bukti Anekdot"
         },
         {
           "id": "fal_8_2",
           "text": "Karena tidak ada yang dapat membuktikan bahwa hantu tidak ada, kita harus mempercayai mereka.",
-          "options": ["Argumen dari Ketidaktahuan", "Banding kepada Misteri", "Dilema Palsu"],
+          "options": [
+            "Argumen dari Ketidaktahuan",
+            "Banding kepada Misteri",
+            "Dilema Palsu"
+          ],
           "answer": "Argumen dari Ketidaktahuan"
         },
         {
           "id": "fal_8_3",
           "text": "Lawan Anda mendukung perlindungan lingkungan, dan mereka dikenal tidak jujur, oleh karena itu perlindungan lingkungan tidak penting.",
-          "options": ["Ad Hominem", "Tu Quoque", "Strawman"],
+          "options": [
+            "Ad Hominem",
+            "Tu Quoque",
+            "Strawman"
+          ],
           "answer": "Ad Hominem"
+        },
+        {
+          "id": "fal_8_6",
+          "text": "Argumen menggunakan bahasa kompleks, oleh karena itu harus canggih dan benar.",
+          "options": [
+            "Appeal to Complexity",
+            "Ad Populum"
+          ],
+          "answer": "Appeal to Complexity"
+        },
+        {
+          "id": "fal_8_7",
+          "text": "Teori saya tidak dapat disalahkan, jadi bukti apa pun mendukungnya.",
+          "options": [
+            "Begging the Question",
+            "Heads I win Tails You lose"
+          ],
+          "answer": "Heads I win Tails You lose"
         }
       ]
     },
@@ -763,40 +1639,100 @@
         {
           "id": "fal_9_1",
           "text": "You say I should stop smoking, but you drink alcohol, so your argument about my smoking is invalid.",
-          "options": ["Tu Quoque", "Ad Hominem", "Red Herring"],
+          "options": [
+            "Tu Quoque",
+            "Ad Hominem",
+            "Red Herring"
+          ],
           "answer": "Tu Quoque"
         },
         {
           "id": "fal_9_2",
           "text": "The stock market went down after the president took office, therefore the president caused the market decline.",
-          "options": ["Post Hoc Ergo Propter Hoc", "False Cause", "Correlation vs Causation"],
+          "options": [
+            "Post Hoc Ergo Propter Hoc",
+            "False Cause",
+            "Correlation vs Causation"
+          ],
           "answer": "Post Hoc Ergo Propter Hoc"
         },
         {
           "id": "fal_9_3",
           "text": "We shouldn't ban violent video games because think of how upset the gaming industry would be.",
-          "options": ["Red Herring", "Appeal to Consequences", "Begging the Question"],
+          "options": [
+            "Red Herring",
+            "Appeal to Consequences",
+            "Begging the Question"
+          ],
           "answer": "Red Herring"
+        },
+        {
+          "id": "fal_9_6",
+          "text": "Your argument loses if you engage, wins if you don't. Therefore, truth is on my side.",
+          "options": [
+            "Epistemic Closure",
+            "Loaded Question"
+          ],
+          "answer": "Heads I win Tails You lose"
+        },
+        {
+          "id": "fal_9_7",
+          "text": "We need to reach a compromise between two extremes, so the middle ground must be correct.",
+          "options": [
+            "False Compromise",
+            "Appeal to Moderation"
+          ],
+          "answer": "Appeal to Moderation"
         }
       ],
       "id": [
         {
           "id": "fal_9_1",
           "text": "Anda mengatakan saya harus berhenti merokok, tetapi Anda minum alkohol, jadi argumen Anda tentang merokok saya tidak valid.",
-          "options": ["Tu Quoque", "Ad Hominem", "Pengalihan Perhatian"],
+          "options": [
+            "Tu Quoque",
+            "Ad Hominem",
+            "Pengalihan Perhatian"
+          ],
           "answer": "Tu Quoque"
         },
         {
           "id": "fal_9_2",
           "text": "Pasar saham turun setelah presiden berkuasa, oleh karena itu presiden menyebabkan penurunan pasar.",
-          "options": ["Post Hoc Ergo Propter Hoc", "Sebab Palsu", "Korelasi vs Kausalitas"],
+          "options": [
+            "Post Hoc Ergo Propter Hoc",
+            "Sebab Palsu",
+            "Korelasi vs Kausalitas"
+          ],
           "answer": "Post Hoc Ergo Propter Hoc"
         },
         {
           "id": "fal_9_3",
           "text": "Kita tidak boleh melarang video game kekerasan karena pikirkan betapa kesal industri permainan akan menjadi.",
-          "options": ["Pengalihan Perhatian", "Banding kepada Konsekuensi", "Mempertanyakan Dasar"],
+          "options": [
+            "Pengalihan Perhatian",
+            "Banding kepada Konsekuensi",
+            "Mempertanyakan Dasar"
+          ],
           "answer": "Pengalihan Perhatian"
+        },
+        {
+          "id": "fal_9_6",
+          "text": "Argumen Anda kalah jika Anda terlibat, menang jika tidak. Oleh karena itu, kebenaran ada di pihak saya.",
+          "options": [
+            "Epistemic Closure",
+            "Loaded Question"
+          ],
+          "answer": "Heads I win Tails You lose"
+        },
+        {
+          "id": "fal_9_7",
+          "text": "Kita perlu mencapai kompromi antara dua ekstrem, jadi posisi tengah harus benar.",
+          "options": [
+            "False Compromise",
+            "Appeal to Moderation"
+          ],
+          "answer": "Appeal to Moderation"
         }
       ]
     },
@@ -805,40 +1741,100 @@
         {
           "id": "fal_10_1",
           "text": "Either you accept my religious beliefs completely, or you're bigoted and intolerant.",
-          "options": ["False Dilemma", "Loaded Question", "Complex Question"],
+          "options": [
+            "False Dilemma",
+            "Loaded Question",
+            "Complex Question"
+          ],
           "answer": "False Dilemma"
         },
         {
           "id": "fal_10_2",
           "text": "Studies show that coffee drinkers have higher rates of heart disease, and studies show coffee drinkers also have higher stress, so stress causes heart disease.",
-          "options": ["Correlation vs Causation", "Multiple Causes", "Cherry Picking"],
+          "options": [
+            "Correlation vs Causation",
+            "Multiple Causes",
+            "Cherry Picking"
+          ],
           "answer": "Correlation vs Causation"
         },
         {
           "id": "fal_10_3",
           "text": "I don't have to provide evidence for my claim because you can't prove it's false.",
-          "options": ["Argument from Ignorance", "Burden of Proof", "Appeal to Mystery"],
+          "options": [
+            "Argument from Ignorance",
+            "Burden of Proof",
+            "Appeal to Mystery"
+          ],
           "answer": "Argument from Ignorance"
+        },
+        {
+          "id": "fal_10_6",
+          "text": "This isn't technically a fallacy because I defined it carefully. Your rejection proves my point.",
+          "options": [
+            "Semantic Sleight",
+            "Circular Reasoning"
+          ],
+          "answer": "Circular Reasoning"
+        },
+        {
+          "id": "fal_10_7",
+          "text": "My unfalsifiable claim seems true, and your skepticism only reinforces belief.",
+          "options": [
+            "Cognitive Biases",
+            "Heads I win Tails You lose"
+          ],
+          "answer": "Heads I win Tails You lose"
         }
       ],
       "id": [
         {
           "id": "fal_10_1",
           "text": "Baik Anda menerima kepercayaan agama saya sepenuhnya, atau Anda berprasangka dan tidak toleran.",
-          "options": ["Dilema Palsu", "Pertanyaan Bermuatan", "Pertanyaan Kompleks"],
+          "options": [
+            "Dilema Palsu",
+            "Pertanyaan Bermuatan",
+            "Pertanyaan Kompleks"
+          ],
           "answer": "Dilema Palsu"
         },
         {
           "id": "fal_10_2",
           "text": "Studi menunjukkan peminum kopi memiliki tingkat penyakit jantung yang lebih tinggi, dan studi menunjukkan peminum kopi juga memiliki stres yang lebih tinggi, jadi stres menyebabkan penyakit jantung.",
-          "options": ["Korelasi vs Kausalitas", "Penyebab Ganda", "Cherry Picking"],
+          "options": [
+            "Korelasi vs Kausalitas",
+            "Penyebab Ganda",
+            "Cherry Picking"
+          ],
           "answer": "Korelasi vs Kausalitas"
         },
         {
           "id": "fal_10_3",
           "text": "Saya tidak perlu memberikan bukti untuk klaim saya karena Anda tidak dapat membuktikan itu salah.",
-          "options": ["Argumen dari Ketidaktahuan", "Beban Bukti", "Banding kepada Misteri"],
+          "options": [
+            "Argumen dari Ketidaktahuan",
+            "Beban Bukti",
+            "Banding kepada Misteri"
+          ],
           "answer": "Argumen dari Ketidaktahuan"
+        },
+        {
+          "id": "fal_10_6",
+          "text": "Ini bukan secara teknis kekeliruan karena saya mendefinisikannya dengan hati-hati. Penolakan Anda membuktikan poin saya.",
+          "options": [
+            "Semantic Sleight",
+            "Circular Reasoning"
+          ],
+          "answer": "Circular Reasoning"
+        },
+        {
+          "id": "fal_10_7",
+          "text": "Klaim saya yang tidak dapat disalahkan tampak benar, dan skeptisisme Anda hanya memperkuat kepercayaan.",
+          "options": [
+            "Cognitive Biases",
+            "Heads I win Tails You lose"
+          ],
+          "answer": "Heads I win Tails You lose"
         }
       ]
     }
@@ -849,40 +1845,136 @@
         {
           "id": "ded_1_1",
           "text": "If it rains, the ground will be wet. It is raining. Therefore, the ground is...",
-          "options": ["Wet", "Dry", "Sunny"],
+          "options": [
+            "Wet",
+            "Dry",
+            "Sunny"
+          ],
           "answer": "Wet"
         },
         {
           "id": "ded_1_2",
           "text": "All students study hard. John is a student. Therefore, John...",
-          "options": ["Studies hard", "Does not study", "Is smart"],
+          "options": [
+            "Studies hard",
+            "Does not study",
+            "Is smart"
+          ],
           "answer": "Studies hard"
         },
         {
           "id": "ded_1_3",
           "text": "If a number is even, it is divisible by 2. 8 is even. Therefore, 8 is...",
-          "options": ["Divisible by 2", "Divisible by 3", "Odd"],
+          "options": [
+            "Divisible by 2",
+            "Divisible by 3",
+            "Odd"
+          ],
           "answer": "Divisible by 2"
+        },
+        {
+          "id": "ded_1_4",
+          "text": "If it rains, the ground is wet. It rained. Therefore, the ground is wet.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_1_5",
+          "text": "If it's sunny, I'm happy. I'm happy. Therefore, it's sunny.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_1_4",
+          "text": "If it rains, the ground is wet. It rained. Therefore, the ground is wet.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_1_5",
+          "text": "If it's sunny, I'm happy. I'm happy. Therefore, it's sunny.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ],
       "id": [
         {
           "id": "ded_1_1",
           "text": "Jika hujan, tanah akan basah. Sedang hujan. Oleh karena itu, tanah adalah...",
-          "options": ["Basah", "Kering", "Cerah"],
+          "options": [
+            "Basah",
+            "Kering",
+            "Cerah"
+          ],
           "answer": "Basah"
         },
         {
           "id": "ded_1_2",
           "text": "Semua siswa belajar keras. John adalah siswa. Oleh karena itu, John...",
-          "options": ["Belajar keras", "Tidak belajar", "Cerdas"],
+          "options": [
+            "Belajar keras",
+            "Tidak belajar",
+            "Cerdas"
+          ],
           "answer": "Belajar keras"
         },
         {
           "id": "ded_1_3",
           "text": "Jika suatu bilangan genap, maka habis dibagi 2. 8 adalah genap. Oleh karena itu, 8 adalah...",
-          "options": ["Habis dibagi 2", "Habis dibagi 3", "Ganjil"],
+          "options": [
+            "Habis dibagi 2",
+            "Habis dibagi 3",
+            "Ganjil"
+          ],
           "answer": "Habis dibagi 2"
+        },
+        {
+          "id": "ded_1_4",
+          "text": "Jika hujan, tanah basah. Hujan turun. Oleh karena itu, tanah basah.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_1_5",
+          "text": "Jika cerah, saya senang. Saya senang. Oleh karena itu, cuacanya cerah.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_1_4",
+          "text": "Jika hujan, tanah basah. Hujan turun. Oleh karena itu, tanah basah.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_1_5",
+          "text": "Jika cerah, saya senang. Saya senang. Oleh karena itu, cuacanya cerah.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ]
     },
@@ -891,40 +1983,136 @@
         {
           "id": "ded_2_1",
           "text": "If P then Q. P is true. Therefore Q is...",
-          "options": ["True", "False", "Unknown"],
+          "options": [
+            "True",
+            "False",
+            "Unknown"
+          ],
           "answer": "True"
         },
         {
           "id": "ded_2_2",
           "text": "All mammals are animals. Dogs are mammals. Therefore, dogs are...",
-          "options": ["Animals", "Not animals", "Reptiles"],
+          "options": [
+            "Animals",
+            "Not animals",
+            "Reptiles"
+          ],
           "answer": "Animals"
         },
         {
           "id": "ded_2_3",
           "text": "If the code contains an error, the program will crash. The program crashed. Therefore, the code...",
-          "options": ["May or may not contain error", "Definitely contains error", "Does not contain error"],
+          "options": [
+            "May or may not contain error",
+            "Definitely contains error",
+            "Does not contain error"
+          ],
           "answer": "May or may not contain error"
+        },
+        {
+          "id": "ded_2_4",
+          "text": "If you study, you pass. You didn't pass. Therefore, you didn't study.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_2_5",
+          "text": "If it's Tuesday, John works. John works. Therefore, it's Tuesday.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_2_4",
+          "text": "If you study, you pass. You didn't pass. Therefore, you didn't study.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_2_5",
+          "text": "If it's Tuesday, John works. John works. Therefore, it's Tuesday.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ],
       "id": [
         {
           "id": "ded_2_1",
           "text": "Jika P maka Q. P benar. Oleh karena itu Q adalah...",
-          "options": ["Benar", "Salah", "Tidak diketahui"],
+          "options": [
+            "Benar",
+            "Salah",
+            "Tidak diketahui"
+          ],
           "answer": "Benar"
         },
         {
           "id": "ded_2_2",
           "text": "Semua mamalia adalah hewan. Anjing adalah mamalia. Oleh karena itu, anjing adalah...",
-          "options": ["Hewan", "Bukan hewan", "Reptil"],
+          "options": [
+            "Hewan",
+            "Bukan hewan",
+            "Reptil"
+          ],
           "answer": "Hewan"
         },
         {
           "id": "ded_2_3",
           "text": "Jika kode berisi kesalahan, program akan mogok. Program mogok. Oleh karena itu, kodenya...",
-          "options": ["Mungkin atau tidak mengandung kesalahan", "Pasti mengandung kesalahan", "Tidak mengandung kesalahan"],
+          "options": [
+            "Mungkin atau tidak mengandung kesalahan",
+            "Pasti mengandung kesalahan",
+            "Tidak mengandung kesalahan"
+          ],
           "answer": "Mungkin atau tidak mengandung kesalahan"
+        },
+        {
+          "id": "ded_2_4",
+          "text": "Jika Anda belajar, Anda lulus. Anda tidak lulus. Oleh karena itu, Anda tidak belajar.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_2_5",
+          "text": "Jika hari Selasa, John bekerja. John bekerja. Oleh karena itu, hari ini Selasa.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_2_4",
+          "text": "Jika Anda belajar, Anda lulus. Anda tidak lulus. Oleh karena itu, Anda tidak belajar.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_2_5",
+          "text": "Jika hari Selasa, John bekerja. John bekerja. Oleh karena itu, hari ini Selasa.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ]
     },
@@ -933,40 +2121,136 @@
         {
           "id": "ded_3_1",
           "text": "If A then B. If B then C. A is true. Therefore C is...",
-          "options": ["True", "False", "Unknown"],
+          "options": [
+            "True",
+            "False",
+            "Unknown"
+          ],
           "answer": "True"
         },
         {
           "id": "ded_3_2",
           "text": "No A are B. All B are C. Therefore, no A are...",
-          "options": ["C", "B", "Unknown"],
+          "options": [
+            "C",
+            "B",
+            "Unknown"
+          ],
           "answer": "C"
         },
         {
           "id": "ded_3_3",
           "text": "If it's Monday, I work. If I work, I'm tired. Today is Monday. Therefore, I'm...",
-          "options": ["Tired", "Energetic", "Unknown"],
+          "options": [
+            "Tired",
+            "Energetic",
+            "Unknown"
+          ],
           "answer": "Tired"
+        },
+        {
+          "id": "ded_3_4",
+          "text": "If A then B. If B then C. A is true. Therefore, C is true.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_3_5",
+          "text": "If P then Q. If R then S. P is true. Therefore, S is true.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_3_4",
+          "text": "If A then B. If B then C. A is true. Therefore, C is true.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_3_5",
+          "text": "If P then Q. If R then S. P is true. Therefore, S is true.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ],
       "id": [
         {
           "id": "ded_3_1",
           "text": "Jika A maka B. Jika B maka C. A benar. Oleh karena itu C adalah...",
-          "options": ["Benar", "Salah", "Tidak diketahui"],
+          "options": [
+            "Benar",
+            "Salah",
+            "Tidak diketahui"
+          ],
           "answer": "Benar"
         },
         {
           "id": "ded_3_2",
           "text": "Tidak ada A yang merupakan B. Semua B adalah C. Oleh karena itu, tidak ada A yang merupakan...",
-          "options": ["C", "B", "Tidak diketahui"],
+          "options": [
+            "C",
+            "B",
+            "Tidak diketahui"
+          ],
           "answer": "C"
         },
         {
           "id": "ded_3_3",
           "text": "Jika hari Senin, saya bekerja. Jika saya bekerja, saya lelah. Hari ini hari Senin. Oleh karena itu, saya...",
-          "options": ["Lelah", "Penuh energi", "Tidak diketahui"],
+          "options": [
+            "Lelah",
+            "Penuh energi",
+            "Tidak diketahui"
+          ],
           "answer": "Lelah"
+        },
+        {
+          "id": "ded_3_4",
+          "text": "Jika A maka B. Jika B maka C. A benar. Oleh karena itu, C benar.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_3_5",
+          "text": "Jika P maka Q. Jika R maka S. P benar. Oleh karena itu, S benar.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_3_4",
+          "text": "Jika A maka B. Jika B maka C. A benar. Oleh karena itu, C benar.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_3_5",
+          "text": "Jika P maka Q. Jika R maka S. P benar. Oleh karena itu, S benar.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ]
     },
@@ -975,40 +2259,136 @@
         {
           "id": "ded_4_1",
           "text": "If P then Q. Q is false. Therefore, P is...",
-          "options": ["False", "True", "Unknown"],
+          "options": [
+            "False",
+            "True",
+            "Unknown"
+          ],
           "answer": "False"
         },
         {
           "id": "ded_4_2",
           "text": "All A are B. No B are C. X is A. Therefore, X is...",
-          "options": ["Not C", "C", "Unknown"],
+          "options": [
+            "Not C",
+            "C",
+            "Unknown"
+          ],
           "answer": "Not C"
         },
         {
           "id": "ded_4_3",
           "text": "If it's raining OR snowing, the roads are slippery. The roads are slippery. Therefore, it's...",
-          "options": ["Raining or snowing", "Not raining", "Definitely raining"],
+          "options": [
+            "Raining or snowing",
+            "Not raining",
+            "Definitely raining"
+          ],
           "answer": "Raining or snowing"
+        },
+        {
+          "id": "ded_4_4",
+          "text": "If (A and B) then C. A is true, B is true. Therefore, C is true.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_4_5",
+          "text": "If A then (B or C). A is true. Therefore, B is true.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_4_4",
+          "text": "If (A and B) then C. A is true, B is true. Therefore, C is true.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_4_5",
+          "text": "If A then (B or C). A is true. Therefore, B is true.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ],
       "id": [
         {
           "id": "ded_4_1",
           "text": "Jika P maka Q. Q salah. Oleh karena itu, P adalah...",
-          "options": ["Salah", "Benar", "Tidak diketahui"],
+          "options": [
+            "Salah",
+            "Benar",
+            "Tidak diketahui"
+          ],
           "answer": "Salah"
         },
         {
           "id": "ded_4_2",
           "text": "Semua A adalah B. Tidak ada B yang merupakan C. X adalah A. Oleh karena itu, X adalah...",
-          "options": ["Bukan C", "C", "Tidak diketahui"],
+          "options": [
+            "Bukan C",
+            "C",
+            "Tidak diketahui"
+          ],
           "answer": "Bukan C"
         },
         {
           "id": "ded_4_3",
           "text": "Jika hujan ATAU salju, jalan licin. Jalan licin. Oleh karena itu, sedang...",
-          "options": ["Hujan atau salju", "Tidak hujan", "Pasti hujan"],
+          "options": [
+            "Hujan atau salju",
+            "Tidak hujan",
+            "Pasti hujan"
+          ],
           "answer": "Hujan atau salju"
+        },
+        {
+          "id": "ded_4_4",
+          "text": "Jika (A dan B) maka C. A benar, B benar. Oleh karena itu, C benar.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_4_5",
+          "text": "Jika A maka (B atau C). A benar. Oleh karena itu, B benar.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_4_4",
+          "text": "Jika (A dan B) maka C. A benar, B benar. Oleh karena itu, C benar.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_4_5",
+          "text": "Jika A maka (B atau C). A benar. Oleh karena itu, B benar.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ]
     },
@@ -1017,40 +2397,136 @@
         {
           "id": "ded_5_1",
           "text": "If (P and Q) then R. P is true, Q is true. Therefore R is...",
-          "options": ["True", "False", "Unknown"],
+          "options": [
+            "True",
+            "False",
+            "Unknown"
+          ],
           "answer": "True"
         },
         {
           "id": "ded_5_2",
           "text": "All A are B. All B are C. All C are D. Some E are A. Therefore, some E are...",
-          "options": ["D", "Not D", "Unknown"],
+          "options": [
+            "D",
+            "Not D",
+            "Unknown"
+          ],
           "answer": "D"
         },
         {
           "id": "ded_5_3",
           "text": "If X then Y. If not Y then not X. Y is false. Therefore X is...",
-          "options": ["False", "True", "Unknown"],
+          "options": [
+            "False",
+            "True",
+            "Unknown"
+          ],
           "answer": "False"
+        },
+        {
+          "id": "ded_5_4",
+          "text": "If A then B. If not B then not A. Not B. Therefore, not A.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_5_5",
+          "text": "If A then B. If A then C. A. Therefore, B and not C.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_5_4",
+          "text": "If A then B. If not B then not A. Not B. Therefore, not A.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_5_5",
+          "text": "If A then B. If A then C. A. Therefore, B and not C.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ],
       "id": [
         {
           "id": "ded_5_1",
           "text": "Jika (P dan Q) maka R. P benar, Q benar. Oleh karena itu R adalah...",
-          "options": ["Benar", "Salah", "Tidak diketahui"],
+          "options": [
+            "Benar",
+            "Salah",
+            "Tidak diketahui"
+          ],
           "answer": "Benar"
         },
         {
           "id": "ded_5_2",
           "text": "Semua A adalah B. Semua B adalah C. Semua C adalah D. Beberapa E adalah A. Oleh karena itu, beberapa E adalah...",
-          "options": ["D", "Bukan D", "Tidak diketahui"],
+          "options": [
+            "D",
+            "Bukan D",
+            "Tidak diketahui"
+          ],
           "answer": "D"
         },
         {
           "id": "ded_5_3",
           "text": "Jika X maka Y. Jika bukan Y maka bukan X. Y salah. Oleh karena itu X adalah...",
-          "options": ["Salah", "Benar", "Tidak diketahui"],
+          "options": [
+            "Salah",
+            "Benar",
+            "Tidak diketahui"
+          ],
           "answer": "Salah"
+        },
+        {
+          "id": "ded_5_4",
+          "text": "Jika A maka B. Jika bukan B maka bukan A. Bukan B. Oleh karena itu, bukan A.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_5_5",
+          "text": "Jika A maka B. Jika A maka C. A. Oleh karena itu, B dan bukan C.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_5_4",
+          "text": "Jika A maka B. Jika bukan B maka bukan A. Bukan B. Oleh karena itu, bukan A.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_5_5",
+          "text": "Jika A maka B. Jika A maka C. A. Oleh karena itu, B dan bukan C.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ]
     },
@@ -1059,40 +2535,136 @@
         {
           "id": "ded_6_1",
           "text": "If P or Q then R. If not R then not (P or Q). R is false. Therefore, P and Q are...",
-          "options": ["Both false", "Both true", "One true, one false"],
+          "options": [
+            "Both false",
+            "Both true",
+            "One true, one false"
+          ],
           "answer": "Both false"
         },
         {
           "id": "ded_6_2",
           "text": "All A are B. Some C are not B. Therefore, some C are...",
-          "options": ["Not A", "A", "Unknown"],
+          "options": [
+            "Not A",
+            "A",
+            "Unknown"
+          ],
           "answer": "Not A"
         },
         {
           "id": "ded_6_3",
           "text": "If A then B. If B then C. If C then D. A is true. Therefore D is...",
-          "options": ["True", "False", "Unknown"],
+          "options": [
+            "True",
+            "False",
+            "Unknown"
+          ],
           "answer": "True"
+        },
+        {
+          "id": "ded_6_4",
+          "text": "If A or B then C. If not C then not (A or B). Not C. Therefore, not A and not B.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_6_5",
+          "text": "If P then Q. If Q then R. If not R then not S. Not R. Therefore, not P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_6_4",
+          "text": "If A or B then C. If not C then not (A or B). Not C. Therefore, not A and not B.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_6_5",
+          "text": "If P then Q. If Q then R. If not R then not S. Not R. Therefore, not P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ],
       "id": [
         {
           "id": "ded_6_1",
           "text": "Jika P atau Q maka R. Jika bukan R maka bukan (P atau Q). R salah. Oleh karena itu, P dan Q adalah...",
-          "options": ["Keduanya salah", "Keduanya benar", "Satu benar, satu salah"],
+          "options": [
+            "Keduanya salah",
+            "Keduanya benar",
+            "Satu benar, satu salah"
+          ],
           "answer": "Keduanya salah"
         },
         {
           "id": "ded_6_2",
           "text": "Semua A adalah B. Beberapa C bukan B. Oleh karena itu, beberapa C adalah...",
-          "options": ["Bukan A", "A", "Tidak diketahui"],
+          "options": [
+            "Bukan A",
+            "A",
+            "Tidak diketahui"
+          ],
           "answer": "Bukan A"
         },
         {
           "id": "ded_6_3",
           "text": "Jika A maka B. Jika B maka C. Jika C maka D. A benar. Oleh karena itu D adalah...",
-          "options": ["Benar", "Salah", "Tidak diketahui"],
+          "options": [
+            "Benar",
+            "Salah",
+            "Tidak diketahui"
+          ],
           "answer": "Benar"
+        },
+        {
+          "id": "ded_6_4",
+          "text": "Jika A atau B maka C. Jika bukan C maka bukan (A atau B). Bukan C. Oleh karena itu, bukan A dan bukan B.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_6_5",
+          "text": "Jika P maka Q. Jika Q maka R. Jika bukan R maka bukan S. Bukan R. Oleh karena itu, bukan P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_6_4",
+          "text": "Jika A atau B maka C. Jika bukan C maka bukan (A atau B). Bukan C. Oleh karena itu, bukan A dan bukan B.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_6_5",
+          "text": "Jika P maka Q. Jika Q maka R. Jika bukan R maka bukan S. Bukan R. Oleh karena itu, bukan P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ]
     },
@@ -1101,40 +2673,136 @@
         {
           "id": "ded_7_1",
           "text": "If P then Q. If not P then R. Q is false. Therefore...",
-          "options": ["R is true", "R is false", "R is unknown"],
+          "options": [
+            "R is true",
+            "R is false",
+            "R is unknown"
+          ],
           "answer": "R is true"
         },
         {
           "id": "ded_7_2",
           "text": "All A are B. No C are B. Some D are C. Therefore, some D are...",
-          "options": ["Not A", "A", "Unknown"],
+          "options": [
+            "Not A",
+            "A",
+            "Unknown"
+          ],
           "answer": "Not A"
         },
         {
           "id": "ded_7_3",
           "text": "If A and B then C. If C then D. A is true, B is false. Therefore D is...",
-          "options": ["Unknown", "True", "False"],
+          "options": [
+            "Unknown",
+            "True",
+            "False"
+          ],
           "answer": "Unknown"
+        },
+        {
+          "id": "ded_7_4",
+          "text": "A if and only if B. B if and only if C. A. Therefore, C.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_7_5",
+          "text": "If (A and B) then (C or D). If C then E. A and B and not E. Therefore, D.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_7_4",
+          "text": "A if and only if B. B if and only if C. A. Therefore, C.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_7_5",
+          "text": "If (A and B) then (C or D). If C then E. A and B and not E. Therefore, D.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ],
       "id": [
         {
           "id": "ded_7_1",
           "text": "Jika P maka Q. Jika bukan P maka R. Q salah. Oleh karena itu...",
-          "options": ["R benar", "R salah", "R tidak diketahui"],
+          "options": [
+            "R benar",
+            "R salah",
+            "R tidak diketahui"
+          ],
           "answer": "R benar"
         },
         {
           "id": "ded_7_2",
           "text": "Semua A adalah B. Tidak ada C yang merupakan B. Beberapa D adalah C. Oleh karena itu, beberapa D adalah...",
-          "options": ["Bukan A", "A", "Tidak diketahui"],
+          "options": [
+            "Bukan A",
+            "A",
+            "Tidak diketahui"
+          ],
           "answer": "Bukan A"
         },
         {
           "id": "ded_7_3",
           "text": "Jika A dan B maka C. Jika C maka D. A benar, B salah. Oleh karena itu D adalah...",
-          "options": ["Tidak diketahui", "Benar", "Salah"],
+          "options": [
+            "Tidak diketahui",
+            "Benar",
+            "Salah"
+          ],
           "answer": "Tidak diketahui"
+        },
+        {
+          "id": "ded_7_4",
+          "text": "A jika dan hanya jika B. B jika dan hanya jika C. A. Oleh karena itu, C.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_7_5",
+          "text": "Jika (A dan B) maka (C atau D). Jika C maka E. A dan B dan bukan E. Oleh karena itu, D.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_7_4",
+          "text": "A jika dan hanya jika B. B jika dan hanya jika C. A. Oleh karena itu, C.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_7_5",
+          "text": "Jika (A dan B) maka (C atau D). Jika C maka E. A dan B dan bukan E. Oleh karena itu, D.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
         }
       ]
     },
@@ -1143,40 +2811,172 @@
         {
           "id": "ded_8_1",
           "text": "All A are B. Some B are not C. Therefore, some A...",
-          "options": ["May or may not be C", "Are definitely C", "Are definitely not C"],
+          "options": [
+            "May or may not be C",
+            "Are definitely C",
+            "Are definitely not C"
+          ],
           "answer": "May or may not be C"
         },
         {
           "id": "ded_8_2",
           "text": "If P then (Q and R). P is true. Therefore Q is true and R is...",
-          "options": ["True", "False", "Unknown"],
+          "options": [
+            "True",
+            "False",
+            "Unknown"
+          ],
           "answer": "True"
         },
         {
           "id": "ded_8_3",
           "text": "No A are B. No B are C. Therefore, no A are...",
-          "options": ["Definitely not C", "Definitely C", "Unknown"],
+          "options": [
+            "Definitely not C",
+            "Definitely C",
+            "Unknown"
+          ],
           "answer": "Unknown"
+        },
+        {
+          "id": "ded_8_4",
+          "text": "If A then B. If B then C or D. If C then E. If D then E. A. Therefore, E.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_8_5",
+          "text": "If P then Q. If R then S. P or R (exclusive). Therefore, Q or S.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_8_4",
+          "text": "If A then B. If B then C or D. If C then E. If D then E. A. Therefore, E.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_8_5",
+          "text": "If P then Q. If R then S. P or R (exclusive). Therefore, Q or S.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_8_6",
+          "text": "If A then (B and C). If B then D. If C then E. A. Therefore, D and E.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_8_7",
+          "text": "If P then Q. If Q then R. If not R then S. If S then not P. Not R. Therefore, not P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
         }
       ],
       "id": [
         {
           "id": "ded_8_1",
           "text": "Semua A adalah B. Beberapa B bukan C. Oleh karena itu, beberapa A...",
-          "options": ["Mungkin atau tidak C", "Pasti C", "Pasti bukan C"],
+          "options": [
+            "Mungkin atau tidak C",
+            "Pasti C",
+            "Pasti bukan C"
+          ],
           "answer": "Mungkin atau tidak C"
         },
         {
           "id": "ded_8_2",
           "text": "Jika P maka (Q dan R). P benar. Oleh karena itu Q benar dan R adalah...",
-          "options": ["Benar", "Salah", "Tidak diketahui"],
+          "options": [
+            "Benar",
+            "Salah",
+            "Tidak diketahui"
+          ],
           "answer": "Benar"
         },
         {
           "id": "ded_8_3",
           "text": "Tidak ada A yang merupakan B. Tidak ada B yang merupakan C. Oleh karena itu, tidak ada A yang merupakan...",
-          "options": ["Pasti bukan C", "Pasti C", "Tidak diketahui"],
+          "options": [
+            "Pasti bukan C",
+            "Pasti C",
+            "Tidak diketahui"
+          ],
           "answer": "Tidak diketahui"
+        },
+        {
+          "id": "ded_8_4",
+          "text": "Jika A maka B. Jika B maka C atau D. Jika C maka E. Jika D maka E. A. Oleh karena itu, E.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_8_5",
+          "text": "Jika P maka Q. Jika R maka S. P atau R (eksklusif). Oleh karena itu, Q atau S.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_8_4",
+          "text": "Jika A maka B. Jika B maka C atau D. Jika C maka E. Jika D maka E. A. Oleh karena itu, E.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_8_5",
+          "text": "Jika P maka Q. Jika R maka S. P atau R (eksklusif). Oleh karena itu, Q atau S.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_8_6",
+          "text": "Jika A maka (B dan C). Jika B maka D. Jika C maka E. A. Oleh karena itu, D dan E.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_8_7",
+          "text": "Jika P maka Q. Jika Q maka R. Jika bukan R maka S. Jika S maka bukan P. Bukan R. Oleh karena itu, bukan P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
         }
       ]
     },
@@ -1185,40 +2985,172 @@
         {
           "id": "ded_9_1",
           "text": "If (P or Q) and R then S. (P or Q) is true, R is true. Therefore S is...",
-          "options": ["True", "False", "Unknown"],
+          "options": [
+            "True",
+            "False",
+            "Unknown"
+          ],
           "answer": "True"
         },
         {
           "id": "ded_9_2",
           "text": "All A are B. All B are C. Some C are not D. Therefore, some A...",
-          "options": ["May or may not be D", "Are definitely D", "Are definitely not D"],
+          "options": [
+            "May or may not be D",
+            "Are definitely D",
+            "Are definitely not D"
+          ],
           "answer": "May or may not be D"
         },
         {
           "id": "ded_9_3",
           "text": "If not P then Q. If not Q then P. P is unknown. Therefore Q is...",
-          "options": ["Unknown", "True", "False"],
+          "options": [
+            "Unknown",
+            "True",
+            "False"
+          ],
           "answer": "Unknown"
+        },
+        {
+          "id": "ded_9_4",
+          "text": "If (A or B) then (C and D). If C then E. If D then F. A. Therefore, E and F.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_9_5",
+          "text": "If A then B. If not A then C. B or C. Therefore, A.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_9_4",
+          "text": "If (A or B) then (C and D). If C then E. If D then F. A. Therefore, E and F.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_9_5",
+          "text": "If A then B. If not A then C. B or C. Therefore, A.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_9_6",
+          "text": "((A or B) and (C or D)) implies (E and F). (A or B) and (C or D). Therefore, E and F.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_9_7",
+          "text": "If (P implies Q) and (Q implies R), then (P implies R). P implies Q. Q implies R. Not R. Therefore, not P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
         }
       ],
       "id": [
         {
           "id": "ded_9_1",
           "text": "Jika (P atau Q) dan R maka S. (P atau Q) benar, R benar. Oleh karena itu S adalah...",
-          "options": ["Benar", "Salah", "Tidak diketahui"],
+          "options": [
+            "Benar",
+            "Salah",
+            "Tidak diketahui"
+          ],
           "answer": "Benar"
         },
         {
           "id": "ded_9_2",
           "text": "Semua A adalah B. Semua B adalah C. Beberapa C bukan D. Oleh karena itu, beberapa A...",
-          "options": ["Mungkin atau tidak D", "Pasti D", "Pasti bukan D"],
+          "options": [
+            "Mungkin atau tidak D",
+            "Pasti D",
+            "Pasti bukan D"
+          ],
           "answer": "Mungkin atau tidak D"
         },
         {
           "id": "ded_9_3",
           "text": "Jika bukan P maka Q. Jika bukan Q maka P. P tidak diketahui. Oleh karena itu Q adalah...",
-          "options": ["Tidak diketahui", "Benar", "Salah"],
+          "options": [
+            "Tidak diketahui",
+            "Benar",
+            "Salah"
+          ],
           "answer": "Tidak diketahui"
+        },
+        {
+          "id": "ded_9_4",
+          "text": "Jika (A atau B) maka (C dan D). Jika C maka E. Jika D maka F. A. Oleh karena itu, E dan F.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_9_5",
+          "text": "Jika A maka B. Jika bukan A maka C. B atau C. Oleh karena itu, A.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_9_4",
+          "text": "Jika (A atau B) maka (C dan D). Jika C maka E. Jika D maka F. A. Oleh karena itu, E dan F.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_9_5",
+          "text": "Jika A maka B. Jika bukan A maka C. B atau C. Oleh karena itu, A.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_9_6",
+          "text": "((A atau B) dan (C atau D)) menyiratkan (E dan F). (A atau B) dan (C atau D). Oleh karena itu, E dan F.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_9_7",
+          "text": "Jika (P menyiratkan Q) dan (Q menyiratkan R), maka (P menyiratkan R). P menyiratkan Q. Q menyiratkan R. Bukan R. Oleh karena itu, bukan P.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
         }
       ]
     },
@@ -1227,40 +3159,172 @@
         {
           "id": "ded_10_1",
           "text": "If (A and B) or C then D. If D then E. (A and B) is false, C is false. Therefore E is...",
-          "options": ["Unknown", "True", "False"],
+          "options": [
+            "Unknown",
+            "True",
+            "False"
+          ],
           "answer": "Unknown"
         },
         {
           "id": "ded_10_2",
           "text": "All A are B. All B are C. Some C are D. Some D are not E. Therefore, some A...",
-          "options": ["May or may not be E", "Are definitely E", "Are definitely not E"],
+          "options": [
+            "May or may not be E",
+            "Are definitely E",
+            "Are definitely not E"
+          ],
           "answer": "May or may not be E"
         },
         {
           "id": "ded_10_3",
           "text": "If P then Q. If Q then R. If not R then not S. P is true. Therefore not S is...",
-          "options": ["False", "True", "Unknown"],
+          "options": [
+            "False",
+            "True",
+            "Unknown"
+          ],
           "answer": "False"
+        },
+        {
+          "id": "ded_10_4",
+          "text": "((A → B) ∧ (B → C) ∧ (C → D)) ∧ A ∧ ¬D. Therefore, a contradiction exists.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_10_5",
+          "text": "If (P or Q) then (R and S). If (R or S) then T. P or not P. Therefore, T.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_10_4",
+          "text": "((A IMPLIES B) AND (B IMPLIES C) AND (C IMPLIES D)) AND A AND NOT D. Therefore, a contradiction exists.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_10_5",
+          "text": "If (P or Q) then (R and S). If (R or S) then T. P or not P. Therefore, T.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_10_6",
+          "text": "For all X: (P(X) implies Q(X)). For some X: P(X). Therefore, for some X: Q(X).",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_10_7",
+          "text": "If ((A and B) or (C and D)) then (E or F). ((A and B) or (C and D)). Not E. Therefore, F.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
         }
       ],
       "id": [
         {
           "id": "ded_10_1",
           "text": "Jika (A dan B) atau C maka D. Jika D maka E. (A dan B) salah, C salah. Oleh karena itu E adalah...",
-          "options": ["Tidak diketahui", "Benar", "Salah"],
+          "options": [
+            "Tidak diketahui",
+            "Benar",
+            "Salah"
+          ],
           "answer": "Tidak diketahui"
         },
         {
           "id": "ded_10_2",
           "text": "Semua A adalah B. Semua B adalah C. Beberapa C adalah D. Beberapa D bukan E. Oleh karena itu, beberapa A...",
-          "options": ["Mungkin atau tidak E", "Pasti E", "Pasti bukan E"],
+          "options": [
+            "Mungkin atau tidak E",
+            "Pasti E",
+            "Pasti bukan E"
+          ],
           "answer": "Mungkin atau tidak E"
         },
         {
           "id": "ded_10_3",
           "text": "Jika P maka Q. Jika Q maka R. Jika bukan R maka bukan S. P benar. Oleh karena itu bukan S adalah...",
-          "options": ["Salah", "Benar", "Tidak diketahui"],
+          "options": [
+            "Salah",
+            "Benar",
+            "Tidak diketahui"
+          ],
           "answer": "Salah"
+        },
+        {
+          "id": "ded_10_4",
+          "text": "((A → B) ∧ (B → C) ∧ (C → D)) ∧ A ∧ ¬D. Oleh karena itu, kontradiksi ada.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_10_5",
+          "text": "Jika (P atau Q) maka (R dan S). Jika (R atau S) maka T. P atau bukan P. Oleh karena itu, T.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_10_4",
+          "text": "((A IMPLIES B) AND (B IMPLIES C) AND (C IMPLIES D)) AND A AND NOT D. Oleh karena itu, kontradiksi ada.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_10_5",
+          "text": "Jika (P atau Q) maka (R dan S). Jika (R atau S) maka T. P atau bukan P. Oleh karena itu, T.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Invalid"
+        },
+        {
+          "id": "ded_10_6",
+          "text": "Untuk semua X: (P(X) menyiratkan Q(X)). Untuk beberapa X: P(X). Oleh karena itu, untuk beberapa X: Q(X).",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
+        },
+        {
+          "id": "ded_10_7",
+          "text": "Jika ((A dan B) atau (C dan D)) maka (E atau F). ((A dan B) atau (C dan D)). Bukan E. Oleh karena itu, F.",
+          "options": [
+            "Valid",
+            "Invalid"
+          ],
+          "answer": "Valid"
         }
       ]
     }
@@ -1271,40 +3335,136 @@
         {
           "id": "ind_1_1",
           "text": "The sun has risen every day so far. Therefore, the sun will...",
-          "options": ["Rise tomorrow", "Not rise tomorrow", "Unknown"],
+          "options": [
+            "Rise tomorrow",
+            "Not rise tomorrow",
+            "Unknown"
+          ],
           "answer": "Rise tomorrow"
         },
         {
           "id": "ind_1_2",
           "text": "Every swan we've observed is white. Therefore, all swans are...",
-          "options": ["White", "Black", "Unknown"],
+          "options": [
+            "White",
+            "Black",
+            "Unknown"
+          ],
           "answer": "White"
         },
         {
           "id": "ind_1_3",
           "text": "The first 5 numbers are 2, 4, 6, 8, 10. Therefore the next number is...",
-          "options": ["12", "11", "15"],
+          "options": [
+            "12",
+            "11",
+            "15"
+          ],
           "answer": "12"
+        },
+        {
+          "id": "ind_1_4",
+          "text": "Observed: grass is green, trees are green. Conclusion: all plants are green.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_1_5",
+          "text": "Observed: 100 swans are white. Conclusion: some swans are white.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_1_4",
+          "text": "Observed: grass is green, trees are green. Conclusion: all plants are green.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_1_5",
+          "text": "Observed: 100 swans are white. Conclusion: some swans are white.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
         }
       ],
       "id": [
         {
           "id": "ind_1_1",
           "text": "Matahari terbit setiap hari sejauh ini. Oleh karena itu, matahari akan...",
-          "options": ["Terbit besok", "Tidak terbit besok", "Tidak diketahui"],
+          "options": [
+            "Terbit besok",
+            "Tidak terbit besok",
+            "Tidak diketahui"
+          ],
           "answer": "Terbit besok"
         },
         {
           "id": "ind_1_2",
           "text": "Setiap angsa yang kami amati berwarna putih. Oleh karena itu, semua angsa adalah...",
-          "options": ["Putih", "Hitam", "Tidak diketahui"],
+          "options": [
+            "Putih",
+            "Hitam",
+            "Tidak diketahui"
+          ],
           "answer": "Putih"
         },
         {
           "id": "ind_1_3",
           "text": "5 angka pertama adalah 2, 4, 6, 8, 10. Oleh karena itu angka berikutnya adalah...",
-          "options": ["12", "11", "15"],
+          "options": [
+            "12",
+            "11",
+            "15"
+          ],
           "answer": "12"
+        },
+        {
+          "id": "ind_1_4",
+          "text": "Diamati: rumput hijau, pohon hijau. Kesimpulan: semua tanaman hijau.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_1_5",
+          "text": "Diamati: 100 angsa putih. Kesimpulan: beberapa angsa putih.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_1_4",
+          "text": "Diamati: rumput hijau, pohon hijau. Kesimpulan: semua tanaman hijau.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_1_5",
+          "text": "Diamati: 100 angsa putih. Kesimpulan: beberapa angsa putih.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
         }
       ]
     },
@@ -1313,40 +3473,136 @@
         {
           "id": "ind_2_1",
           "text": "I've met 10 friendly people from Japan. Therefore, all Japanese people are...",
-          "options": ["Probably friendly", "Definitely friendly", "Definitely not friendly"],
+          "options": [
+            "Probably friendly",
+            "Definitely friendly",
+            "Definitely not friendly"
+          ],
           "answer": "Probably friendly"
         },
         {
           "id": "ind_2_2",
           "text": "This brand of phone worked well for my neighbor. Therefore, this phone...",
-          "options": ["Might work well for me", "Will definitely work well for me", "Will not work for me"],
+          "options": [
+            "Might work well for me",
+            "Will definitely work well for me",
+            "Will not work for me"
+          ],
           "answer": "Might work well for me"
         },
         {
           "id": "ind_2_3",
           "text": "The pattern is 1, 4, 9, 16, 25. Therefore the next number is...",
-          "options": ["36", "26", "30"],
+          "options": [
+            "36",
+            "26",
+            "30"
+          ],
           "answer": "36"
+        },
+        {
+          "id": "ind_2_4",
+          "text": "Observed: 5 metal objects are silver. Conclusion: all metals are silver.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_2_5",
+          "text": "Observed: every time I drop something, it falls down. Conclusion: gravity exists.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_2_4",
+          "text": "Observed: 5 metal objects are silver. Conclusion: all metals are silver.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_2_5",
+          "text": "Observed: every time I drop something, it falls down. Conclusion: gravity exists.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
         }
       ],
       "id": [
         {
           "id": "ind_2_1",
           "text": "Saya telah bertemu 10 orang ramah dari Jepang. Oleh karena itu, semua orang Jepang adalah...",
-          "options": ["Mungkin ramah", "Pasti ramah", "Pasti tidak ramah"],
+          "options": [
+            "Mungkin ramah",
+            "Pasti ramah",
+            "Pasti tidak ramah"
+          ],
           "answer": "Mungkin ramah"
         },
         {
           "id": "ind_2_2",
           "text": "Merek ponsel ini bekerja baik untuk tetangga saya. Oleh karena itu, ponsel ini...",
-          "options": ["Mungkin bekerja baik untuk saya", "Pasti bekerja baik untuk saya", "Tidak akan bekerja untuk saya"],
+          "options": [
+            "Mungkin bekerja baik untuk saya",
+            "Pasti bekerja baik untuk saya",
+            "Tidak akan bekerja untuk saya"
+          ],
           "answer": "Mungkin bekerja baik untuk saya"
         },
         {
           "id": "ind_2_3",
           "text": "Polanya adalah 1, 4, 9, 16, 25. Oleh karena itu angka berikutnya adalah...",
-          "options": ["36", "26", "30"],
+          "options": [
+            "36",
+            "26",
+            "30"
+          ],
           "answer": "36"
+        },
+        {
+          "id": "ind_2_4",
+          "text": "Diamati: 5 benda logam berwarna perak. Kesimpulan: semua logam berwarna perak.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_2_5",
+          "text": "Diamati: setiap kali saya menjatuhkan sesuatu, itu jatuh ke bawah. Kesimpulan: gravitasi ada.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_2_4",
+          "text": "Diamati: 5 benda logam berwarna perak. Kesimpulan: semua logam berwarna perak.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_2_5",
+          "text": "Diamati: setiap kali saya menjatuhkan sesuatu, itu jatuh ke bawah. Kesimpulan: gravitasi ada.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
         }
       ]
     },
@@ -1355,40 +3611,136 @@
         {
           "id": "ind_3_1",
           "text": "90% of people surveyed prefer coffee to tea. Therefore...",
-          "options": ["Most people probably prefer coffee", "Everyone prefers coffee", "Nobody prefers tea"],
+          "options": [
+            "Most people probably prefer coffee",
+            "Everyone prefers coffee",
+            "Nobody prefers tea"
+          ],
           "answer": "Most people probably prefer coffee"
         },
         {
           "id": "ind_3_2",
           "text": "Students who study more tend to get higher grades. Therefore...",
-          "options": ["More studying might improve grades", "Studying guarantees high grades", "Studying has no effect"],
+          "options": [
+            "More studying might improve grades",
+            "Studying guarantees high grades",
+            "Studying has no effect"
+          ],
           "answer": "More studying might improve grades"
         },
         {
           "id": "ind_3_3",
           "text": "The sequence is 2, 5, 10, 17, 26. What's the pattern? The next number is...",
-          "options": ["37", "36", "35"],
+          "options": [
+            "37",
+            "36",
+            "35"
+          ],
           "answer": "37"
+        },
+        {
+          "id": "ind_3_4",
+          "text": "Observed: 1000 coins landed heads 500 times. Conclusion: the coin is fair.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_3_5",
+          "text": "Observed: one sick person recovered after taking herb X. Conclusion: herb X cures sickness.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_3_4",
+          "text": "Observed: 1000 coins landed heads 500 times. Conclusion: the coin is fair.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_3_5",
+          "text": "Observed: one sick person recovered after taking herb X. Conclusion: herb X cures sickness.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
         }
       ],
       "id": [
         {
           "id": "ind_3_1",
           "text": "90% orang yang disurvei lebih suka kopi daripada teh. Oleh karena itu...",
-          "options": ["Kebanyakan orang mungkin lebih suka kopi", "Semua orang lebih suka kopi", "Tidak ada yang lebih suka teh"],
+          "options": [
+            "Kebanyakan orang mungkin lebih suka kopi",
+            "Semua orang lebih suka kopi",
+            "Tidak ada yang lebih suka teh"
+          ],
           "answer": "Kebanyakan orang mungkin lebih suka kopi"
         },
         {
           "id": "ind_3_2",
           "text": "Siswa yang belajar lebih banyak cenderung mendapat nilai yang lebih tinggi. Oleh karena itu...",
-          "options": ["Belajar lebih banyak mungkin meningkatkan nilai", "Belajar menjamin nilai tinggi", "Belajar tidak berpengaruh"],
+          "options": [
+            "Belajar lebih banyak mungkin meningkatkan nilai",
+            "Belajar menjamin nilai tinggi",
+            "Belajar tidak berpengaruh"
+          ],
           "answer": "Belajar lebih banyak mungkin meningkatkan nilai"
         },
         {
           "id": "ind_3_3",
           "text": "Urutan adalah 2, 5, 10, 17, 26. Apa polanya? Angka berikutnya adalah...",
-          "options": ["37", "36", "35"],
+          "options": [
+            "37",
+            "36",
+            "35"
+          ],
           "answer": "37"
+        },
+        {
+          "id": "ind_3_4",
+          "text": "Diamati: 1000 koin mendarat kepala 500 kali. Kesimpulan: koin adil.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_3_5",
+          "text": "Diamati: satu orang sakit pulih setelah minum ramuan X. Kesimpulan: ramuan X menyembuhkan penyakit.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_3_4",
+          "text": "Diamati: 1000 koin mendarat kepala 500 kali. Kesimpulan: koin adil.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_3_5",
+          "text": "Diamati: satu orang sakit pulih setelah minum ramuan X. Kesimpulan: ramuan X menyembuhkan penyakit.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
         }
       ]
     },
@@ -1397,40 +3749,136 @@
         {
           "id": "ind_4_1",
           "text": "Three out of five recent product launches were successful. Therefore, future launches are...",
-          "options": ["Likely to be successful", "Guaranteed to be successful", "Likely to fail"],
+          "options": [
+            "Likely to be successful",
+            "Guaranteed to be successful",
+            "Likely to fail"
+          ],
           "answer": "Likely to be successful"
         },
         {
           "id": "ind_4_2",
           "text": "Historical data shows unemployment rises during recessions. A recession is starting. Therefore...",
-          "options": ["Unemployment will probably rise", "Unemployment will definitely rise", "Unemployment will fall"],
+          "options": [
+            "Unemployment will probably rise",
+            "Unemployment will definitely rise",
+            "Unemployment will fall"
+          ],
           "answer": "Unemployment will probably rise"
         },
         {
           "id": "ind_4_3",
           "text": "The pattern is 1, 1, 2, 3, 5, 8, 13. This is the Fibonacci sequence. The next number is...",
-          "options": ["21", "20", "19"],
+          "options": [
+            "21",
+            "20",
+            "19"
+          ],
           "answer": "21"
+        },
+        {
+          "id": "ind_4_4",
+          "text": "Observed: 99% of sample tested positive. Sample size: 10,000. Conclusion: ~99% of population positive.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_4_5",
+          "text": "Observed: my friend likes pizza, I like pizza. Conclusion: everyone likes pizza.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_4_4",
+          "text": "Observed: 99% of sample tested positive. Sample size: 10,000. Conclusion: ~99% of population positive.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_4_5",
+          "text": "Observed: my friend likes pizza, I like pizza. Conclusion: everyone likes pizza.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
         }
       ],
       "id": [
         {
           "id": "ind_4_1",
           "text": "Tiga dari lima peluncuran produk terakhir berhasil. Oleh karena itu, peluncuran di masa depan adalah...",
-          "options": ["Mungkin berhasil", "Pasti berhasil", "Mungkin gagal"],
+          "options": [
+            "Mungkin berhasil",
+            "Pasti berhasil",
+            "Mungkin gagal"
+          ],
           "answer": "Mungkin berhasil"
         },
         {
           "id": "ind_4_2",
           "text": "Data historis menunjukkan pengangguran meningkat saat resesi. Resesi dimulai. Oleh karena itu...",
-          "options": ["Pengangguran mungkin akan meningkat", "Pengangguran pasti akan meningkat", "Pengangguran akan menurun"],
+          "options": [
+            "Pengangguran mungkin akan meningkat",
+            "Pengangguran pasti akan meningkat",
+            "Pengangguran akan menurun"
+          ],
           "answer": "Pengangguran mungkin akan meningkat"
         },
         {
           "id": "ind_4_3",
           "text": "Polanya adalah 1, 1, 2, 3, 5, 8, 13. Ini adalah urutan Fibonacci. Angka berikutnya adalah...",
-          "options": ["21", "20", "19"],
+          "options": [
+            "21",
+            "20",
+            "19"
+          ],
           "answer": "21"
+        },
+        {
+          "id": "ind_4_4",
+          "text": "Diamati: 99% sampel positif. Ukuran sampel: 10.000. Kesimpulan: ~99% populasi positif.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_4_5",
+          "text": "Diamati: teman saya suka pizza, saya suka pizza. Kesimpulan: semua orang suka pizza.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_4_4",
+          "text": "Diamati: 99% sampel positif. Ukuran sampel: 10.000. Kesimpulan: ~99% populasi positif.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_4_5",
+          "text": "Diamati: teman saya suka pizza, saya suka pizza. Kesimpulan: semua orang suka pizza.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
         }
       ]
     },
@@ -1439,40 +3887,136 @@
         {
           "id": "ind_5_1",
           "text": "We've tested 50 samples and 45 passed quality control. Can we conclude all products pass?",
-          "options": ["Probably yes, but not certainly", "Yes, definitely", "No, never"],
+          "options": [
+            "Probably yes, but not certainly",
+            "Yes, definitely",
+            "No, never"
+          ],
           "answer": "Probably yes, but not certainly"
         },
         {
           "id": "ind_5_2",
           "text": "In 100 coin flips, we got 52 heads and 48 tails. Therefore, the coin is...",
-          "options": ["Probably fair", "Definitely biased", "Definitely fair"],
+          "options": [
+            "Probably fair",
+            "Definitely biased",
+            "Definitely fair"
+          ],
           "answer": "Probably fair"
         },
         {
           "id": "ind_5_3",
           "text": "The pattern is 1, 3, 6, 10, 15, 21. These are triangular numbers. The next is...",
-          "options": ["28", "27", "26"],
+          "options": [
+            "28",
+            "27",
+            "26"
+          ],
           "answer": "28"
+        },
+        {
+          "id": "ind_5_4",
+          "text": "Pattern: 2, 4, 6, 8, 10. Induction: next is 12.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_5_5",
+          "text": "Observed: market went up 3 days in a row. Conclusion: market always goes up.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_5_4",
+          "text": "Pattern: 2, 4, 6, 8, 10. Induction: next is 12.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_5_5",
+          "text": "Observed: market went up 3 days in a row. Conclusion: market always goes up.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
         }
       ],
       "id": [
         {
           "id": "ind_5_1",
           "text": "Kami telah menguji 50 sampel dan 45 lulus kontrol kualitas. Bisakah kita menyimpulkan semua produk lulus?",
-          "options": ["Mungkin ya, tetapi tidak pasti", "Ya, pasti", "Tidak, tidak pernah"],
+          "options": [
+            "Mungkin ya, tetapi tidak pasti",
+            "Ya, pasti",
+            "Tidak, tidak pernah"
+          ],
           "answer": "Mungkin ya, tetapi tidak pasti"
         },
         {
           "id": "ind_5_2",
           "text": "Dalam 100 pelemparan koin, kami mendapat 52 kepala dan 48 ekor. Oleh karena itu, koinnya adalah...",
-          "options": ["Mungkin adil", "Pasti bias", "Pasti adil"],
+          "options": [
+            "Mungkin adil",
+            "Pasti bias",
+            "Pasti adil"
+          ],
           "answer": "Mungkin adil"
         },
         {
           "id": "ind_5_3",
           "text": "Polanya adalah 1, 3, 6, 10, 15, 21. Ini adalah angka segitiga. Yang berikutnya adalah...",
-          "options": ["28", "27", "26"],
+          "options": [
+            "28",
+            "27",
+            "26"
+          ],
           "answer": "28"
+        },
+        {
+          "id": "ind_5_4",
+          "text": "Pola: 2, 4, 6, 8, 10. Induksi: berikutnya adalah 12.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_5_5",
+          "text": "Diamati: pasar naik 3 hari berturut-turut. Kesimpulan: pasar selalu naik.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_5_4",
+          "text": "Pola: 2, 4, 6, 8, 10. Induksi: berikutnya adalah 12.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_5_5",
+          "text": "Diamati: pasar naik 3 hari berturut-turut. Kesimpulan: pasar selalu naik.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
         }
       ]
     },
@@ -1481,40 +4025,136 @@
         {
           "id": "ind_6_1",
           "text": "A study of 1000 people shows exercise correlates with happiness. Can we conclude exercise causes happiness?",
-          "options": ["Probably, but correlation ≠ causation", "Definitely yes", "No, never"],
+          "options": [
+            "Probably, but correlation ≠ causation",
+            "Definitely yes",
+            "No, never"
+          ],
           "answer": "Probably, but correlation ≠ causation"
         },
         {
           "id": "ind_6_2",
           "text": "Market data from 10 years shows tech stocks outperform bonds. Therefore, tech stocks will...",
-          "options": ["Probably continue to outperform", "Definitely outperform forever", "Never outperform again"],
+          "options": [
+            "Probably continue to outperform",
+            "Definitely outperform forever",
+            "Never outperform again"
+          ],
           "answer": "Probably continue to outperform"
         },
         {
           "id": "ind_6_3",
           "text": "The pattern involves powers: 2¹, 2², 2³, 2⁴. Following this, the next is...",
-          "options": ["2⁵ = 32", "2⁴ = 16", "2³ = 8"],
+          "options": [
+            "2⁵ = 32",
+            "2⁴ = 16",
+            "2³ = 8"
+          ],
           "answer": "2⁵ = 32"
+        },
+        {
+          "id": "ind_6_4",
+          "text": "Observed: random sample of 5000 voters, margin of error 2%. Conclusion: reliable population estimate.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_6_5",
+          "text": "Observed: X happens after Y in 3 cases. Conclusion: X is always caused by Y.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_6_4",
+          "text": "Observed: random sample of 5000 voters, margin of error 2%. Conclusion: reliable population estimate.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_6_5",
+          "text": "Observed: X happens after Y in 3 cases. Conclusion: X is always caused by Y.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
         }
       ],
       "id": [
         {
           "id": "ind_6_1",
           "text": "Studi dari 1000 orang menunjukkan olahraga berkorelasi dengan kebahagiaan. Bisakah kita menyimpulkan olahraga menyebabkan kebahagiaan?",
-          "options": ["Mungkin, tetapi korelasi ≠ kausalitas", "Pasti ya", "Tidak, tidak pernah"],
+          "options": [
+            "Mungkin, tetapi korelasi ≠ kausalitas",
+            "Pasti ya",
+            "Tidak, tidak pernah"
+          ],
           "answer": "Mungkin, tetapi korelasi ≠ kausalitas"
         },
         {
           "id": "ind_6_2",
           "text": "Data pasar dari 10 tahun menunjukkan saham teknologi mengungguli obligasi. Oleh karena itu, saham teknologi akan...",
-          "options": ["Mungkin terus mengungguli", "Pasti mengungguli selamanya", "Tidak akan mengungguli lagi"],
+          "options": [
+            "Mungkin terus mengungguli",
+            "Pasti mengungguli selamanya",
+            "Tidak akan mengungguli lagi"
+          ],
           "answer": "Mungkin terus mengungguli"
         },
         {
           "id": "ind_6_3",
           "text": "Pola melibatkan kekuatan: 2¹, 2², 2³, 2⁴. Mengikuti ini, yang berikutnya adalah...",
-          "options": ["2⁵ = 32", "2⁴ = 16", "2³ = 8"],
+          "options": [
+            "2⁵ = 32",
+            "2⁴ = 16",
+            "2³ = 8"
+          ],
           "answer": "2⁵ = 32"
+        },
+        {
+          "id": "ind_6_4",
+          "text": "Diamati: sampel acak dari 5000 pemilih, margin kesalahan 2%. Kesimpulan: perkiraan populasi dapat diandalkan.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_6_5",
+          "text": "Diamati: X terjadi setelah Y dalam 3 kasus. Kesimpulan: X selalu disebabkan oleh Y.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_6_4",
+          "text": "Diamati: sampel acak dari 5000 pemilih, margin kesalahan 2%. Kesimpulan: perkiraan populasi dapat diandalkan.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_6_5",
+          "text": "Diamati: X terjadi setelah Y dalam 3 kasus. Kesimpulan: X selalu disebabkan oleh Y.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
         }
       ]
     },
@@ -1523,40 +4163,136 @@
         {
           "id": "ind_7_1",
           "text": "Medical trials show Drug A works 70% of the time. A patient takes Drug A. Will they recover?",
-          "options": ["Probably, but not certainly", "Definitely yes", "Definitely no"],
+          "options": [
+            "Probably, but not certainly",
+            "Definitely yes",
+            "Definitely no"
+          ],
           "answer": "Probably, but not certainly"
         },
         {
           "id": "ind_7_2",
           "text": "Past performance: Team A beat Team B 8 times in 10 games. Next game, Team A will...",
-          "options": ["Probably win", "Definitely win", "Definitely lose"],
+          "options": [
+            "Probably win",
+            "Definitely win",
+            "Definitely lose"
+          ],
           "answer": "Probably win"
         },
         {
           "id": "ind_7_3",
           "text": "What's the pattern? 2, 6, 12, 20, 30. These are n(n+1). The next is...",
-          "options": ["42", "40", "38"],
+          "options": [
+            "42",
+            "40",
+            "38"
+          ],
           "answer": "42"
+        },
+        {
+          "id": "ind_7_4",
+          "text": "Observed: 95% of 50 companies implement policy X successfully. Controlled variables: industry, size. Conclusion: policy X is likely effective.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_7_5",
+          "text": "Observed: all black swans in city A are elegant. Conclusion: all black swans are elegant.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_7_4",
+          "text": "Observed: 95% of 50 companies implement policy X successfully. Controlled variables: industry, size. Conclusion: policy X is likely effective.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_7_5",
+          "text": "Observed: all black swans in city A are elegant. Conclusion: all black swans are elegant.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
         }
       ],
       "id": [
         {
           "id": "ind_7_1",
           "text": "Uji klinis menunjukkan Obat A bekerja 70% dari waktu. Seorang pasien mengonsumsi Obat A. Apakah mereka akan pulih?",
-          "options": ["Mungkin, tetapi tidak pasti", "Pasti ya", "Pasti tidak"],
+          "options": [
+            "Mungkin, tetapi tidak pasti",
+            "Pasti ya",
+            "Pasti tidak"
+          ],
           "answer": "Mungkin, tetapi tidak pasti"
         },
         {
           "id": "ind_7_2",
           "text": "Kinerja masa lalu: Tim A mengalahkan Tim B 8 kali dalam 10 pertandingan. Permainan berikutnya, Tim A akan...",
-          "options": ["Mungkin menang", "Pasti menang", "Pasti kalah"],
+          "options": [
+            "Mungkin menang",
+            "Pasti menang",
+            "Pasti kalah"
+          ],
           "answer": "Mungkin menang"
         },
         {
           "id": "ind_7_3",
           "text": "Apa polanya? 2, 6, 12, 20, 30. Ini adalah n(n+1). Yang berikutnya adalah...",
-          "options": ["42", "40", "38"],
+          "options": [
+            "42",
+            "40",
+            "38"
+          ],
           "answer": "42"
+        },
+        {
+          "id": "ind_7_4",
+          "text": "Diamati: 95% dari 50 perusahaan menerapkan kebijakan X dengan sukses. Variabel terkontrol: industri, ukuran. Kesimpulan: kebijakan X kemungkinan efektif.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_7_5",
+          "text": "Diamati: semua angsa hitam di kota A elegan. Kesimpulan: semua angsa hitam elegan.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_7_4",
+          "text": "Diamati: 95% dari 50 perusahaan menerapkan kebijakan X dengan sukses. Variabel terkontrol: industri, ukuran. Kesimpulan: kebijakan X kemungkinan efektif.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_7_5",
+          "text": "Diamati: semua angsa hitam di kota A elegan. Kesimpulan: semua angsa hitam elegan.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
         }
       ]
     },
@@ -1565,40 +4301,172 @@
         {
           "id": "ind_8_1",
           "text": "Two studies with different methodologies both show Link X. However, we should be...",
-          "options": ["Cautiously optimistic", "Certain Link X is true", "Skeptical Link X is true"],
+          "options": [
+            "Cautiously optimistic",
+            "Certain Link X is true",
+            "Skeptical Link X is true"
+          ],
           "answer": "Cautiously optimistic"
         },
         {
           "id": "ind_8_2",
           "text": "Historical data shows economic crashes every 10 years on average. We're due for one. Therefore...",
-          "options": ["A crash might happen soon, but not guaranteed", "A crash will definitely happen", "No crash will ever happen"],
+          "options": [
+            "A crash might happen soon, but not guaranteed",
+            "A crash will definitely happen",
+            "No crash will ever happen"
+          ],
           "answer": "A crash might happen soon, but not guaranteed"
         },
         {
           "id": "ind_8_3",
           "text": "Pattern: 5, 11, 19, 29, 41. These follow n² + n + 5. The next is...",
-          "options": ["55", "53", "51"],
+          "options": [
+            "55",
+            "53",
+            "51"
+          ],
           "answer": "55"
+        },
+        {
+          "id": "ind_8_4",
+          "text": "Meta-analysis: 47 peer-reviewed studies show correlation (r=0.87, p<0.001). Conclusion: strong causal link likely.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_8_5",
+          "text": "Observed: rare exceptions contradicting hypothesis. Conclusion: hypothesis is still probably true.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_8_4",
+          "text": "Meta-analysis: 47 peer-reviewed studies show correlation (r=0.87, p<0.001). Conclusion: strong causal link likely.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_8_5",
+          "text": "Observed: rare exceptions contradicting hypothesis. Conclusion: hypothesis is still probably true.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_8_6",
+          "text": "9000 subjects tested with confirmed methodology. 92% correlation. Peer-reviewed. Conclusion: strong induction.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_8_7",
+          "text": "Theory predicts outcome, outcome matches, therefore theory explains causation.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
         }
       ],
       "id": [
         {
           "id": "ind_8_1",
           "text": "Dua studi dengan metodologi berbeda keduanya menunjukkan Tautan X. Namun, kita harus...",
-          "options": ["Optimis berhati-hati", "Yakin Tautan X benar", "Skeptis Tautan X benar"],
+          "options": [
+            "Optimis berhati-hati",
+            "Yakin Tautan X benar",
+            "Skeptis Tautan X benar"
+          ],
           "answer": "Optimis berhati-hati"
         },
         {
           "id": "ind_8_2",
           "text": "Data historis menunjukkan crash ekonomi rata-rata setiap 10 tahun. Kita sudah tiba waktunya. Oleh karena itu...",
-          "options": ["Crash mungkin segera terjadi, tetapi tidak terjamin", "Crash pasti akan terjadi", "Crash tidak akan pernah terjadi"],
+          "options": [
+            "Crash mungkin segera terjadi, tetapi tidak terjamin",
+            "Crash pasti akan terjadi",
+            "Crash tidak akan pernah terjadi"
+          ],
           "answer": "Crash mungkin segera terjadi, tetapi tidak terjamin"
         },
         {
           "id": "ind_8_3",
           "text": "Pola: 5, 11, 19, 29, 41. Ini mengikuti n² + n + 5. Yang berikutnya adalah...",
-          "options": ["55", "53", "51"],
+          "options": [
+            "55",
+            "53",
+            "51"
+          ],
           "answer": "55"
+        },
+        {
+          "id": "ind_8_4",
+          "text": "Meta-analisis: 47 studi peer-review menunjukkan korelasi (r=0,87, p<0,001). Kesimpulan: hubungan kausal kuat mungkin ada.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_8_5",
+          "text": "Diamati: pengecualian langka yang bertentangan dengan hipotesis. Kesimpulan: hipotesis masih kemungkinan benar.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_8_4",
+          "text": "Meta-analisis: 47 studi peer-review menunjukkan korelasi (r=0,87, p<0,001). Kesimpulan: hubungan kausal kuat mungkin ada.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_8_5",
+          "text": "Diamati: pengecualian langka yang bertentangan dengan hipotesis. Kesimpulan: hipotesis masih kemungkinan benar.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_8_6",
+          "text": "9000 subjek diuji dengan metodologi terkonfirmasi. Korelasi 92%. Peer-reviewed. Kesimpulan: induksi kuat.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_8_7",
+          "text": "Teori memprediksi hasil, hasil cocok, oleh karena itu teori menjelaskan kausalitas.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
         }
       ]
     },
@@ -1607,40 +4475,172 @@
         {
           "id": "ind_9_1",
           "text": "10 studies support Hypothesis H, but 2 studies contradict it. Should we accept H?",
-          "options": ["Probably, but remain open to new evidence", "Definitely yes", "Definitely no"],
+          "options": [
+            "Probably, but remain open to new evidence",
+            "Definitely yes",
+            "Definitely no"
+          ],
           "answer": "Probably, but remain open to new evidence"
         },
         {
           "id": "ind_9_2",
           "text": "Technology adoption follows a pattern: 5% of market, then 15%, 35%, 80%. Next adoption level is...",
-          "options": ["Likely 95%+", "Stays at 80%", "Drops to 50%"],
+          "options": [
+            "Likely 95%+",
+            "Stays at 80%",
+            "Drops to 50%"
+          ],
           "answer": "Likely 95%+"
         },
         {
           "id": "ind_9_3",
           "text": "Complex pattern: 3, 7, 13, 21, 31, 43. The next is...",
-          "options": ["57", "55", "53"],
+          "options": [
+            "57",
+            "55",
+            "53"
+          ],
           "answer": "57"
+        },
+        {
+          "id": "ind_9_4",
+          "text": "Repeated experiments (n=1000+), controlled conditions, peer review. Pattern consistent. Conclusion: reliable induction.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_9_5",
+          "text": "Theoretical framework + observations + few counterexamples. Conclusion: theory definitely true.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_9_4",
+          "text": "Repeated experiments (n=1000+), controlled conditions, peer review. Pattern consistent. Conclusion: reliable induction.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_9_5",
+          "text": "Theoretical framework + observations + few counterexamples. Conclusion: theory definitely true.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_9_6",
+          "text": "Systematic review of 120 studies, effect size consistent, confounds controlled. Conclusion: reliable.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_9_7",
+          "text": "Pattern holds for 99% of cases, 1% exceptions explained away. Conclusion: universal law.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
         }
       ],
       "id": [
         {
           "id": "ind_9_1",
           "text": "10 studi mendukung Hipotesis H, tetapi 2 studi bertentangan dengannya. Haruskah kita menerima H?",
-          "options": ["Mungkin, tetapi tetap terbuka terhadap bukti baru", "Pasti ya", "Pasti tidak"],
+          "options": [
+            "Mungkin, tetapi tetap terbuka terhadap bukti baru",
+            "Pasti ya",
+            "Pasti tidak"
+          ],
           "answer": "Mungkin, tetapi tetap terbuka terhadap bukti baru"
         },
         {
           "id": "ind_9_2",
           "text": "Adopsi teknologi mengikuti pola: 5% pasar, kemudian 15%, 35%, 80%. Tingkat adopsi berikutnya adalah...",
-          "options": ["Kemungkinan 95%+", "Tetap di 80%", "Turun ke 50%"],
+          "options": [
+            "Kemungkinan 95%+",
+            "Tetap di 80%",
+            "Turun ke 50%"
+          ],
           "answer": "Kemungkinan 95%+"
         },
         {
           "id": "ind_9_3",
           "text": "Pola kompleks: 3, 7, 13, 21, 31, 43. Yang berikutnya adalah...",
-          "options": ["57", "55", "53"],
+          "options": [
+            "57",
+            "55",
+            "53"
+          ],
           "answer": "57"
+        },
+        {
+          "id": "ind_9_4",
+          "text": "Eksperimen berulang (n=1000+), kondisi terkontrol, peer review. Pola konsisten. Kesimpulan: induksi dapat diandalkan.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_9_5",
+          "text": "Kerangka teoritis + pengamatan + beberapa contoh penyangkal. Kesimpulan: teori pasti benar.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_9_4",
+          "text": "Eksperimen berulang (n=1000+), kondisi terkontrol, peer review. Pola konsisten. Kesimpulan: induksi dapat diandalkan.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_9_5",
+          "text": "Kerangka teoritis + pengamatan + beberapa contoh penyangkal. Kesimpulan: teori pasti benar.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_9_6",
+          "text": "Tinjauan sistematis dari 120 studi, ukuran efek konsisten, perancu terkontrol. Kesimpulan: dapat diandalkan.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_9_7",
+          "text": "Pola berlaku untuk 99% kasus, pengecualian 1% dijelaskan. Kesimpulan: hukum universal.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
         }
       ]
     },
@@ -1649,40 +4649,172 @@
         {
           "id": "ind_10_1",
           "text": "Meta-analysis of 50 studies on Topic T shows conflicting results. Proper conclusion is...",
-          "options": ["More research needed, evidence is inconclusive", "Topic T is definitely true", "Topic T is definitely false"],
+          "options": [
+            "More research needed, evidence is inconclusive",
+            "Topic T is definitely true",
+            "Topic T is definitely false"
+          ],
           "answer": "More research needed, evidence is inconclusive"
         },
         {
           "id": "ind_10_2",
           "text": "Long-term climate data shows warming trend, but with natural variations. Scientists conclude...",
-          "options": ["Warming is likely, but uncertainty remains", "Warming is impossible", "Warming is guaranteed 100%"],
+          "options": [
+            "Warming is likely, but uncertainty remains",
+            "Warming is impossible",
+            "Warming is guaranteed 100%"
+          ],
           "answer": "Warming is likely, but uncertainty remains"
         },
         {
           "id": "ind_10_3",
           "text": "Advanced pattern: 1, 4, 9, 16, 25, 36, 49, 64. But then 81, 100, 120. Next is...",
-          "options": ["Insufficient data to determine pattern", "144", "125"],
+          "options": [
+            "Insufficient data to determine pattern",
+            "144",
+            "125"
+          ],
           "answer": "Insufficient data to determine pattern"
+        },
+        {
+          "id": "ind_10_4",
+          "text": "Large sample (n=10000+), random selection, established methodology, confidence interval 95%. Conclusion: data-driven inference.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_10_5",
+          "text": "Observations match theory perfectly. Therefore, theory explains all future cases.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_10_4",
+          "text": "Large sample (n=10000+), random selection, established methodology, confidence interval 95%. Conclusion: data-driven inference.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_10_5",
+          "text": "Observations match theory perfectly. Therefore, theory explains all future cases.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_10_6",
+          "text": "Replicated across populations, contexts, and measurement tools. Mechanisms understood. Confidence 97%. Conclusion: robust.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_10_7",
+          "text": "All observations consistent with theory. No future anomalies possible. Therefore, induction is complete.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
         }
       ],
       "id": [
         {
           "id": "ind_10_1",
           "text": "Meta-analisis dari 50 studi tentang Topik T menunjukkan hasil yang bertentangan. Kesimpulan yang tepat adalah...",
-          "options": ["Penelitian lebih lanjut diperlukan, bukti tidak meyakinkan", "Topik T pasti benar", "Topik T pasti salah"],
+          "options": [
+            "Penelitian lebih lanjut diperlukan, bukti tidak meyakinkan",
+            "Topik T pasti benar",
+            "Topik T pasti salah"
+          ],
           "answer": "Penelitian lebih lanjut diperlukan, bukti tidak meyakinkan"
         },
         {
           "id": "ind_10_2",
           "text": "Data iklim jangka panjang menunjukkan tren pemanasan, tetapi dengan variasi alami. Para ilmuwan menyimpulkan...",
-          "options": ["Pemanasan mungkin terjadi, tetapi ketidakpastian tetap ada", "Pemanasan tidak mungkin", "Pemanasan dijamin 100%"],
+          "options": [
+            "Pemanasan mungkin terjadi, tetapi ketidakpastian tetap ada",
+            "Pemanasan tidak mungkin",
+            "Pemanasan dijamin 100%"
+          ],
           "answer": "Pemanasan mungkin terjadi, tetapi ketidakpastian tetap ada"
         },
         {
           "id": "ind_10_3",
           "text": "Pola canggih: 1, 4, 9, 16, 25, 36, 49, 64. Tetapi kemudian 81, 100, 120. Yang berikutnya adalah...",
-          "options": ["Data tidak cukup untuk menentukan pola", "144", "125"],
+          "options": [
+            "Data tidak cukup untuk menentukan pola",
+            "144",
+            "125"
+          ],
           "answer": "Data tidak cukup untuk menentukan pola"
+        },
+        {
+          "id": "ind_10_4",
+          "text": "Sampel besar (n=10000+), pemilihan acak, metodologi mapan, interval kepercayaan 95%. Kesimpulan: inferensi berbasis data.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_10_5",
+          "text": "Pengamatan cocok sempurna dengan teori. Oleh karena itu, teori menjelaskan semua kasus di masa depan.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_10_4",
+          "text": "Sampel besar (n=10000+), pemilihan acak, metodologi mapan, interval kepercayaan 95%. Kesimpulan: inferensi berbasis data.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_10_5",
+          "text": "Pengamatan cocok sempurna dengan teori. Oleh karena itu, teori menjelaskan semua kasus di masa depan.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
+        },
+        {
+          "id": "ind_10_6",
+          "text": "Direplikasi lintas populasi, konteks, dan alat pengukuran. Mekanisme dipahami. Kepercayaan 97%. Kesimpulan: robust.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Strong"
+        },
+        {
+          "id": "ind_10_7",
+          "text": "Semua pengamatan konsisten dengan teori. Tidak ada anomali di masa depan. Oleh karena itu, induksi lengkap.",
+          "options": [
+            "Strong",
+            "Weak"
+          ],
+          "answer": "Weak"
         }
       ]
     }
