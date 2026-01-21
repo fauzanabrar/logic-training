@@ -1,7 +1,7 @@
 {
-  "name": "Training Template",
-  "short_name": "Template",
-  "description": "Adaptive practice template with modular providers and analytics.",
+  "name": "Logic Training",
+  "short_name": "Logic",
+  "description": "Adaptive practice for logic skills with syllogisms, fallacies, deduction, and induction.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

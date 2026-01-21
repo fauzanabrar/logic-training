@@ -3,7 +3,8 @@ export const appConfig = {
   shortName: "Logic",
   description:
     "Adaptive practice for logic skills with syllogisms, fallacies, deduction, and induction.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://example.com",
+  url:
+    process.env.NEXT_PUBLIC_SITE_URL || "https://loictrainer.netlify.app",
   themeColor: "#ff6b35",
   locale: "en-US",
   author: "Your Team",

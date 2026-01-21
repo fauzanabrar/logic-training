@@ -6,4 +6,4 @@ Allow: /
 Disallow: /api/
 Disallow: /private/
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://loictrainer.netlify.app/sitemap.xml
