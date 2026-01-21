@@ -46,6 +46,26 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "syl_cd_1_1",
+          "text": "All cats are animals. What color is the cat?",
+          "options": [
+            "Cannot Determine",
+            "We need more information",
+            "It must be gray"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_1_2",
+          "text": "Some students study hard. Do all students pass exams?",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -93,6 +113,26 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "syl_cd_1_1",
+          "text": "Semua kucing adalah hewan. Warna apa kucing itu?",
+          "options": [
+            "Tidak Dapat Ditentukan",
+            "Kita butuh informasi lebih",
+            "Pasti abu-abu"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_1_2",
+          "text": "Beberapa siswa belajar dengan keras. Apakah semua siswa lulus ujian?",
+          "options": [
+            "Ya",
+            "Tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -142,6 +182,26 @@
             "Invalid"
           ],
           "answer": "Valid"
+        },
+        {
+          "id": "syl_cd_2_1",
+          "text": "All birds have feathers. John wears a blue shirt. Therefore, John is a bird?",
+          "options": [
+            "Valid",
+            "Invalid",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_2_2",
+          "text": "Some fruits are sweet. Apples are fruits. Are all apples sweet?",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -189,6 +249,26 @@
             "Invalid"
           ],
           "answer": "Valid"
+        },
+        {
+          "id": "syl_cd_2_1",
+          "text": "Semua burung memiliki bulu. John mengenakan kemeja biru. Jadi, John adalah burung?",
+          "options": [
+            "Valid",
+            "Tidak Valid",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_2_2",
+          "text": "Beberapa buah rasanya manis. Apel adalah buah. Apakah semua apel rasanya manis?",
+          "options": [
+            "Ya",
+            "Tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -238,6 +318,26 @@
             "Invalid"
           ],
           "answer": "Valid"
+        },
+        {
+          "id": "syl_cd_3_1",
+          "text": "All A are B. All C are B. Therefore, are all C also A?",
+          "options": [
+            "Valid",
+            "Invalid",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_3_2",
+          "text": "Some teachers are strict. Some strict people are fair. Therefore, are all teachers fair?",
+          "options": [
+            "Certainly",
+            "Certainly not",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -285,6 +385,26 @@
             "Invalid"
           ],
           "answer": "Valid"
+        },
+        {
+          "id": "syl_cd_3_1",
+          "text": "Semua A adalah B. Semua C adalah B. Jadi, apakah semua C juga A?",
+          "options": [
+            "Valid",
+            "Tidak Valid",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_3_2",
+          "text": "Beberapa guru tegas. Beberapa orang tegas adalah adil. Jadi, apakah semua guru adil?",
+          "options": [
+            "Tentu",
+            "Tentu tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -334,6 +454,26 @@
             "Invalid"
           ],
           "answer": "Valid"
+        },
+        {
+          "id": "syl_cd_4_1",
+          "text": "Some politicians are corrupt. Some corrupt people are caught. Therefore, are some politicians caught?",
+          "options": [
+            "Must be true",
+            "Must be false",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_4_2",
+          "text": "All cars need fuel. All planes need fuel. Therefore, do all vehicles that need fuel go on roads?",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -381,6 +521,26 @@
             "Invalid"
           ],
           "answer": "Valid"
+        },
+        {
+          "id": "syl_cd_4_1",
+          "text": "Beberapa politisi korup. Beberapa orang korup tertangkap. Jadi, apakah beberapa politisi tertangkap?",
+          "options": [
+            "Pasti benar",
+            "Pasti salah",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_4_2",
+          "text": "Semua mobil butuh bahan bakar. Semua pesawat butuh bahan bakar. Jadi, apakah semua kendaraan yang butuh bahan bakar di jalan?",
+          "options": [
+            "Ya",
+            "Tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -430,6 +590,26 @@
             "Invalid"
           ],
           "answer": "Valid"
+        },
+        {
+          "id": "syl_cd_5_1",
+          "text": "Most employees come to the office. Some employees work from home. Do most people work?",
+          "options": [
+            "Provably true",
+            "Provably false",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_5_2",
+          "text": "All smartphones have screens. Some screens break. Do all smartphones break eventually?",
+          "options": [
+            "True",
+            "False",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -477,6 +657,26 @@
             "Invalid"
           ],
           "answer": "Valid"
+        },
+        {
+          "id": "syl_cd_5_1",
+          "text": "Sebagian besar karyawan datang ke kantor. Beberapa karyawan bekerja dari rumah. Apakah sebagian besar orang bekerja?",
+          "options": [
+            "Terbukti benar",
+            "Terbukti salah",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_5_2",
+          "text": "Semua smartphone memiliki layar. Beberapa layar pecah. Apakah semua smartphone akhirnya rusak?",
+          "options": [
+            "Benar",
+            "Salah",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -526,6 +726,26 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "syl_cd_6_1",
+          "text": "No reptiles have fur. All snakes are reptiles. Some cold-blooded animals are snakes. Does this tell us if any animal with fur is cold-blooded?",
+          "options": [
+            "Yes we can",
+            "No we cannot",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_6_2",
+          "text": "All triangles have 3 sides. Some 3-sided shapes are equilateral. Are all equilateral shapes triangles?",
+          "options": [
+            "Definitely",
+            "Definitely not",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -573,6 +793,26 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "syl_cd_6_1",
+          "text": "Tidak ada reptil yang berbulu. Semua ular adalah reptil. Beberapa hewan berdarah dingin adalah ular. Apakah ini memberi tahu kita jika ada hewan berbulu yang berdarah dingin?",
+          "options": [
+            "Ya kita bisa",
+            "Tidak kita tidak bisa",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_6_2",
+          "text": "Semua segitiga memiliki 3 sisi. Beberapa bentuk 3-sisi adalah sama sisi. Apakah semua bentuk sama sisi adalah segitiga?",
+          "options": [
+            "Pasti",
+            "Pasti tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -622,6 +862,26 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "syl_cd_7_1",
+          "text": "All poets are creative. Some musicians are creative. All dancers are musicians. Is there a definite relationship between dancers and poets?",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_7_2",
+          "text": "Most successful people work hard. Most hard workers aren't successful. Can we conclude most successful people are typical?",
+          "options": [
+            "True",
+            "False",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -669,6 +929,26 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "syl_cd_7_1",
+          "text": "Semua penyair adalah kreatif. Beberapa musisi adalah kreatif. Semua penari adalah musisi. Apakah ada hubungan pasti antara penari dan penyair?",
+          "options": [
+            "Ya",
+            "Tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_7_2",
+          "text": "Sebagian besar orang sukses bekerja keras. Sebagian besar pekerja keras tidak sukses. Dapatkah kita simpulkan orang sukses adalah tipikal?",
+          "options": [
+            "Benar",
+            "Salah",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -736,6 +1016,26 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "syl_cd_8_1",
+          "text": "All X have property P. Some entities with property P also have property Q. Some Q have property R. Does this tell us if any X have property R?",
+          "options": [
+            "Definitely yes",
+            "Definitely no",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_8_2",
+          "text": "Most members of group A have characteristic M. Many members of group A also have characteristic N. Do we know if M causes N?",
+          "options": [
+            "Yes we do",
+            "No we don't",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -801,6 +1101,26 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "syl_cd_8_1",
+          "text": "Semua X memiliki sifat P. Beberapa entitas dengan sifat P juga memiliki sifat Q. Beberapa Q memiliki sifat R. Apakah ini memberi tahu kita jika ada X yang memiliki sifat R?",
+          "options": [
+            "Pasti ya",
+            "Pasti tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_8_2",
+          "text": "Sebagian besar anggota grup A memiliki karakteristik M. Banyak anggota grup A juga memiliki karakteristik N. Apakah kita tahu jika M menyebabkan N?",
+          "options": [
+            "Ya kita tahu",
+            "Tidak kita tidak tahu",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -868,6 +1188,26 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "syl_cd_9_1",
+          "text": "Neither all nor some X are Y. Either all or no Z are Y. Some W have property Y. Can we conclude the relationship between X and Z?",
+          "options": [
+            "Yes clearly",
+            "No clearly",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_9_2",
+          "text": "If condition A holds, then B must be true. If B is true, then C is true. We observe neither A nor C. What about B?",
+          "options": [
+            "B is true",
+            "B is false",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -933,6 +1273,26 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "syl_cd_9_1",
+          "text": "Tidak semua dan tidak beberapa X adalah Y. Baik semua atau tidak ada Z yang Y. Beberapa W memiliki sifat Y. Dapatkah kita simpulkan hubungan antara X dan Z?",
+          "options": [
+            "Ya jelas",
+            "Tidak jelas",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_9_2",
+          "text": "Jika kondisi A berlaku, maka B harus benar. Jika B benar, maka C benar. Kami mengamati bukan A dan bukan C. Bagaimana dengan B?",
+          "options": [
+            "B benar",
+            "B salah",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -1000,6 +1360,26 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "syl_cd_10_1",
+          "text": "Premise 1: No exceptions exist to rule R. Premise 2: Case S appears to violate R. Premise 3: Some observers question the validity of S. What is the truth value of R?",
+          "options": [
+            "R is definitely true",
+            "R is definitely false",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_10_2",
+          "text": "Sets X and Y overlap partially. Set Z contains some but not all members of X. Set W contains some but not all members of Y. Are Z and W disjoint?",
+          "options": [
+            "Yes disjoint",
+            "No not disjoint",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -1065,6 +1445,26 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "syl_cd_10_1",
+          "text": "Premis 1: Tidak ada pengecualian pada aturan R. Premis 2: Kasus S tampak melanggar R. Premis 3: Beberapa pengamat mempertanyakan validitas S. Apa nilai kebenaran R?",
+          "options": [
+            "R pasti benar",
+            "R pasti salah",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "syl_cd_10_2",
+          "text": "Himpunan X dan Y tumpang tindih sebagian. Himpunan Z berisi beberapa tapi tidak semua anggota X. Himpunan W berisi beberapa tapi tidak semua anggota Y. Apakah Z dan W terpisah?",
+          "options": [
+            "Ya terpisah",
+            "Tidak terpisah",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     }
@@ -1101,6 +1501,16 @@
             "False Cause"
           ],
           "answer": "Ad Hominem"
+        },
+        {
+          "id": "fal_cd_1_1",
+          "text": "This medicine costs a lot. Is it definitely effective?",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -1133,6 +1543,16 @@
             "Sebab Palsu"
           ],
           "answer": "Ad Hominem"
+        },
+        {
+          "id": "fal_cd_1_1",
+          "text": "Obat ini harganya mahal. Apakah pasti efektif?",
+          "options": [
+            "Ya",
+            "Tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -1167,6 +1587,16 @@
             "Begging the Question"
           ],
           "answer": "Ad Hominem"
+        },
+        {
+          "id": "fal_cd_2_1",
+          "text": "Most criminals have dark hair. John has dark hair. Is John a criminal?",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -1199,6 +1629,16 @@
             "Mempertanyakan Dasar"
           ],
           "answer": "Ad Hominem"
+        },
+        {
+          "id": "fal_cd_2_1",
+          "text": "Sebagian besar kriminal memiliki rambut gelap. John memiliki rambut gelap. Apakah John seorang kriminal?",
+          "options": [
+            "Ya",
+            "Tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -1233,6 +1673,16 @@
             "Slippery Slope"
           ],
           "answer": "False Dilemma"
+        },
+        {
+          "id": "fal_cd_3_1",
+          "text": "People who exercise live longer. Does this mean exercise causes longer life?",
+          "options": [
+            "Definitely yes",
+            "Definitely no",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -1265,6 +1715,16 @@
             "Lereng Licin"
           ],
           "answer": "Dilema Palsu"
+        },
+        {
+          "id": "fal_cd_3_1",
+          "text": "Orang yang berolahraga hidup lebih lama. Apakah ini berarti olahraga menyebabkan hidup lebih lama?",
+          "options": [
+            "Pasti ya",
+            "Pasti tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -1299,6 +1759,16 @@
             "Appeal to Fear"
           ],
           "answer": "Straw Man"
+        },
+        {
+          "id": "fal_cd_4_1",
+          "text": "All successful entrepreneurs read books. Does reading books guarantee success?",
+          "options": [
+            "Certainly",
+            "Not certainly",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -1331,6 +1801,16 @@
             "Banding kepada Ketakutan"
           ],
           "answer": "Strawman"
+        },
+        {
+          "id": "fal_cd_4_1",
+          "text": "Semua pengusaha sukses membaca buku. Apakah membaca buku menjamin kesuksesan?",
+          "options": [
+            "Tentu",
+            "Tidak tentu",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -1365,6 +1845,16 @@
             "Complex Question"
           ],
           "answer": "Loaded Question"
+        },
+        {
+          "id": "fal_cd_5_1",
+          "text": "Studies show people with higher education earn more. Does education directly cause higher earnings?",
+          "options": [
+            "Yes always",
+            "No never",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -1397,6 +1887,16 @@
             "Pertanyaan Kompleks"
           ],
           "answer": "Pertanyaan Bermuatan"
+        },
+        {
+          "id": "fal_cd_5_1",
+          "text": "Studi menunjukkan orang berpendidikan tinggi lebih banyak penghasilan. Apakah pendidikan langsung menyebabkan penghasilan lebih tinggi?",
+          "options": [
+            "Ya selalu",
+            "Tidak pernah",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -1431,6 +1931,26 @@
             "Domino Effect"
           ],
           "answer": "Slippery Slope"
+        },
+        {
+          "id": "fal_cd_6_1",
+          "text": "Company A spends most on R&D among all competitors. Company A also has the highest profit. Does R&D spending cause high profit?",
+          "options": [
+            "Certainly yes",
+            "Certainly no",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "fal_cd_6_2",
+          "text": "Students who attend tutoring have higher test scores. Students with higher IQ attend tutoring more. Is tutoring the cause of high scores?",
+          "options": [
+            "Yes definitely",
+            "No definitely",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -1463,6 +1983,26 @@
             "Efek Domino"
           ],
           "answer": "Lereng Licin"
+        },
+        {
+          "id": "fal_cd_6_1",
+          "text": "Perusahaan A paling banyak mengeluarkan untuk R&D dibanding pesaing. Perusahaan A juga memiliki keuntungan tertinggi. Apakah pengeluaran R&D menyebabkan keuntungan tinggi?",
+          "options": [
+            "Tentu ya",
+            "Tentu tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "fal_cd_6_2",
+          "text": "Siswa yang mendapat les memiliki nilai tes lebih tinggi. Siswa dengan IQ lebih tinggi lebih banyak mengikuti les. Apakah les adalah penyebab nilai tinggi?",
+          "options": [
+            "Ya pasti",
+            "Tidak pasti",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -1497,6 +2037,16 @@
             "Hasty Generalization"
           ],
           "answer": "Affirming the Consequent"
+        },
+        {
+          "id": "fal_cd_7_1",
+          "text": "Cities with more police have higher crime rates. Does more police cause higher crime?",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -1529,6 +2079,16 @@
             "Generalisasi Terburu-buru"
           ],
           "answer": "Menegaskan Konsekuensi"
+        },
+        {
+          "id": "fal_cd_7_1",
+          "text": "Kota dengan lebih banyak polisi memiliki tingkat kejahatan lebih tinggi. Apakah lebih banyak polisi menyebabkan kejahatan lebih tinggi?",
+          "options": [
+            "Ya",
+            "Tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -1581,6 +2141,16 @@
             "Heads I win Tails You lose"
           ],
           "answer": "Heads I win Tails You lose"
+        },
+        {
+          "id": "fal_cd_8_1",
+          "text": "People who smoke have higher stress levels. People who exercise have lower stress. Does smoking increase stress or does stress cause smoking?",
+          "options": [
+            "Smoking causes stress",
+            "Stress causes smoking",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -1631,6 +2201,16 @@
             "Heads I win Tails You lose"
           ],
           "answer": "Heads I win Tails You lose"
+        },
+        {
+          "id": "fal_cd_8_1",
+          "text": "Orang yang merokok memiliki tingkat stres lebih tinggi. Orang yang berolahraga memiliki stres lebih rendah. Apakah merokok meningkatkan stres atau stres menyebabkan merokok?",
+          "options": [
+            "Merokok sebab stres",
+            "Stres sebab merokok",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -1683,6 +2263,16 @@
             "Appeal to Moderation"
           ],
           "answer": "Appeal to Moderation"
+        },
+        {
+          "id": "fal_cd_9_1",
+          "text": "Studies show: A correlates with B, B correlates with C, C correlates with D. Does A cause D?",
+          "options": [
+            "Yes directly",
+            "No directly",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -1733,6 +2323,16 @@
             "Appeal to Moderation"
           ],
           "answer": "Appeal to Moderation"
+        },
+        {
+          "id": "fal_cd_9_1",
+          "text": "Studi menunjukkan: A berkorelasi dengan B, B dengan C, C dengan D. Apakah A menyebabkan D?",
+          "options": [
+            "Ya langsung",
+            "Tidak langsung",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -1785,6 +2385,16 @@
             "Heads I win Tails You lose"
           ],
           "answer": "Heads I win Tails You lose"
+        },
+        {
+          "id": "fal_cd_10_1",
+          "text": "Claim X is supported by 3 studies, contradicted by 2 studies, with conflicting evidence in 5 others. Is X true, false, or indeterminate?",
+          "options": [
+            "Definitely true",
+            "Definitely false",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -1835,6 +2445,16 @@
             "Heads I win Tails You lose"
           ],
           "answer": "Heads I win Tails You lose"
+        },
+        {
+          "id": "fal_cd_10_1",
+          "text": "Klaim X didukung oleh 3 studi, ditentang oleh 2 studi, dengan bukti bertentangan di 5 lainnya. Apakah X benar, salah, atau tidak dapat ditentukan?",
+          "options": [
+            "Pasti benar",
+            "Pasti salah",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     }
@@ -1907,6 +2527,16 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "ded_cd_1_1",
+          "text": "If it rains, the ground is wet. The ground is wet. Did it rain?",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -1975,6 +2605,16 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "ded_cd_1_1",
+          "text": "Jika hujan, tanah basah. Tanah basah. Apakah turun hujan?",
+          "options": [
+            "Ya",
+            "Tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -2045,6 +2685,16 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "ded_cd_2_1",
+          "text": "All mammals breathe air. Some water animals breathe air. Are all water animals mammals?",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -2113,6 +2763,16 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "ded_cd_2_1",
+          "text": "Semua mamalia bernapas dengan udara. Beberapa hewan air bernapas dengan udara. Apakah semua hewan air adalah mamalia?",
+          "options": [
+            "Ya",
+            "Tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -2183,6 +2843,16 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "ded_cd_3_1",
+          "text": "If the alarm is set, the door is locked. The door is locked. Was the alarm set?",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -2251,6 +2921,16 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "ded_cd_3_1",
+          "text": "Jika alarm diset, pintu terkunci. Pintu terkunci. Apakah alarm diset?",
+          "options": [
+            "Ya",
+            "Tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -2321,6 +3001,16 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "ded_cd_4_1",
+          "text": "All philosophers question reality. Some scientists question reality. Are all scientists philosophers?",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -2389,6 +3079,16 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "ded_cd_4_1",
+          "text": "Semua filsuf mempertanyakan realitas. Beberapa ilmuwan mempertanyakan realitas. Apakah semua ilmuwan adalah filsuf?",
+          "options": [
+            "Ya",
+            "Tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -2459,6 +3159,16 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "ded_cd_5_1",
+          "text": "If compound X reacts with Y, Z is produced. Z was produced. Did X react with Y?",
+          "options": [
+            "Definitely",
+            "Definitely not",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -2527,6 +3237,16 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "ded_cd_5_1",
+          "text": "Jika senyawa X bereaksi dengan Y, Z diproduksi. Z diproduksi. Apakah X bereaksi dengan Y?",
+          "options": [
+            "Pasti",
+            "Pasti tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -2597,6 +3317,16 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "ded_cd_6_1",
+          "text": "Only experts can solve this puzzle. John solved it. Is John definitely an expert?",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -2665,6 +3395,16 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "ded_cd_6_1",
+          "text": "Hanya ahli yang bisa menyelesaikan teka-teki ini. John menyelesaikannya. Apakah John pasti seorang ahli?",
+          "options": [
+            "Ya",
+            "Tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -2735,6 +3475,16 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "ded_cd_7_1",
+          "text": "If P then Q. If Q then R. If not R then not P. We know P is true. Can we determine R?",
+          "options": [
+            "R must be true",
+            "R must be false",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -2803,6 +3553,16 @@
             "Invalid"
           ],
           "answer": "Invalid"
+        },
+        {
+          "id": "ded_cd_7_1",
+          "text": "Jika P maka Q. Jika Q maka R. Jika bukan R maka bukan P. Kami tahu P benar. Bisakah kita tentukan R?",
+          "options": [
+            "R harus benar",
+            "R harus salah",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -2891,6 +3651,26 @@
             "Invalid"
           ],
           "answer": "Valid"
+        },
+        {
+          "id": "ded_cd_8_1",
+          "text": "Either A or B must be true. If A then C. If B then not C. We know C is false. What is A and B?",
+          "options": [
+            "We can determine",
+            "We cannot determine",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "ded_cd_8_2",
+          "text": "All members of group G have property P. John has property P. Members include both G and non-G entities. Is John in G?",
+          "options": [
+            "Definitely",
+            "Definitely not",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -2977,6 +3757,26 @@
             "Invalid"
           ],
           "answer": "Valid"
+        },
+        {
+          "id": "ded_cd_8_1",
+          "text": "Entah A atau B harus benar. Jika A maka C. Jika B maka bukan C. Kami tahu C salah. Apa A dan B?",
+          "options": [
+            "Kita bisa tentukan",
+            "Kita tidak bisa tentukan",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "ded_cd_8_2",
+          "text": "Semua anggota grup G memiliki sifat P. John memiliki sifat P. Anggota termasuk G dan non-G. Apakah John di G?",
+          "options": [
+            "Pasti",
+            "Pasti tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -3065,6 +3865,16 @@
             "Invalid"
           ],
           "answer": "Valid"
+        },
+        {
+          "id": "ded_cd_9_1",
+          "text": "If X is true, then Y must be true. If Y is true, then either Z or W (or both). Z was false. Does this tell us about X?",
+          "options": [
+            "Yes tell us about X",
+            "No tell us about X",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -3151,6 +3961,16 @@
             "Invalid"
           ],
           "answer": "Valid"
+        },
+        {
+          "id": "ded_cd_9_1",
+          "text": "Jika X benar, maka Y harus benar. Jika Y benar, maka baik Z atau W (atau keduanya). Z salah. Apakah ini memberi tahu tentang X?",
+          "options": [
+            "Ya memberi tahu",
+            "Tidak memberi tahu",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -3239,6 +4059,26 @@
             "Invalid"
           ],
           "answer": "Valid"
+        },
+        {
+          "id": "ded_cd_10_1",
+          "text": "For all x: if f(x) is defined, then g(x) is defined. Function g is undefined for some inputs. What can we conclude about f?",
+          "options": [
+            "We can conclude",
+            "We cannot conclude",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "ded_cd_10_2",
+          "text": "Assumption A leads to contradiction with observation B. Assumption C leads to contradiction with observation D. Can we determine which assumption is true?",
+          "options": [
+            "Yes we can",
+            "No we cannot",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -3325,6 +4165,26 @@
             "Invalid"
           ],
           "answer": "Valid"
+        },
+        {
+          "id": "ded_cd_10_1",
+          "text": "Untuk semua x: jika f(x) terdefinisi, maka g(x) terdefinisi. Fungsi g tidak terdefinisi untuk beberapa input. Apa yang bisa kita simpulkan tentang f?",
+          "options": [
+            "Kita bisa simpulkan",
+            "Kita tidak bisa simpulkan",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "ded_cd_10_2",
+          "text": "Asumsi A menyebabkan kontradiksi dengan observasi B. Asumsi C menyebabkan kontradiksi dengan observasi D. Bisakah kita tentukan asumsi mana yang benar?",
+          "options": [
+            "Ya kita bisa",
+            "Tidak kita tidak bisa",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     }
@@ -3397,6 +4257,16 @@
             "Weak"
           ],
           "answer": "Strong"
+        },
+        {
+          "id": "ind_cd_1_1",
+          "text": "We observed 3 swans that are white. Can we conclude all swans are white?",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -3465,6 +4335,16 @@
             "Weak"
           ],
           "answer": "Strong"
+        },
+        {
+          "id": "ind_cd_1_1",
+          "text": "Kami mengamati 3 angsa yang berwarna putih. Dapatkah kita simpulkan semua angsa putih?",
+          "options": [
+            "Ya pasti",
+            "Tidak pasti",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -3535,6 +4415,16 @@
             "Weak"
           ],
           "answer": "Strong"
+        },
+        {
+          "id": "ind_cd_2_1",
+          "text": "We tested 5 phones and 3 had battery issues. How many will have issues in 1000?",
+          "options": [
+            "600",
+            "300",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -3603,6 +4493,16 @@
             "Weak"
           ],
           "answer": "Strong"
+        },
+        {
+          "id": "ind_cd_2_1",
+          "text": "Kami menguji 5 ponsel dan 3 ada masalah baterai. Berapa banyak yang akan rusak dari 1000?",
+          "options": [
+            "600",
+            "300",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -3673,6 +4573,16 @@
             "Weak"
           ],
           "answer": "Weak"
+        },
+        {
+          "id": "ind_cd_3_1",
+          "text": "Every student we surveyed likes pizza. Can we say all students like pizza?",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -3741,6 +4651,16 @@
             "Weak"
           ],
           "answer": "Weak"
+        },
+        {
+          "id": "ind_cd_3_1",
+          "text": "Setiap siswa yang kami survei suka pizza. Dapatkah kita katakan semua siswa suka pizza?",
+          "options": [
+            "Ya",
+            "Tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -3811,6 +4731,16 @@
             "Weak"
           ],
           "answer": "Weak"
+        },
+        {
+          "id": "ind_cd_4_1",
+          "text": "80% of people in our sample preferred option A. How many in the population prefer it?",
+          "options": [
+            "Exactly 80%",
+            "More or less",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -3879,6 +4809,16 @@
             "Weak"
           ],
           "answer": "Weak"
+        },
+        {
+          "id": "ind_cd_4_1",
+          "text": "80% orang dalam sampel kami lebih suka opsi A. Berapa banyak di populasi yang suka?",
+          "options": [
+            "Tepat 80%",
+            "Lebih atau kurang",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -3949,6 +4889,16 @@
             "Weak"
           ],
           "answer": "Weak"
+        },
+        {
+          "id": "ind_cd_5_1",
+          "text": "All observed ravens are black. Does this prove all ravens in the world are black?",
+          "options": [
+            "Yes certainly",
+            "No not certainly",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -4017,6 +4967,16 @@
             "Weak"
           ],
           "answer": "Weak"
+        },
+        {
+          "id": "ind_cd_5_1",
+          "text": "Semua gagak yang diamati berwarna hitam. Apakah ini membuktikan semua gagak di dunia hitam?",
+          "options": [
+            "Ya tentu",
+            "Tidak tentu",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -4087,6 +5047,16 @@
             "Weak"
           ],
           "answer": "Weak"
+        },
+        {
+          "id": "ind_cd_6_1",
+          "text": "Historical data shows pattern X happening every 5 years. Will it happen next?",
+          "options": [
+            "Definitely",
+            "Definitely not",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -4155,6 +5125,16 @@
             "Weak"
           ],
           "answer": "Weak"
+        },
+        {
+          "id": "ind_cd_6_1",
+          "text": "Data historis menunjukkan pola X terjadi setiap 5 tahun. Apakah akan terjadi lagi?",
+          "options": [
+            "Pasti",
+            "Pasti tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -4225,6 +5205,16 @@
             "Weak"
           ],
           "answer": "Weak"
+        },
+        {
+          "id": "ind_cd_7_1",
+          "text": "From 100 samples, we found pattern X in 78 cases. From 1000 samples, pattern X appeared in 72 cases. Will it appear in 70% of future cases?",
+          "options": [
+            "Probably",
+            "Probably not",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -4293,6 +5283,16 @@
             "Weak"
           ],
           "answer": "Weak"
+        },
+        {
+          "id": "ind_cd_7_1",
+          "text": "Dari 100 sampel, kami menemukan pola X dalam 78 kasus. Dari 1000 sampel, pola X muncul dalam 72 kasus. Akankah muncul dalam 70% kasus masa depan?",
+          "options": [
+            "Mungkin",
+            "Mungkin tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -4381,6 +5381,26 @@
             "Weak"
           ],
           "answer": "Weak"
+        },
+        {
+          "id": "ind_cd_8_1",
+          "text": "Data from 2020-2023 shows trend T increasing. Does this trend continue in 2024-2025?",
+          "options": [
+            "Yes it will",
+            "No it won't",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "ind_cd_8_2",
+          "text": "In random sample of 500 voters, 52% support candidate X. Margin of error is 4%. Can we conclude X wins the election?",
+          "options": [
+            "Yes",
+            "No",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -4467,6 +5487,26 @@
             "Weak"
           ],
           "answer": "Weak"
+        },
+        {
+          "id": "ind_cd_8_1",
+          "text": "Data dari 2020-2023 menunjukkan tren T meningkat. Apakah tren ini berlanjut di 2024-2025?",
+          "options": [
+            "Ya akan",
+            "Tidak akan",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "ind_cd_8_2",
+          "text": "Dalam sampel acak 500 pemilih, 52% mendukung kandidat X. Margin kesalahan 4%. Bisakah kita simpulkan X menang?",
+          "options": [
+            "Ya",
+            "Tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -4555,6 +5595,16 @@
             "Weak"
           ],
           "answer": "Weak"
+        },
+        {
+          "id": "ind_cd_9_1",
+          "text": "All 50 patients treated with drug Y recovered. Does this prove Y cures the condition?",
+          "options": [
+            "Yes it proves",
+            "No it doesn't prove",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -4641,6 +5691,16 @@
             "Weak"
           ],
           "answer": "Weak"
+        },
+        {
+          "id": "ind_cd_9_1",
+          "text": "Semua 50 pasien yang diobati dengan obat Y sembuh. Apakah ini membuktikan Y menyembuhkan kondisi?",
+          "options": [
+            "Ya membuktikan",
+            "Tidak membuktikan",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     },
@@ -4729,6 +5789,26 @@
             "Weak"
           ],
           "answer": "Weak"
+        },
+        {
+          "id": "ind_cd_10_1",
+          "text": "Data shows A correlates with B in 95% of cases globally, but only 45% in specific region Z. Can we generalize to region Z?",
+          "options": [
+            "Yes generalize",
+            "No don't generalize",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "ind_cd_10_2",
+          "text": "Historical pattern suggests event E occurs every 7 years. Last E was 6 years ago. Will E occur next year?",
+          "options": [
+            "Definitely yes",
+            "Definitely no",
+            "Cannot Determine"
+          ],
+          "answer": "Cannot Determine"
         }
       ],
       "id": [
@@ -4815,6 +5895,26 @@
             "Weak"
           ],
           "answer": "Weak"
+        },
+        {
+          "id": "ind_cd_10_1",
+          "text": "Data menunjukkan A berkorelasi dengan B dalam 95% kasus global, tapi hanya 45% di wilayah Z. Bisakah kita generalisasi ke Z?",
+          "options": [
+            "Ya generalisasi",
+            "Tidak generalisasi",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
+        },
+        {
+          "id": "ind_cd_10_2",
+          "text": "Pola historis menunjukkan peristiwa E terjadi setiap 7 tahun. E terakhir 6 tahun lalu. Akankah E terjadi tahun depan?",
+          "options": [
+            "Pasti ya",
+            "Pasti tidak",
+            "Tidak Dapat Ditentukan"
+          ],
+          "answer": "Cannot Determine"
         }
       ]
     }
