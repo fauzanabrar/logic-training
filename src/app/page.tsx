@@ -158,16 +158,6 @@ export default function Home() {
     modes.find((item) => item.key === "mix")?.label ?? "Mix";
   const modeLabel = mode === "mix" ? mixModeLabel : provider.skills[mode].label;
   const timeLeftLabel = formatSeconds(timeLeft);
-  const appBarTitle =
-    screen === "menu"
-      ? copy.appBar.menu
-      : screen === "drill"
-        ? `${modeLabel} ${copy.appBar.drillSuffix}`
-        : screen === "summary"
-          ? copy.appBar.summary
-          : screen === "stats"
-            ? copy.appBar.stats
-            : copy.appBar.settings;
 
   const totalAnswered = session.correct + session.wrong;
   const accuracy = totalAnswered
@@ -192,6 +182,7 @@ export default function Home() {
   let content: ReactElement | null = null;
 
   const [useEmojiIcons, setUseEmojiIcons] = useState(false);
+  const [learnSkill, setLearnSkill] = useState<string | null>(null);
   useEffect(() => {
     setUseEmojiIcons(true);
   }, []);
@@ -218,6 +209,7 @@ export default function Home() {
         description: "Pilih fokus atau gunakan Campuran untuk beradaptasi dengan keterampilan terlemah Anda.",
         statsAction: "Statistik",
         settingsAction: "Pengaturan",
+        learnAction: "Pelajari",
         questionsSuffix: "soal",
         timeSuffix: "d/s",
         weakestPrefix: "Terlemah:",
@@ -274,15 +266,137 @@ export default function Home() {
         summary: "Ringkasan",
         stats: "Statistik",
         settings: "Pengaturan",
+        learn: "Pelajari",
       },
       feedback: {
         correctPrefix: "Benar!",
         wrongPrefix: "Jawaban Anda salah. Yang benar adalah:",
         timeoutPrefix: "Waktu habis. Jawaban yang benar adalah:",
       },
+      study: {
+        syllogism: {
+          title: "Silogisme",
+          description: "Bentuk penalaran deduktif yang terdiri dari premis mayor, premis minor, dan kesimpulan.",
+          content: `
+            <h3>Apa itu Silogisme?</h3>
+            <p>Silogisme adalah argumen logis di mana kesimpulan ditarik dari dua proposisi atau premis yang diberikan atau diasumsikan.</p>
+            
+            <h3>Struktur</h3>
+            <ul>
+              <li><strong>Premis Mayor:</strong> Pernyataan umum (Semua X adalah Y)</li>
+              <li><strong>Premis Minor:</strong> Pernyataan khusus (Z adalah X)</li>
+              <li><strong>Kesimpulan:</strong> Hasil logis (Oleh karena itu, Z adalah Y)</li>
+            </ul>
+            
+            <h3>Contoh</h3>
+            <p><strong>Premis Mayor:</strong> Semua manusia adalah makhluk hidup</p>
+            <p><strong>Premis Minor:</strong> Sokrates adalah manusia</p>
+            <p><strong>Kesimpulan:</strong> Oleh karena itu, Sokrates adalah makhluk hidup</p>
+            
+            <h3>Poin Penting</h3>
+            <ul>
+              <li>Silogisme yang valid mengikuti aturan logika</li>
+              <li>Silogisme yang tidak valid melanggar aturan logika</li>
+              <li>Istilah tengah harus didistribusikan dalam setidaknya satu premis</li>
+            </ul>
+          `,
+        },
+        fallacy: {
+          title: "Kekeliruan Logis",
+          description: "Kesalahan umum dalam penalaran yang membuat argumen tidak valid atau menyesatkan.",
+          content: `
+            <h3>Kekeliruan Umum</h3>
+            
+            <h4>Dilema Palsu</h4>
+            <p>Menyajikan hanya dua pilihan padahal ada lebih banyak. Contoh: "Anda harus setuju dengan saya atau tidak peduli."</p>
+            
+            <h4>Ad Hominem</h4>
+            <p>Menyerang orang bukan argumennya. Contoh: "Anda bodoh, jadi idenya salah."</p>
+            
+            <h4>Strawman</h4>
+            <p>Merepresentasikan ulang argumen seseorang untuk membuatnya lebih mudah diserang.</p>
+            
+            <h4>Banding kepada Otoritas</h4>
+            <p>Menggunakan pendapat tokoh terkenal sebagai bukti tanpa bukti lain.</p>
+            
+            <h4>Banding kepada Mayoritas</h4>
+            <p>Menganggap sesuatu benar karena banyak orang percayanya.</p>
+            
+            <h3>Mengapa Mengidentifikasi Kekeliruan?</h3>
+            <ul>
+              <li>Mengenali argumen yang lemah</li>
+              <li>Meningkatkan pemikiran kritis</li>
+              <li>Mencegah terjadi dibohongi</li>
+            </ul>
+          `,
+        },
+        deduction: {
+          title: "Penalaran Deduktif",
+          description: "Menarik kesimpulan khusus dari prinsip atau premis umum.",
+          content: `
+            <h3>Apa itu Penalaran Deduktif?</h3>
+            <p>Deduksi bergerak dari pengetahuan umum ke kesimpulan spesifik. Jika premis benar dan penalaran valid, kesimpulannya harus benar.</p>
+            
+            <h3>Struktur</h3>
+            <p><strong>Premis 1:</strong> Jika A, maka B</p>
+            <p><strong>Premis 2:</strong> A benar</p>
+            <p><strong>Kesimpulan:</strong> Oleh karena itu, B benar</p>
+            
+            <h3>Contoh</h3>
+            <p><strong>Premis 1:</strong> Jika hujan, maka tanah basah</p>
+            <p><strong>Premis 2:</strong> Sedang hujan</p>
+            <p><strong>Kesimpulan:</strong> Oleh karena itu, tanah basah</p>
+            
+            <h3>Poin Penting</h3>
+            <ul>
+              <li>Deduksi dapat diandalkan ketika premis benar</li>
+              <li>Kesimpulannya pasti, bukan hanya kemungkinan</li>
+              <li>Digunakan dalam matematika dan logika formal</li>
+            </ul>
+          `,
+        },
+        induction: {
+          title: "Penalaran Induktif",
+          description: "Menarik kesimpulan umum dari pengamatan atau contoh spesifik.",
+          content: `
+            <h3>Apa itu Penalaran Induktif?</h3>
+            <p>Induksi bergerak dari pengamatan spesifik ke kesimpulan umum. Kesimpulannya kemungkinan besar namun tidak pasti.</p>
+            
+            <h3>Struktur</h3>
+            <p><strong>Pengamatan 1:</strong> Matahari terbit hari ini</p>
+            <p><strong>Pengamatan 2:</strong> Matahari terbit kemarin</p>
+            <p><strong>Pola:</strong> Matahari terbit setiap hari</p>
+            <p><strong>Kesimpulan:</strong> Matahari akan terbit besok</p>
+            
+            <h3>Contoh</h3>
+            <p>Setiap angsa yang kami lihat putih → Semua angsa putih (Ini adalah lompatan induktif umum yang sebenarnya salah!)</p>
+            
+            <h3>Poin Penting</h3>
+            <ul>
+              <li>Kesimpulan kemungkinan besar, bukan pasti</li>
+              <li>Berdasarkan pola dan pengamatan</li>
+              <li>Digunakan dalam sains dan statistik</li>
+              <li>Lebih banyak pengamatan memperkuat kesimpulan</li>
+            </ul>
+          `,
+        },
+      },
     },
   };
   const currentCopy = copyMap[settings.language] || trainingConfig.copy;
+
+  const appBarTitle =
+    screen === "menu"
+      ? copy.appBar.menu
+      : screen === "learn"
+        ? currentCopy.menu.learnAction
+        : screen === "drill"
+          ? `${modeLabel} ${copy.appBar.drillSuffix}`
+          : screen === "summary"
+            ? copy.appBar.summary
+            : screen === "stats"
+              ? copy.appBar.stats
+              : copy.appBar.settings;
 
   if (screen === "menu") {
     content = (
@@ -341,6 +455,13 @@ export default function Home() {
         <div className={styles.menuActions}>
           <button
             type="button"
+            onClick={() => setScreen("learn")}
+            className={`${styles.settingsButton} ${styles.menuActionButton}`}
+          >
+            {currentCopy.menu.learnAction}
+          </button>
+          <button
+            type="button"
             onClick={() => setScreen("stats")}
             className={`${styles.settingsButton} ${styles.menuActionButton}`}
           >
@@ -352,6 +473,77 @@ export default function Home() {
             className={`${styles.settingsButton} ${styles.menuActionButton}`}
           >
             {currentCopy.menu.settingsAction}
+          </button>
+        </div>
+      </>
+    );
+  }
+
+  if (screen === "learn") {
+    content = (
+      <>
+        <section className={styles.card}>
+          <h2 className={styles.sectionTitle}>{currentCopy.menu.learnAction}</h2>
+          <p className={styles.sectionSub}>Learn the fundamentals before practicing</p>
+
+          {!learnSkill ? (
+            <div className={styles.skillSelectionGrid}>
+              {skillKeys.map((skill) => {
+                const skillDef = provider.skills[skill];
+                return (
+                  <button
+                    key={skill}
+                    onClick={() => setLearnSkill(skill)}
+                    type="button"
+                    className={styles.skillCard}
+                  >
+                    <span className={styles.skillCardIcon}>
+                      {useEmojiIcons && emojiSkillIcons[skill] ? emojiSkillIcons[skill] : skillDef.symbol}
+                    </span>
+                    <span className={styles.skillCardLabel}>{skillDef.label}</span>
+                  </button>
+                );
+              })}
+            </div>
+          ) : (
+            <div className={styles.studyContent}>
+              {currentCopy.study && learnSkill && currentCopy.study[learnSkill as keyof typeof currentCopy.study] && (
+                <>
+                  {(() => {
+                    const studyMaterial = currentCopy.study[learnSkill as keyof typeof currentCopy.study];
+                    return (
+                      <>
+                        <h3 className={styles.studyTitle}>{studyMaterial.title}</h3>
+                        <p className={styles.studyDescription}>{studyMaterial.description}</p>
+                        <div
+                          className={styles.studyHtml}
+                          dangerouslySetInnerHTML={{
+                            __html: studyMaterial.content,
+                          }}
+                        />
+                      </>
+                    );
+                  })()}
+                  <button
+                    type="button"
+                    onClick={() => setLearnSkill(null)}
+                    className={`${styles.settingsButton} ${styles.backButton}`}
+                  >
+                    ← {currentCopy.menu.title}
+                  </button>
+                </>
+              )}
+            </div>
+          )}
+        </section>
+
+        <div className={styles.learnActions}>
+          <button
+            type="button"
+            onClick={() => setScreen("menu")}
+            className={`${styles.settingsButton} ${styles.menuActionButton}`}
+          >
+            {currentCopy.settings.backToMenu}
           </button>
         </div>
       </>

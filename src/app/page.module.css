@@ -933,6 +933,122 @@ button:focus-visible {
   box-shadow: 0 0 0 3px var(--focus-ring);
 }
 
+.skillSelectionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px 16px;
+  border: 2px solid var(--border-strong);
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+
+.skillCard:hover {
+  border-color: var(--accent);
+  background: var(--card-subtle);
+  transform: translateY(-2px);
+}
+
+.skillCard:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--focus-ring);
+}
+
+.skillCardIcon {
+  font-size: 2rem;
+}
+
+.skillCardLabel {
+  text-align: center;
+}
+
+.studyContent {
+  margin: 24px 0;
+  padding: 24px;
+  border: 2px solid var(--border-strong);
+  border-radius: 12px;
+  background: var(--card-subtle);
+}
+
+.studyTitle {
+  margin: 0 0 12px 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.studyDescription {
+  margin: 0 0 24px 0;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.studyHtml {
+  margin: 24px 0;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.studyHtml h3 {
+  margin: 20px 0 12px 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.studyHtml h4 {
+  margin: 16px 0 8px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.studyHtml p {
+  margin: 12px 0;
+  font-size: 1rem;
+}
+
+.studyHtml ul,
+.studyHtml ol {
+  margin: 12px 0 12px 24px;
+  font-size: 1rem;
+}
+
+.studyHtml li {
+  margin: 6px 0;
+}
+
+.studyHtml strong {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.backButton {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.learnActions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero,
   .card,

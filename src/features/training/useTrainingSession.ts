@@ -8,7 +8,7 @@ import type {
   TrainingSettingsBase,
 } from "./types";
 
-type Screen = "menu" | "drill" | "settings" | "summary" | "stats";
+type Screen = "menu" | "drill" | "settings" | "summary" | "stats" | "learn";
 
 type Feedback<SkillKey extends string> = {
   correct: boolean;
