@@ -38,19 +38,40 @@ type UseTrainingSessionOptions<
   onSessionComplete?: () => void;
 };
 
+/**
+ * Normalizes settings by clamping all control values within their min/max bounds.
+ * Ensures settings are always valid before use.
+ */
 const normalizeSettings = <Settings,>(
-  settings: Settings,
+  settings: Settings | null | undefined,
   controls: SettingControl<Settings>[]
-) => {
-  let next = { ...settings } as Settings;
-  controls.forEach((control) => {
-    const value = control.getValue(next);
-    const clamped = Math.min(Math.max(value, control.min), control.max);
-    if (value !== clamped) {
-      next = control.setValue(next, clamped);
-    }
-  });
-  return next;
+): Settings => {
+  // Validate inputs
+  if (!settings || !controls) {
+    throw new Error("Settings and controls are required for normalization");
+  }
+
+  try {
+    let next = { ...settings } as Settings;
+    controls.forEach((control) => {
+      if (!control || typeof control.getValue !== "function") {
+        console.warn("Invalid control:", control);
+        return;
+      }
+      const value = control.getValue(next);
+      const clamped = Math.min(
+        Math.max(value, control.min),
+        control.max
+      );
+      if (value !== clamped) {
+        next = control.setValue(next, clamped);
+      }
+    });
+    return next;
+  } catch (error) {
+    console.error("Settings normalization failed:", error);
+    throw new Error("Failed to normalize settings");
+  }
 };
 
 export const useTrainingSession = <
@@ -105,33 +126,60 @@ export const useTrainingSession = <
   // Only load settings from localStorage on first mount
   const didLoadFromStorage = useRef(false);
 
+  /**
+   * Load persisted session and settings from localStorage.
+   * Validates data structure before applying to ensure corrupted data doesn't crash the app.
+   */
   useEffect(() => {
     if (didLoadFromStorage.current) return;
     didLoadFromStorage.current = true;
-    const savedSession = storage.readJSON<{
-      stats?: ReturnType<typeof provider.createDefaultStats>;
-      mode?: Mode;
-    }>(storageKeys.session);
-    const savedSettings = storage.readJSON<Partial<Settings>>(
-      storageKeys.settings
-    );
-    if (savedSession?.stats) {
-      setStats(savedSession.stats);
-    }
-    if (savedSession?.mode) {
-      setMode(savedSession.mode);
-    }
-    if (savedSettings) {
-      const merged = {
-        ...provider.settings.defaultValue,
-        ...savedSettings,
-      } as Settings;
-      const normalizedSettings = normalizeSettings(
-        merged,
-        provider.settings.controls
+
+    try {
+      const savedSession = storage.readJSON<{
+        stats?: ReturnType<typeof provider.createDefaultStats>;
+        mode?: Mode;
+      }>(storageKeys.session);
+
+      // Validate and load session stats
+      if (savedSession?.stats && typeof savedSession.stats === "object") {
+        try {
+          setStats(savedSession.stats);
+        } catch (error) {
+          console.error("[Session] Failed to load stats:", error);
+          // Silently fall back to default stats
+        }
+      }
+
+      // Validate and load mode
+      if (savedSession?.mode && typeof savedSession.mode === "string") {
+        setMode(savedSession.mode);
+      }
+
+      // Load and validate settings
+      const savedSettings = storage.readJSON<Partial<Settings>>(
+        storageKeys.settings
       );
-      setSettings(normalizedSettings);
-      setTimeLeft(normalizedSettings.timeLimitSeconds);
+
+      if (savedSettings && typeof savedSettings === "object") {
+        try {
+          const merged = {
+            ...provider.settings.defaultValue,
+            ...savedSettings,
+          } as Settings;
+          const normalizedSettings = normalizeSettings(
+            merged,
+            provider.settings.controls
+          );
+          setSettings(normalizedSettings);
+          setTimeLeft(normalizedSettings.timeLimitSeconds);
+        } catch (error) {
+          console.error("[Session] Failed to load settings:", error);
+          // Silently fall back to default settings
+        }
+      }
+    } catch (error) {
+      console.error("[Session] Failed to load from storage:", error);
+      // App continues with defaults
     }
   }, [provider, storageKeys]);
   const [answered, setAnswered] = useState(false);
@@ -146,7 +194,12 @@ export const useTrainingSession = <
   }, [stats, mode, storageKeys]);
 
   useEffect(() => {
-    storage.writeJSON(storageKeys.settings, settings);
+    try {
+      storage.writeJSON(storageKeys.settings, settings);
+    } catch (error) {
+      console.error("[Session] Failed to save settings:", error);
+      // Storage failure is non-fatal; continue with in-memory state
+    }
   }, [settings, storageKeys]);
 
   useEffect(() => {
@@ -201,31 +254,54 @@ export const useTrainingSession = <
 
   const createQuestion = useCallback(
     (selectedMode: Mode) => {
-      const skill =
-        selectedMode === "mix"
-          ? provider.pickSkill(statsRef.current)
-          : selectedMode;
-      const level = statsRef.current[skill].level;
-      return provider.createQuestion({
-        skill,
-        level,
-        settings,
-        stats: statsRef.current,
-      });
+      try {
+        const skill: SkillKey =
+          selectedMode === "mix"
+            ? provider.pickSkill(statsRef.current)
+            : selectedMode;
+
+        if (!skill) {
+          throw new Error("Failed to pick a skill");
+        }
+
+        const level = statsRef.current[skill]?.level;
+
+        if (level === undefined) {
+          throw new Error(`Invalid level for skill: ${skill}`);
+        }
+
+        return provider.createQuestion({
+          skill,
+          level,
+          settings,
+          stats: statsRef.current,
+        });
+      } catch (error) {
+        console.error("[Session] Question creation failed:", error);
+        setError("Failed to generate question. Please try again.");
+        throw error;
+      }
     },
     [provider, settings]
   );
 
   const startSession = useCallback(
     (nextMode: Mode) => {
-      clearAdvanceTimer();
-      setMode(nextMode);
-      modeRef.current = nextMode;
-      setSession({ correct: 0, wrong: 0 });
-      setQuestionIndex(1);
-      setScreen("drill");
-      const nextQuestion = createQuestion(nextMode);
-      beginQuestion(nextQuestion);
+      try {
+        clearAdvanceTimer();
+        setMode(nextMode);
+        modeRef.current = nextMode;
+        setSession({ correct: 0, wrong: 0 });
+        setQuestionIndex(1);
+        setScreen("drill");
+        setError(null);
+        const nextQuestion = createQuestion(nextMode);
+        beginQuestion(nextQuestion);
+      } catch (error) {
+        console.error("[Session] Failed to start session:", error);
+        setError("Failed to start training session. Please try again.");
+        setScreen("menu");
+      }
     },
     [beginQuestion, clearAdvanceTimer, createQuestion]
   );
@@ -243,29 +319,41 @@ export const useTrainingSession = <
   const applyResult = useCallback(
     (correct: boolean, elapsed: number, timedOut = false) => {
       if (!question) {
+        console.warn("[Session] Attempted to apply result without a question");
         return;
       }
-      const nextStats = provider.updateStats(statsRef.current, {
-        skill: question.skill,
-        correct,
-        elapsedMs: elapsed,
-      });
-      statsRef.current = nextStats;
-      setStats(nextStats);
-      setFeedback({
-        correct,
-        expected: provider.answer.formatExpected(question),
-        ms: elapsed,
-        skill: question.skill,
-        level: question.level,
-        timedOut,
-      });
-      setSession((prev) => ({
-        correct: prev.correct + (correct ? 1 : 0),
-        wrong: prev.wrong + (correct ? 0 : 1),
-      }));
-      setError(null);
-      setAnswered(true);
+
+      try {
+        const nextStats = provider.updateStats(statsRef.current, {
+          skill: question.skill,
+          correct,
+          elapsedMs: elapsed,
+        });
+
+        if (!nextStats) {
+          throw new Error("Stats update returned null");
+        }
+
+        statsRef.current = nextStats;
+        setStats(nextStats);
+        setFeedback({
+          correct,
+          expected: provider.answer.formatExpected(question),
+          ms: elapsed,
+          skill: question.skill,
+          level: question.level,
+          timedOut,
+        });
+        setSession((prev) => ({
+          correct: prev.correct + (correct ? 1 : 0),
+          wrong: prev.wrong + (correct ? 0 : 1),
+        }));
+        setError(null);
+        setAnswered(true);
+      } catch (error) {
+        console.error("[Session] Failed to apply result:", error);
+        setError("Failed to record response. Please try again.");
+      }
     },
     [provider, question]
   );
@@ -380,20 +468,28 @@ export const useTrainingSession = <
     if (!question || !answered) {
       return;
     }
-    clearAdvanceTimer();
-    const nextIndex = questionIndex + 1;
-    if (nextIndex > settings.questionCount) {
-      setScreen("summary");
-      setQuestion(null);
-      setAnswered(false);
-      if (onSessionComplete) {
-        onSessionComplete();
+
+    try {
+      clearAdvanceTimer();
+      const nextIndex = questionIndex + 1;
+
+      if (nextIndex > settings.questionCount) {
+        setScreen("summary");
+        setQuestion(null);
+        setAnswered(false);
+        if (onSessionComplete) {
+          onSessionComplete();
+        }
+        return;
       }
-      return;
+
+      setQuestionIndex(nextIndex);
+      const nextQuestion = createQuestion(modeRef.current);
+      beginQuestion(nextQuestion);
+    } catch (error) {
+      console.error("[Session] Failed to advance to next question:", error);
+      setError("Failed to load next question. Please try again.");
     }
-    setQuestionIndex(nextIndex);
-    const nextQuestion = createQuestion(modeRef.current);
-    beginQuestion(nextQuestion);
   }, [
     answered,
     beginQuestion,
