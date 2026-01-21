@@ -205,32 +205,111 @@ export default function Home() {
     mix: "🔀",
   };
 
+  // Language copy map
+  const copyMap = {
+    en: trainingConfig.copy,
+    id: {
+      brand: {
+        name: "Logic Training",
+        shortName: "Training",
+      },
+      menu: {
+        title: "Pilih Latihan",
+        description: "Pilih fokus atau gunakan Campuran untuk beradaptasi dengan keterampilan terlemah Anda.",
+        statsAction: "Statistik",
+        settingsAction: "Pengaturan",
+        questionsSuffix: "soal",
+        timeSuffix: "d/s",
+        weakestPrefix: "Terlemah:",
+        negativesLabel: "Negatif:",
+        negativesOff: "Mati",
+        negativesFormat: (value: number) => `Lvl ${value}+`,
+      },
+      drill: {
+        subtitle: "Jawab dengan cepat dan benar untuk naik level.",
+        questionLabel: "Soal",
+        timeLabel: "Waktu",
+        skillLabel: "Kategori",
+        levelLabel: "Level",
+        targetLabel: "Target",
+        answerPlaceholder: "Ketik jawaban Anda",
+        answerPlaceholderKeypad: "Ketuk untuk menjawab",
+        checkAction: "Periksa",
+        nextAction: "Selanjutnya",
+        loading: "Memuat soal Anda...",
+        sessionScoreLabel: "Skor sesi",
+        sessionHint: "Tetap fokus dan terus bergerak maju.",
+      },
+      stats: {
+        title: "Statistik",
+        intro: "Kinerja terbaru Anda di seluruh latihan (12 usaha terakhir per keterampilan).",
+        overallTitle: "Keseluruhan",
+        overallIntro: "Berdasarkan usaha terbaru Anda di semua keterampilan.",
+        accuracyLabel: "Akurasi",
+        attemptsLabel: "Usaha",
+        avgTimeLabel: "Waktu rata-rata",
+        noData: "Belum ada data",
+        noAttempts: "Belum ada usaha",
+      },
+      summary: {
+        title: "Sesi selesai",
+        accuracyLabel: "Akurasi",
+        correctLabel: "Benar",
+        wrongLabel: "Salah",
+        practiceAgain: "Latihan lagi",
+        backToMenu: "Kembali ke menu",
+      },
+      settings: {
+        title: "Pengaturan",
+        intro: "Sesuaikan pengalaman latihan Anda.",
+        themeLabel: "Tema",
+        themeDark: "Gelap",
+        themeLight: "Terang",
+        resetStats: "Reset Statistik",
+        backToMenu: "Kembali ke menu",
+      },
+      appBar: {
+        menu: "Menu Utama",
+        drillSuffix: "Latihan",
+        summary: "Ringkasan",
+        stats: "Statistik",
+        settings: "Pengaturan",
+      },
+      feedback: {
+        correctPrefix: "Benar!",
+        wrongPrefix: "Jawaban Anda salah. Yang benar adalah:",
+        timeoutPrefix: "Waktu habis. Jawaban yang benar adalah:",
+      },
+    },
+  };
+  const currentCopy = copyMap[settings.language] || trainingConfig.copy;
+
   if (screen === "menu") {
     content = (
       <>
         <section className={styles.hero}>
-          <h1 className={styles.heroTitle}>{copy.menu.title}</h1>
-          <p className={styles.heroText}>{copy.menu.description}</p>
+          <h1 className={styles.heroTitle}>{currentCopy.menu.title}</h1>
+          <p className={styles.heroText}>{currentCopy.menu.description}</p>
           <div className={styles.menuMetaRow}>
             <div className={styles.metaBadge}>
               <span className={styles.metaBadgeText}>
-                {settings.questionCount} {copy.menu.questionsSuffix}
+                {settings.questionCount} {currentCopy.menu.questionsSuffix}
               </span>
             </div>
             <div className={styles.metaBadge}>
               <span className={styles.metaBadgeText}>
                 {settings.timeLimitSeconds}
-                {copy.menu.timeSuffix}
+                {currentCopy.menu.timeSuffix}
               </span>
             </div>
             <div className={styles.metaBadge}>
               <span className={styles.metaBadgeText}>
-                {copy.menu.weakestPrefix} {hasHydrated ? (weaknessText ?? '-') : '-'}
+                {currentCopy.menu.weakestPrefix} {hasHydrated ? (weaknessText ?? '-') : '-'}
               </span>
             </div>
             <div className={styles.metaBadge}>
               <span className={styles.metaBadgeText}>
-                {copy.menu.negativesLabel} {hasHydrated ? (negativeText ?? '-') : '-'}
+                {currentCopy.menu.negativesLabel} {hasHydrated ? (negativeText ?? '-') : '-'}
               </span>
             </div>
           </div>
@@ -265,14 +344,14 @@ export default function Home() {
             onClick={() => setScreen("stats")}
             className={`${styles.settingsButton} ${styles.menuActionButton}`}
           >
-            {copy.menu.statsAction}
+            {currentCopy.menu.statsAction}
           </button>
           <button
             type="button"
             onClick={() => setScreen("settings")}
             className={`${styles.settingsButton} ${styles.menuActionButton}`}
           >
-            {copy.menu.settingsAction}
+            {currentCopy.menu.settingsAction}
           </button>
         </div>
       </>
@@ -285,7 +364,7 @@ export default function Home() {
         <div className={styles.statusRow} suppressHydrationWarning>
           <div className={styles.statusPill}>
             <span className={styles.statusText}>
-              {copy.drill.questionLabel} {questionIndex}/
+              {currentCopy.drill.questionLabel} {questionIndex}/
               {settings.questionCount}
             </span>
           </div>
@@ -295,7 +374,7 @@ export default function Home() {
             }`}
           >
             <span className={styles.statusText}>
-              {copy.drill.timeLabel} {timeLeftLabel}
+              {currentCopy.drill.timeLabel} {timeLeftLabel}
             </span>
           </div>
         </div>
@@ -304,19 +383,19 @@ export default function Home() {
           <h2 className={styles.sectionTitle}>
             {modeLabel} {copy.appBar.drillSuffix}
           </h2>
-          <p className={styles.sectionSub}>{copy.drill.subtitle}</p>
+          <p className={styles.sectionSub}>{currentCopy.drill.subtitle}</p>
 
           {question ? (
             <div className={styles.questionCard}>
               <div className={styles.metaRow}>
                 <span className={styles.metaPill}>
-                  {copy.drill.skillLabel}: {provider.skills[question.skill].label}
+                  {currentCopy.drill.skillLabel}: {provider.skills[question.skill].label}
                 </span>
                 <span className={styles.metaPill}>
-                  {copy.drill.levelLabel} {question.level}
+                  {currentCopy.drill.levelLabel} {question.level}
                 </span>
                 <span className={styles.metaPill}>
-                  {copy.drill.targetLabel} {formatMs(provider.getTargetMs(question.level))}
+                  {currentCopy.drill.targetLabel} {formatMs(provider.getTargetMs(question.level))}
                 </span>
               </div>
 
@@ -336,7 +415,7 @@ export default function Home() {
                         }
                       >
                         {answer.length === 0
-                          ? copy.drill.answerPlaceholderKeypad
+                          ? currentCopy.drill.answerPlaceholderKeypad
                           : answer}
                       </span>
                     </div>
@@ -437,7 +516,7 @@ export default function Home() {
                             onClick={handleNext}
                             className={styles.primaryButton}
                           >
-                            {copy.drill.nextAction}
+                            {currentCopy.drill.nextAction}
                           </button>
                         ) : null
                       ) : (
@@ -448,7 +527,7 @@ export default function Home() {
                             disabled={answered}
                             className={`${styles.primaryButton} ${answered ? styles.buttonDisabled : ""}`}
                           >
-                            {copy.drill.checkAction}
+                            {currentCopy.drill.checkAction}
                           </button>
                           <button
                             type="button"
@@ -456,7 +535,7 @@ export default function Home() {
                             disabled={!answered}
                             className={`${styles.secondaryButton} ${!answered ? styles.buttonDisabled : ""}`}
                           >
-                            {copy.drill.nextAction}
+                            {currentCopy.drill.nextAction}
                           </button>
                         </>
                       )}
@@ -478,17 +557,17 @@ export default function Home() {
               </div>
             </div>
           ) : (
-            <p className={styles.sectionSub}>{copy.drill.loading}</p>
+            <p className={styles.sectionSub}>{currentCopy.drill.loading}</p>
           )}
 
           <div className={styles.sessionRow}>
             <div>
-              <p className={styles.sessionLabel}>{copy.drill.sessionScoreLabel}</p>
+              <p className={styles.sessionLabel}>{currentCopy.drill.sessionScoreLabel}</p>
               <p className={styles.sessionValue}>
                 {session.correct} correct / {session.wrong} wrong
               </p>
             </div>
-            <p className={styles.sessionHint}>{copy.drill.sessionHint}</p>
+            <p className={styles.sessionHint}>{currentCopy.drill.sessionHint}</p>
           </div>
         </section>
       </>
@@ -499,24 +578,24 @@ export default function Home() {
     content = (
       <>
         <section className={styles.hero} suppressHydrationWarning>
-          <h1 className={styles.heroTitle}>{copy.stats.title}</h1>
-          <p className={styles.heroText}>{copy.stats.intro}</p>
+          <h1 className={styles.heroTitle}>{currentCopy.stats.title}</h1>
+          <p className={styles.heroText}>{currentCopy.stats.intro}</p>
         </section>
 
         <section className={styles.card}>
-          <h2 className={styles.sectionTitle}>{copy.stats.overallTitle}</h2>
-          <p className={styles.sectionSub}>{copy.stats.overallIntro}</p>
+          <h2 className={styles.sectionTitle}>{currentCopy.stats.overallTitle}</h2>
+          <p className={styles.sectionSub}>{currentCopy.stats.overallIntro}</p>
           <div className={styles.summaryGrid}>
             <div className={styles.summaryCard}>
-              <p className={styles.summaryLabel}>{copy.stats.accuracyLabel}</p>
+              <p className={styles.summaryLabel}>{currentCopy.stats.accuracyLabel}</p>
               <p className={styles.summaryValue}>{overallAccuracy}%</p>
             </div>
             <div className={styles.summaryCard}>
-              <p className={styles.summaryLabel}>{copy.stats.attemptsLabel}</p>
+              <p className={styles.summaryLabel}>{currentCopy.stats.attemptsLabel}</p>
               <p className={styles.summaryValue}>{allAttempts}</p>
             </div>
             <div className={styles.summaryCard}>
-              <p className={styles.summaryLabel}>{copy.stats.avgTimeLabel}</p>
+              <p className={styles.summaryLabel}>{currentCopy.stats.avgTimeLabel}</p>
               <p className={styles.summaryValue}>
                 {allAttempts ? formatMs(overallAvgMs) : "-"}
               </p>
@@ -537,7 +616,7 @@ export default function Home() {
             const avgMs = provider.getAverageMs(stats[skill]);
             const accuracyText =
               history.length === 0
-                ? copy.stats.noData
+                ? currentCopy.stats.noData
                 : `${Math.round(accuracy * 100)}%`;
             const speedText = history.length === 0 ? "-" : formatMs(avgMs);
             const barWidth =
@@ -550,7 +629,7 @@ export default function Home() {
                     {provider.skills[skill].label}
                   </h3>
                   <span className={styles.levelBadge}>
-                    {copy.drill.levelLabel} {stats[skill].level}
+                    {currentCopy.drill.levelLabel} {stats[skill].level}
                   </span>
                 </div>
                 <div className={styles.statBar}>
@@ -562,20 +641,20 @@ export default function Home() {
                 <div className={styles.statMetrics}>
                   <div>
                     <p className={styles.metricLabel}>
-                      {copy.stats.accuracyLabel}
+                      {currentCopy.stats.accuracyLabel}
                     </p>
                     <p className={styles.metricValue}>{accuracyText}</p>
                   </div>
                   <div className={styles.metricDivider} />
                   <div>
-                    <p className={styles.metricLabel}>{copy.stats.avgTimeLabel}</p>
+                    <p className={styles.metricLabel}>{currentCopy.stats.avgTimeLabel}</p>
                     <p className={styles.metricValue}>{speedText}</p>
                   </div>
                 </div>
                 <div className={styles.dotRow}>
                   {history.length === 0 ? (
                     <span className={styles.dotEmpty}>
-                      {copy.stats.noAttempts}
+                      {currentCopy.stats.noAttempts}
                     </span>
                   ) : (
                     history.map((item, index) => (
@@ -599,21 +678,21 @@ export default function Home() {
   if (screen === "summary") {
     content = (
       <section className={styles.card} suppressHydrationWarning>
-        <h2 className={styles.sectionTitle}>{copy.summary.title}</h2>
+        <h2 className={styles.sectionTitle}>{currentCopy.summary.title}</h2>
         <p className={styles.sectionSub}>
           {modeLabel} {copy.appBar.drillSuffix}
         </p>
         <div className={styles.summaryGrid}>
           <div className={styles.summaryCard}>
-            <p className={styles.summaryLabel}>{copy.summary.accuracyLabel}</p>
+            <p className={styles.summaryLabel}>{currentCopy.summary.accuracyLabel}</p>
             <p className={styles.summaryValue}>{accuracy}%</p>
           </div>
           <div className={styles.summaryCard}>
-            <p className={styles.summaryLabel}>{copy.summary.correctLabel}</p>
+            <p className={styles.summaryLabel}>{currentCopy.summary.correctLabel}</p>
             <p className={styles.summaryValue}>{session.correct}</p>
           </div>
           <div className={styles.summaryCard}>
-            <p className={styles.summaryLabel}>{copy.summary.wrongLabel}</p>
+            <p className={styles.summaryLabel}>{currentCopy.summary.wrongLabel}</p>
             <p className={styles.summaryValue}>{session.wrong}</p>
           </div>
         </div>
@@ -622,14 +701,14 @@ export default function Home() {
           onClick={() => startSession(mode)}
           className={styles.primaryButton}
         >
-          {copy.summary.practiceAgain}
+          {currentCopy.summary.practiceAgain}
         </button>
         <button
           type="button"
           onClick={goToMenu}
           className={styles.secondaryButton}
         >
-          {copy.summary.backToMenu}
+          {currentCopy.summary.backToMenu}
         </button>
       </section>
     );
@@ -638,10 +717,38 @@ export default function Home() {
   if (screen === "settings") {
     content = (
       <section className={styles.card} suppressHydrationWarning>
-        <h2 className={styles.sectionTitle}>{copy.settings.title}</h2>
-        <p className={styles.sectionSub}>{copy.settings.intro}</p>
+        <h2 className={styles.sectionTitle}>{currentCopy.settings.title}</h2>
+        <p className={styles.sectionSub}>{currentCopy.settings.intro}</p>
 
         {provider.settings.controls.map((control) => {
+          if (control.id === "language") {
+            return (
+              <div key={control.id} className={styles.settingRow}>
+                <div className={styles.settingInfo}>
+                  <p className={styles.settingLabel}>{control.label}</p>
+                  {control.hint ? (
+                    <p className={styles.settingHint}>{control.hint}</p>
+                  ) : null}
+                </div>
+                <select
+                  className={styles.languageSelect}
+                  value={settings.language}
+                  onChange={e => {
+                    // Get current language value (0 = en, 1 = id)
+                    const currentValue = settings.language === "en" ? 0 : 1;
+                    // Get target value
+                    const targetValue = e.target.value === "en" ? 0 : 1;
+                    // Calculate delta for adjustSetting
+                    const delta = targetValue - currentValue;
+                    adjustSetting("language", delta);
+                  }}
+                >
+                  <option value="en">English</option>
+                  <option value="id">Indonesian</option>
+                </select>
+              </div>
+            );
+          }
           const value = control.getValue(settings);
           const displayValue = control.formatValue
             ? control.formatValue(value, settings)
@@ -679,7 +786,7 @@ export default function Home() {
           type="button"
           onClick={toggleTheme}
           aria-pressed={theme === "dark"}
-          aria-label={copy.settings.themeLabel}
+          aria-label={currentCopy.settings.themeLabel}
           className={`${styles.themeToggle} ${
             theme === "dark" ? styles.themeToggleDark : ""
           }`}
@@ -709,9 +816,9 @@ export default function Home() {
             )}
           </span>
           <span className={styles.themeText}>
-            <span className={styles.themeLabel}>{copy.settings.themeLabel}</span>
+            <span className={styles.themeLabel}>{currentCopy.settings.themeLabel}</span>
             <span className={styles.themeName}>
-              {theme === "dark" ? copy.settings.themeDark : copy.settings.themeLight}
+              {theme === "dark" ? currentCopy.settings.themeDark : currentCopy.settings.themeLight}
             </span>
           </span>
           <span className={styles.themeSwitch} aria-hidden="true">
@@ -724,7 +831,7 @@ export default function Home() {
           onClick={resetStats}
           className={styles.dangerButton}
         >
-          {copy.settings.resetStats}
+          {currentCopy.settings.resetStats}
         </button>
 
         <button
@@ -732,7 +839,7 @@ export default function Home() {
           onClick={goToMenu}
           className={`${styles.secondaryButton} ${styles.fullWidthButton}`}
         >
-          {copy.settings.backToMenu}
+          {currentCopy.settings.backToMenu}
         </button>
       </section>
     );
@@ -746,7 +853,7 @@ export default function Home() {
             {screen === "menu" ? (
               <div className={styles.brandMark}>
                 <span className={styles.brandMarkText}>
-                  {copy.brand.shortName}
+                  {currentCopy.brand.shortName}
                 </span>
               </div>
             ) : (
@@ -754,7 +861,7 @@ export default function Home() {
                 type="button"
                 onClick={goToMenu}
                 className={styles.appBarBack}
-                aria-label={copy.summary.backToMenu}
+                aria-label={currentCopy.summary.backToMenu}
               >
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path

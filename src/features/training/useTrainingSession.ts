@@ -102,8 +102,12 @@ export const useTrainingSession = <
   const [questionIndex, setQuestionIndex] = useState(1);
   const [timeLeft, setTimeLeft] = useState(defaultInitialState.timeLeft);
 
-  // Load saved state from localStorage after hydration
+  // Only load settings from localStorage on first mount
+  const didLoadFromStorage = useRef(false);
+
   useEffect(() => {
+    if (didLoadFromStorage.current) return;
+    didLoadFromStorage.current = true;
     const savedSession = storage.readJSON<{
       stats?: ReturnType<typeof provider.createDefaultStats>;
       mode?: Mode;
@@ -111,14 +115,12 @@ export const useTrainingSession = <
     const savedSettings = storage.readJSON<Partial<Settings>>(
       storageKeys.settings
     );
-    
     if (savedSession?.stats) {
       setStats(savedSession.stats);
     }
     if (savedSession?.mode) {
       setMode(savedSession.mode);
     }
-    
     if (savedSettings) {
       const merged = {
         ...provider.settings.defaultValue,

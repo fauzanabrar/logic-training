@@ -129,7 +129,7 @@ export const logicTrainingProvider: TrainingProvider<
   maxLevel: MAX_LEVEL,
   createDefaultStats,
   createQuestion: ({ skill, level, settings }) => {
-    return generateQuestion(skill, level);
+    return generateQuestion(skill, level, settings.language);
   },
   getQuestionText: (question) => question.text,
   getQuestionOptions: (question) => question.options ?? [],
