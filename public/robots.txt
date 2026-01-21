@@ -1,11 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# Canonical robots.txt kept in sync with app/robots.ts
+# Set NEXT_PUBLIC_SITE_URL to your production domain so sitemap points correctly
+
 User-agent: *
 Allow: /
+Disallow: /api/
 Disallow: /private/
 
-# Specific rules for Googlebot
-User-agent: Googlebot
-Allow: /
-
-# Sitemap location
 Sitemap: https://example.com/sitemap.xml
