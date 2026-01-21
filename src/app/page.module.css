@@ -96,6 +96,7 @@ button:focus-visible {
   width: 28px;
   height: 28px;
   color: #fff;
+  filter: invert(100%) brightness(200%);
 }
 
 .brandMarkText {

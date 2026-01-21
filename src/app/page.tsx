@@ -1046,7 +1046,7 @@ export default function Home() {
             {screen === "menu" ? (
               <div className={styles.brandMark}>
                 <img
-                  src="/icons/brain-192.png"
+                  src="/icons/brain.png"
                   alt={appConfig.name}
                   className={styles.brandIcon}
                   loading="lazy"
