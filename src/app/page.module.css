@@ -339,6 +339,16 @@ button:focus-visible {
   gap: 8px;
 }
 
+.answerButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.answerButtons button {
+  flex: 1;
+}
+
 .answerInput {
   width: 100%;
   border: 2px solid var(--border-strong);
@@ -438,14 +448,20 @@ button:focus-visible {
 
 .primaryButton {
   flex: 1 1 160px;
+  min-height: 52px;
   border: none;
-  border-radius: 12px;
-  padding: 12px;
-  background: var(--accent);
+  border-radius: 18px;
+  padding: 0 20px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: var(--accent-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .primaryButton:hover {
@@ -454,6 +470,14 @@ button:focus-visible {
 
 .primaryButton:active {
   transform: translateY(1px);
+  box-shadow: var(--accent-shadow);
+}
+
+.primaryButton.buttonDisabled,
+.primaryButton:disabled {
+  background: var(--border-strong);
+  box-shadow: none;
+  color: var(--muted);
 }
 
 .secondaryButton {
@@ -842,6 +866,49 @@ button:focus-visible {
 .dotEmpty {
   font-size: 0.8rem;
   color: var(--muted);
+}
+
+.answerButtonsRow {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-bottom: 8px;
+  justify-content: center;
+}
+
+.answerOptionButton {
+  flex: 1 1 0;
+  min-width: 80px;
+  min-height: 48px;
+  border: 2px solid var(--border-strong);
+  border-radius: 12px;
+  background: var(--card-subtle);
+  color: var(--ink);
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.answerOptionButton:active {
+  background: var(--accent-faint);
+}
+
+.answerSelected {
+  border-color: var(--accent);
+  background: var(--accent-faint);
+}
+
+.answerCorrect {
+  border-color: var(--success-border);
+  background: var(--success-bg);
+  color: var(--success-text);
+}
+
+.answerWrong {
+  border-color: var(--error-border);
+  background: var(--error-bg);
+  color: var(--error-text);
 }
 
 @media (prefers-reduced-motion: reduce) {

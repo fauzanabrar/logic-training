@@ -4,19 +4,19 @@ import { storage } from "@/lib/storage";
 type ThemeMode = "light" | "dark";
 
 export const useThemeMode = (storageKey: string) => {
-  const [theme, setTheme] = useState<ThemeMode>(() => {
-    if (typeof window === "undefined") {
-      return "light";
-    }
+  const [theme, setTheme] = useState<ThemeMode>("light");
+
+  useEffect(() => {
     const savedTheme = storage.readString(storageKey);
     if (savedTheme === "light" || savedTheme === "dark") {
-      return savedTheme;
+      setTheme(savedTheme);
+      return;
     }
     const prefersDark = window.matchMedia
       ? window.matchMedia("(prefers-color-scheme: dark)").matches
       : false;
-    return prefersDark ? "dark" : "light";
-  });
+    setTheme(prefersDark ? "dark" : "light");
+  }, [storageKey]);
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;

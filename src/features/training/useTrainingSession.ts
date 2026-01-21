@@ -70,34 +70,27 @@ export const useTrainingSession = <
 >) => {
   type Mode = TrainingMode<SkillKey>;
 
-  const initialState = useMemo(() => {
-    const savedSession = storage.readJSON<{
-      stats?: ReturnType<typeof provider.createDefaultStats>;
-      mode?: Mode;
-    }>(storageKeys.session);
-    const savedSettings = storage.readJSON<Partial<Settings>>(
-      storageKeys.settings
-    );
+  // Create default initial state that matches both server and client
+  const defaultInitialState = useMemo(() => {
     const merged = {
       ...provider.settings.defaultValue,
-      ...savedSettings,
     } as Settings;
     const normalizedSettings = normalizeSettings(
       merged,
       provider.settings.controls
     );
     return {
-      stats: savedSession?.stats ?? provider.createDefaultStats(),
-      mode: savedSession?.mode ?? "mix",
+      stats: provider.createDefaultStats(),
+      mode: "mix" as Mode,
       settings: normalizedSettings,
       timeLeft: normalizedSettings.timeLimitSeconds,
     };
-  }, [provider, storageKeys]);
+  }, [provider]);
 
-  const [stats, setStats] = useState(initialState.stats);
-  const [mode, setMode] = useState<Mode>(initialState.mode);
+  const [stats, setStats] = useState(defaultInitialState.stats);
+  const [mode, setMode] = useState<Mode>(defaultInitialState.mode);
   const [screen, setScreen] = useState<Screen>("menu");
-  const [settings, setSettings] = useState<Settings>(initialState.settings);
+  const [settings, setSettings] = useState<Settings>(defaultInitialState.settings);
   const [question, setQuestion] = useState<Question | null>(null);
   const [answer, setAnswer] = useState("");
   const [feedback, setFeedback] = useState<Feedback<SkillKey> | null>(null);
@@ -107,7 +100,38 @@ export const useTrainingSession = <
     wrong: 0,
   });
   const [questionIndex, setQuestionIndex] = useState(1);
-  const [timeLeft, setTimeLeft] = useState(initialState.timeLeft);
+  const [timeLeft, setTimeLeft] = useState(defaultInitialState.timeLeft);
+
+  // Load saved state from localStorage after hydration
+  useEffect(() => {
+    const savedSession = storage.readJSON<{
+      stats?: ReturnType<typeof provider.createDefaultStats>;
+      mode?: Mode;
+    }>(storageKeys.session);
+    const savedSettings = storage.readJSON<Partial<Settings>>(
+      storageKeys.settings
+    );
+    
+    if (savedSession?.stats) {
+      setStats(savedSession.stats);
+    }
+    if (savedSession?.mode) {
+      setMode(savedSession.mode);
+    }
+    
+    if (savedSettings) {
+      const merged = {
+        ...provider.settings.defaultValue,
+        ...savedSettings,
+      } as Settings;
+      const normalizedSettings = normalizeSettings(
+        merged,
+        provider.settings.controls
+      );
+      setSettings(normalizedSettings);
+      setTimeLeft(normalizedSettings.timeLimitSeconds);
+    }
+  }, [provider, storageKeys]);
   const [answered, setAnswered] = useState(false);
 
   const startTimeRef = useRef<number>(0);

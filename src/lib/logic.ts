@@ -1,4 +1,3 @@
-
 export type SkillKey = "syllogism" | "fallacy" | "deduction" | "induction";
 
 export interface Question {
@@ -18,10 +17,10 @@ export const SKILL_LABELS: Record<SkillKey, string> = {
 };
 
 export const SKILL_SYMBOLS: Record<SkillKey, string> = {
-  syllogism: "📜",
-  fallacy: "🤔",
-  deduction: "🧐",
-  induction: "🤯",
+  syllogism: "S",
+  fallacy: "F",
+  deduction: "D",
+  induction: "I",
 };
 
 export const MAX_LEVEL = 10;

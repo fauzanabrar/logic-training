@@ -33,7 +33,7 @@ const skillModes: Array<{
 export const trainingConfig = {
   provider: logicTrainingProvider,
   storageKeys: {
-    session: `${storagePrefix}:session`,
+    session: `${storagePrefix}:session:${logicTrainingProvider.id}`,
     settings: `${storagePrefix}:settings`,
     theme: `${storagePrefix}:theme`,
   },

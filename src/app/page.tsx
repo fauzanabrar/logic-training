@@ -26,6 +26,15 @@ const inlineAdConfig = {
 
 const popUnderEnabled = adsConfig.enabled && adsConfig.popUnder.enabled;
 
+// Custom hook to detect hydration
+function useHasHydrated() {
+  const [hasHydrated, setHasHydrated] = useState(false);
+  useEffect(() => {
+    setHasHydrated(true);
+  }, []);
+  return hasHydrated;
+}
+
 export default function Home() {
   const { provider, modes, storageKeys, copy } = trainingConfig;
   const inputRef = useRef<HTMLInputElement>(null);
@@ -73,6 +82,8 @@ export default function Home() {
     onSessionComplete: handleSessionComplete,
   });
 
+  const hasHydrated = useHasHydrated();
+
   useEffect(() => {
     if (screen !== "drill" || useKeypad || answered) {
       return;
@@ -114,6 +125,7 @@ export default function Home() {
   }, [goToMenu, screen]);
 
   const skillKeys = provider.skillOrder;
+
   const hasAttempts = useMemo(
     () => Object.values(stats).some((entry) => entry.history.length > 0),
     [stats]
@@ -122,6 +134,7 @@ export default function Home() {
     () => provider.getWeakestSkill(stats),
     [provider, stats]
   );
+
   const weaknessText = hasAttempts
     ? provider.skills[weakestSkill].label
     : copy.stats.noData;
@@ -178,6 +191,20 @@ export default function Home() {
 
   let content: ReactElement | null = null;
 
+  const [useEmojiIcons, setUseEmojiIcons] = useState(false);
+  useEffect(() => {
+    setUseEmojiIcons(true);
+  }, []);
+
+  // Emoji map for client-only rendering
+  const emojiSkillIcons = {
+    syllogism: "📜",
+    fallacy: "🤔",
+    deduction: "🧐",
+    induction: "🤯",
+    mix: "🔀",
+  };
+
   if (screen === "menu") {
     content = (
       <>
@@ -198,35 +225,39 @@ export default function Home() {
             </div>
             <div className={styles.metaBadge}>
               <span className={styles.metaBadgeText}>
-                {copy.menu.weakestPrefix} {weaknessText}
+                {copy.menu.weakestPrefix} {hasHydrated ? (weaknessText ?? '-') : '-'}
               </span>
             </div>
-            {negativeText ? (
-              <div className={styles.metaBadge}>
-                <span className={styles.metaBadgeText}>
-                  {copy.menu.negativesLabel} {negativeText}
-                </span>
-              </div>
-            ) : null}
+            <div className={styles.metaBadge}>
+              <span className={styles.metaBadgeText}>
+                {copy.menu.negativesLabel} {hasHydrated ? (negativeText ?? '-') : '-'}
+              </span>
+            </div>
           </div>
         </section>
 
-        <div className={styles.menuGrid}>
-          {modes.map((item) => (
-            <button
-              key={item.key}
-              onClick={() => startSession(item.key)}
-              type="button"
-              className={styles.menuButton}
-            >
-              <span className={styles.menuIcon}>{item.icon}</span>
-              <span>
-                <span className={styles.menuLabel}>{item.label}</span>
-                <span className={styles.menuSub}>{item.subtitle}</span>
-              </span>
-            </button>
-          ))}
-        </div>
+        {hasHydrated ? (
+          <div className={styles.menuGrid}>
+            {modes.map((item) => (
+              <button
+                key={item.key}
+                onClick={() => startSession(item.key)}
+                type="button"
+                className={styles.menuButton}
+              >
+                <span className={styles.menuIcon}>
+                  {useEmojiIcons && emojiSkillIcons[item.key] ? emojiSkillIcons[item.key] : item.icon}
+                </span>
+                <span>
+                  <span className={styles.menuLabel}>{item.label}</span>
+                  <span className={styles.menuSub}>{item.subtitle}</span>
+                </span>
+              </button>
+            ))}
+          </div>
+        ) : (
+          <div className={styles.menuGrid} />
+        )}
 
         <div className={styles.menuActions}>
           <button
@@ -251,7 +282,7 @@ export default function Home() {
   if (screen === "drill") {
     content = (
       <>
-        <div className={styles.statusRow}>
+        <div className={styles.statusRow} suppressHydrationWarning>
           <div className={styles.statusPill}>
             <span className={styles.statusText}>
               {copy.drill.questionLabel} {questionIndex}/
@@ -341,99 +372,110 @@ export default function Home() {
                     </div>
                   </>
                 ) : (
-                  <div className={styles.answerRow}>
-                    {provider.answer.inputMode === "multiple-choice" &&
-                    question &&
-                    provider.getQuestionOptions ? (
-                      <div className={styles.answerButtons}>
-                        {provider.getQuestionOptions(question).map((option) => (
+                  <div className={styles.answerAreaWrapper}>
+                    {/* Answer Row */}
+                    <div className={styles.answerRow}>
+                      {provider.answer.inputMode === "multiple-choice" && question && provider.getQuestionOptions ? (
+                        <div className={styles.answerButtonsRow}>
+                          {provider.getQuestionOptions(question).map((option) => {
+                            let btnClass = styles.answerOptionButton;
+                            if (answered) {
+                              if (option === answer) {
+                                btnClass += feedback && feedback.correct && option === feedback.expected ? ` ${styles.answerCorrect}` : ` ${styles.answerWrong}`;
+                              }
+                            } else if (option === answer) {
+                              btnClass += ` ${styles.answerSelected}`;
+                            }
+                            return (
+                              <button
+                                key={option}
+                                type="button"
+                                onClick={() => {
+                                  if (!answered) {
+                                    handleAnswerChange(option);
+                                    handleSubmit({ answer: option });
+                                  }
+                                }}
+                                disabled={answered}
+                                className={btnClass}
+                              >
+                                {option}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      ) : (
+                        <input
+                          ref={inputRef}
+                          className={styles.answerInput}
+                          type="text"
+                          inputMode={provider.answer.inputMode === "numeric" ? "numeric" : "text"}
+                          pattern={provider.answer.inputMode === "numeric" ? "[-0-g]*" : undefined}
+                          value={answer}
+                          onChange={(event) => {
+                            handleAnswerChange(event.target.value);
+                          }}
+                          onKeyDown={(event) => {
+                            if (event.key === "Enter") {
+                              event.preventDefault();
+                              handleSubmit();
+                            }
+                          }}
+                          placeholder={provider.answer.placeholder}
+                          autoComplete="off"
+                          disabled={answered}
+                          aria-label="Answer input"
+                        />
+                      )}
+                    </div>
+                    {/* Action Row */}
+                    <div className={styles.actionRow}>
+                      {provider.answer.inputMode === "multiple-choice" && question && provider.getQuestionOptions ? (
+                        answered ? (
                           <button
-                            key={option}
                             type="button"
-                            onClick={() => {
-                              handleAnswerChange(option);
-                              handleSubmit({ answer: option });
-                            }}
-                            disabled={answered}
-                            className={`${styles.primaryButton} ${
-                              answered ? styles.buttonDisabled : ""
-                            }`}
+                            onClick={handleNext}
+                            className={styles.primaryButton}
                           >
-                            {option}
+                            {copy.drill.nextAction}
                           </button>
-                        ))}
-                      </div>
-                    ) : (
-                      <input
-                        ref={inputRef}
-                        className={styles.answerInput}
-                        type="text"
-                        inputMode={
-                          provider.answer.inputMode === "numeric"
-                            ? "numeric"
-                            : "text"
-                        }
-                        pattern={
-                          provider.answer.inputMode === "numeric"
-                            ? "[-0-g]*"
-                            : undefined
-                        }
-                        value={answer}
-                        onChange={(event) => {
-                          handleAnswerChange(event.target.value);
-                        }}
-                        onKeyDown={(event) => {
-                          if (event.key === "Enter") {
-                            event.preventDefault();
-                            handleSubmit();
-                          }
-                        }}
-                        placeholder={provider.answer.placeholder}
-                        autoComplete="off"
-                        disabled={answered}
-                        aria-label="Answer input"
-                      />
-                    )}
+                        ) : null
+                      ) : (
+                        <>
+                          <button
+                            type="button"
+                            onClick={() => handleSubmit({ useKeypad: Boolean(useKeypad && keypadRows) })}
+                            disabled={answered}
+                            className={`${styles.primaryButton} ${answered ? styles.buttonDisabled : ""}`}
+                          >
+                            {copy.drill.checkAction}
+                          </button>
+                          <button
+                            type="button"
+                            onClick={handleNext}
+                            disabled={!answered}
+                            className={`${styles.secondaryButton} ${!answered ? styles.buttonDisabled : ""}`}
+                          >
+                            {copy.drill.nextAction}
+                          </button>
+                        </>
+                      )}
+                    </div>
                   </div>
                 )}
-                <div className={styles.actionRow}>
-                  <button
-                    type="button"
-                    onClick={() =>
-                      handleSubmit({ useKeypad: Boolean(useKeypad && keypadRows) })
-                    }
-                    disabled={answered}
-                    className={`${styles.primaryButton} ${
-                      answered ? styles.buttonDisabled : ""
+                {error ? <p className={styles.errorText}>{error}</p> : null}
+                {feedback ? (
+                  <div
+                    className={`${styles.feedback} ${
+                      feedback.correct
+                        ? styles.feedbackCorrect
+                        : styles.feedbackWrong
                     }`}
                   >
-                    {copy.drill.checkAction}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={handleNext}
-                    disabled={!answered}
-                    className={`${styles.secondaryButton} ${
-                      !answered ? styles.buttonDisabled : ""
-                    }`}
-                  >
-                    {copy.drill.nextAction}
-                  </button>
-                </div>
+                    <span className={styles.feedbackText}>{feedbackText}</span>
+                  </div>
+                ) : null}
               </div>
-
-              {error ? <p className={styles.errorText}>{error}</p> : null}
-              {feedback ? (
-                <div
-                  className={`${styles.feedback} ${
-                    feedback.correct
-                      ? styles.feedbackCorrect
-                      : styles.feedbackWrong
-                  }`}
-                >
-                  <span className={styles.feedbackText}>{feedbackText}</span>
-                </div>
-              ) : null}
             </div>
           ) : (
             <p className={styles.sectionSub}>{copy.drill.loading}</p>
@@ -456,7 +498,7 @@ export default function Home() {
   if (screen === "stats") {
     content = (
       <>
-        <section className={styles.hero}>
+        <section className={styles.hero} suppressHydrationWarning>
           <h1 className={styles.heroTitle}>{copy.stats.title}</h1>
           <p className={styles.heroText}>{copy.stats.intro}</p>
         </section>
@@ -556,7 +598,7 @@ export default function Home() {
 
   if (screen === "summary") {
     content = (
-      <section className={styles.card}>
+      <section className={styles.card} suppressHydrationWarning>
         <h2 className={styles.sectionTitle}>{copy.summary.title}</h2>
         <p className={styles.sectionSub}>
           {modeLabel} {copy.appBar.drillSuffix}
@@ -595,7 +637,7 @@ export default function Home() {
 
   if (screen === "settings") {
     content = (
-      <section className={styles.card}>
+      <section className={styles.card} suppressHydrationWarning>
         <h2 className={styles.sectionTitle}>{copy.settings.title}</h2>
         <p className={styles.sectionSub}>{copy.settings.intro}</p>
 
